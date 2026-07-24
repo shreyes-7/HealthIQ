@@ -1,6 +1,7 @@
-# Runtime dependencies for the data engineering phase (Sprint 1).
-# ML training frameworks (XGBoost, LightGBM, CatBoost, SHAP) will be added
-# in a later sprint once the data pipeline is complete.
+# Runtime dependencies.
+# Sprint 1: data engineering pipeline. Sprint 2: model training.
+# SHAP is included now only for Sprint 2's "Ready for Explainable AI" compatibility
+# smoke test; building the actual explainability module is a later sprint.
 
 pandas
 numpy
@@ -12,3 +13,9 @@ matplotlib
 seaborn
 pyyaml
 python-dotenv
+xgboost
+lightgbm
+catboost
+shap
+statsmodels
+tabulate

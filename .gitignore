@@ -21,6 +21,9 @@ Data/processed/
 # Logs
 logs/
 
+# CatBoost auto-generated training telemetry (regenerates every training run)
+catboost_info/
+
 # OS
 .DS_Store
 Thumbs.db
