@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-07-24T15:37:34.539254+00:00",
+  "source_file": "Data/raw/ed2022_sas.sas7bdat",
+  "file_encoding": "WINDOWS-1252",
+  "row_count": 16025,
+  "column_count": 913,
+  "target_variables": [
+    "ADMITHOS",
+    "OBSHOS"
+  ],
+  "derived_target_name": "hospital_admission",
+  "survey_design_variables": [
+    "PATWT",
+    "CSTRATM",
+    "CPSUM"
+  ],
+  "facility_weight_variable": "EDWT"
+}

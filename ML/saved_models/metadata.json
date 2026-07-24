@@ -1,0 +1,2629 @@
+{
+  "generated_at": "2026-07-24T17:42:14.842073+00:00",
+  "target_column": "hospital_admission",
+  "feature_count": 866,
+  "split_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "random_state": 42,
+  "split_sizes": {
+    "train": 11217,
+    "validation": 2404,
+    "test": 2404
+  },
+  "encoder_feature_metadata": {
+    "VMONTH": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "12",
+        "1",
+        "7",
+        "4",
+        "6",
+        "3",
+        "8",
+        "10",
+        "11",
+        "5",
+        "9"
+      ]
+    },
+    "VDAYR": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "3",
+        "4",
+        "6",
+        "5",
+        "7",
+        "1"
+      ]
+    },
+    "AGER": {
+      "encoding": "one_hot",
+      "reference_category": "3",
+      "encoded_categories": [
+        "4",
+        "1",
+        "2",
+        "6",
+        "5"
+      ]
+    },
+    "RESIDNCE": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "3",
+        "2",
+        "Missing",
+        "4"
+      ]
+    },
+    "SEX": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2"
+      ]
+    },
+    "ETHUN": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "Missing",
+        "1"
+      ]
+    },
+    "ETHIM": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1"
+      ]
+    },
+    "RACEUN": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing",
+        "3",
+        "5",
+        "6",
+        "4"
+      ]
+    },
+    "RACER": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "3"
+      ]
+    },
+    "RACERETH": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "ARREMS": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "AMBTRANSFER": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1"
+      ]
+    },
+    "PAYPRIV": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PAYMCARE": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PAYMCAID": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PAYSELF": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PAYOTH": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PAYDK": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PAYTYPER": {
+      "encoding": "one_hot",
+      "reference_category": "3",
+      "encoded_categories": [
+        "1",
+        "2",
+        "Missing",
+        "5",
+        "7",
+        "4",
+        "6"
+      ]
+    },
+    "IMMEDR": {
+      "encoding": "one_hot",
+      "reference_category": "3",
+      "encoded_categories": [
+        "Missing",
+        "4",
+        "2",
+        "7",
+        "0",
+        "5",
+        "1"
+      ]
+    },
+    "PAINSCALE": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "0",
+        "8",
+        "10",
+        "7",
+        "5",
+        "6",
+        "9",
+        "4",
+        "3",
+        "2",
+        "1"
+      ]
+    },
+    "SEEN72": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "Missing",
+        "1"
+      ]
+    },
+    "EPISODE": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "Missing",
+        "2"
+      ]
+    },
+    "INJURY": {
+      "encoding": "one_hot",
+      "reference_category": "0",
+      "encoded_categories": [
+        "1",
+        "Missing",
+        "2"
+      ]
+    },
+    "INJPOISAD": {
+      "encoding": "one_hot",
+      "reference_category": "4",
+      "encoded_categories": [
+        "1",
+        "Missing",
+        "3",
+        "5",
+        "2"
+      ]
+    },
+    "INJURY72": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "INTENT15": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "4"
+      ]
+    },
+    "INJURY_ENC": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "PRDIAG1": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Missing",
+        "Yes"
+      ]
+    },
+    "PRDIAG2": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Missing",
+        "Yes"
+      ]
+    },
+    "PRDIAG3": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "No",
+        "Yes"
+      ]
+    },
+    "PRDIAG4": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "No",
+        "Yes"
+      ]
+    },
+    "PRDIAG5": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "No",
+        "Yes"
+      ]
+    },
+    "ETOHAB": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "ALZHD": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "ASTHMA": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CANCER": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CEBVD": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CKD": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "COPD": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CHF": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CAD": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "DEPRN": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "DIABTYP2": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "DIABTYP0": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "ESRD": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "HPE": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "HYPLIPID": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "HTN": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OBESITY": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OSA": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OSTPRSIS": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "SUBSTAB": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "NOCHRON": {
+      "encoding": "one_hot",
+      "reference_category": "0",
+      "encoded_categories": [
+        "1",
+        "2"
+      ]
+    },
+    "TOTCHRON": {
+      "encoding": "one_hot",
+      "reference_category": "0",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "Missing",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "13"
+      ]
+    },
+    "DIAGSCRN": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "0",
+        "2"
+      ]
+    },
+    "ABG": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "BAC": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "BMP": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "BNP": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "BUNCREAT": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CARDENZ": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CBC": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CMP": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "BLOODCX": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "TRTCX": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "URINECX": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OTHCX": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "DDIMER": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "ELECTROL": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "GLUCOSE": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "LACTATE": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "LFT": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PTTINR": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OTHERBLD": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CARDMON": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "EKG": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "HIVTEST": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "FLUTEST": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PREGTEST": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "TOXSCREN": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "URINE": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OTHRTEST": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "ANYIMAGE": {
+      "encoding": "one_hot",
+      "reference_category": "Yes",
+      "encoded_categories": [
+        "No"
+      ]
+    },
+    "XRAY": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CATSCAN": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CTCONTRAST": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1"
+      ]
+    },
+    "CTAB": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CTCHEST": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CTHEAD": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CTOTHER": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "MRI": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "MRICONTRAST": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1"
+      ]
+    },
+    "ULTRASND": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OTHIMAGE": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "COVIDTEST": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "COVIDANTIBODY": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PROC": {
+      "encoding": "one_hot",
+      "reference_category": "0",
+      "encoded_categories": [
+        "1",
+        "2"
+      ]
+    },
+    "BLADCATH": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CASTSPLINT": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "IVFLUIDS": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "NEBUTHER": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PELVIC": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "SKINADH": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "SUTURE": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OTHPROC": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "TOTPROC": {
+      "encoding": "one_hot",
+      "reference_category": "0",
+      "encoded_categories": [
+        "1",
+        "2",
+        "Missing",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "MED": {
+      "encoding": "one_hot",
+      "reference_category": "Yes",
+      "encoded_categories": [
+        "No"
+      ]
+    },
+    "GPMED1": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "Missing",
+        "2",
+        "3"
+      ]
+    },
+    "GPMED2": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "GPMED3": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "GPMED4": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "GPMED5": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "GPMED6": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "GPMED7": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "GPMED8": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "GPMED9": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "GPMED10": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "GPMED11": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "GPMED12": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "GPMED13": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "GPMED14": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "GPMED15": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "GPMED16": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "GPMED17": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    "VITALSD": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "ATTPHYS": {
+      "encoding": "one_hot",
+      "reference_category": "Yes",
+      "encoded_categories": [
+        "No"
+      ]
+    },
+    "RESINT": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "CONSULT": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "RNLPN": {
+      "encoding": "one_hot",
+      "reference_category": "Yes",
+      "encoded_categories": [
+        "No"
+      ]
+    },
+    "NURSEPR": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "PHYSASST": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "EMT": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "MHPROV": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "OTHPROV": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "ETHNICFL": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "RACERFL": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "EMRED": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "HHSMUE": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "Missing",
+        "2"
+      ]
+    },
+    "EHRINSE": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing",
+        "3"
+      ]
+    },
+    "EDPRIM": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "4",
+        "Missing",
+        "3"
+      ]
+    },
+    "EDINFO": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "INCSHX": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "INCPHYS": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "EXPSPACE": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "BEDREG": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "KIOSELCHK": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "CATRIAGE": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "IMBED": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "ADVTRIAG": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "PHYSPRACTRIA": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "FASTTRAK": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "EDPTOR": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "DASHBORD": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "RFID": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "1",
+        "Missing"
+      ]
+    },
+    "WIRELESS": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "ZONENURS": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "POOLNURS": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2",
+        "Missing"
+      ]
+    },
+    "SURGDAY": {
+      "encoding": "one_hot",
+      "reference_category": "5",
+      "encoded_categories": [
+        "7",
+        "6",
+        "Missing",
+        "0",
+        "3",
+        "1",
+        "4"
+      ]
+    },
+    "REGION": {
+      "encoding": "one_hot",
+      "reference_category": "2",
+      "encoded_categories": [
+        "3",
+        "4",
+        "1"
+      ]
+    },
+    "MSA": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "2"
+      ]
+    },
+    "PRESCR1": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "5",
+        "Missing",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB1": {
+      "encoding": "one_hot",
+      "reference_category": "6",
+      "encoded_categories": [
+        "Missing",
+        "2",
+        "4",
+        "7",
+        "8",
+        "3",
+        "5"
+      ]
+    },
+    "COMSTAT1": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "Missing",
+        "2",
+        "3"
+      ]
+    },
+    "RX1CAT3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "197",
+        "203",
+        "433",
+        "204",
+        "430",
+        "185",
+        "270"
+      ]
+    },
+    "RX1V1C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "057",
+        "040",
+        "097",
+        "105"
+      ]
+    },
+    "RX1V2C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "064",
+        "065",
+        "433",
+        "430",
+        "101",
+        "270"
+      ]
+    },
+    "RX1V3C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "197",
+        "203",
+        "204",
+        "185"
+      ]
+    },
+    "PRESCR2": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB2": {
+      "encoding": "one_hot",
+      "reference_category": "6",
+      "encoded_categories": [
+        "Missing",
+        "2",
+        "4",
+        "7",
+        "8",
+        "3",
+        "5"
+      ]
+    },
+    "COMSTAT2": {
+      "encoding": "one_hot",
+      "reference_category": "1",
+      "encoded_categories": [
+        "Missing",
+        "2",
+        "3"
+      ]
+    },
+    "RX2CAT3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "197",
+        "203",
+        "433",
+        "204",
+        "185",
+        "265",
+        "374"
+      ]
+    },
+    "RX2V1C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "057",
+        "040",
+        "097",
+        "113",
+        "331"
+      ]
+    },
+    "RX2V2C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "065",
+        "064",
+        "433",
+        "101",
+        "265",
+        "332"
+      ]
+    },
+    "RX2V3C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "197",
+        "203",
+        "204",
+        "185",
+        "374"
+      ]
+    },
+    "PRESCR3": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB3": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "7",
+        "3",
+        "5",
+        "8"
+      ]
+    },
+    "COMSTAT3": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "RX3CAT3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "197",
+        "203",
+        "204",
+        "433",
+        "265",
+        "430"
+      ]
+    },
+    "RX3V1C2": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "122",
+        "040",
+        "057",
+        "081",
+        "115",
+        "001",
+        "133",
+        "242",
+        "105",
+        "097",
+        "218",
+        "358",
+        "087",
+        "113"
+      ]
+    },
+    "RX3V1C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "057",
+        "040",
+        "113"
+      ]
+    },
+    "RX3V2C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "065",
+        "064",
+        "433",
+        "265",
+        "430"
+      ]
+    },
+    "RX3V3C3": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "197",
+        "203",
+        "204"
+      ]
+    },
+    "PRESCR4": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB4": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "7",
+        "8",
+        "5",
+        "3"
+      ]
+    },
+    "COMSTAT4": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "RX4V1C2": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "122",
+        "040",
+        "057",
+        "081",
+        "001",
+        "115",
+        "242",
+        "133",
+        "218",
+        "105",
+        "087",
+        "097",
+        "358",
+        "254"
+      ]
+    },
+    "PRESCR5": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB5": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "7",
+        "3",
+        "8",
+        "5"
+      ]
+    },
+    "COMSTAT5": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "RX5V1C2": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "122",
+        "040",
+        "057",
+        "115",
+        "081",
+        "242",
+        "001",
+        "133",
+        "218",
+        "087",
+        "105",
+        "358",
+        "097"
+      ]
+    },
+    "PRESCR6": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB6": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "7",
+        "3",
+        "5",
+        "8"
+      ]
+    },
+    "COMSTAT6": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "RX6V1C2": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "122",
+        "057",
+        "040",
+        "115",
+        "081",
+        "001",
+        "133",
+        "242",
+        "097",
+        "358",
+        "218",
+        "105",
+        "087",
+        "113"
+      ]
+    },
+    "PRESCR7": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB7": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "7",
+        "3",
+        "5",
+        "8"
+      ]
+    },
+    "COMSTAT7": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "RX7V1C2": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "122",
+        "057",
+        "040",
+        "115",
+        "001",
+        "081",
+        "218",
+        "242",
+        "087",
+        "097",
+        "133",
+        "358",
+        "105",
+        "254"
+      ]
+    },
+    "PRESCR8": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB8": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "7",
+        "3",
+        "8"
+      ]
+    },
+    "COMSTAT8": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "RX8V1C2": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "122",
+        "040",
+        "057",
+        "001",
+        "081",
+        "218",
+        "115",
+        "105",
+        "133",
+        "097",
+        "087",
+        "113",
+        "358",
+        "242"
+      ]
+    },
+    "PRESCR9": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB9": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "7",
+        "3",
+        "5"
+      ]
+    },
+    "COMSTAT9": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "PRESCR10": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "CONTSUB10": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "3",
+        "1",
+        "5",
+        "7"
+      ]
+    },
+    "COMSTAT10": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "PRESCR11": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB11": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "4",
+        "2",
+        "5",
+        "7",
+        "8"
+      ]
+    },
+    "COMSTAT11": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "PRESCR12": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2"
+      ]
+    },
+    "CONTSUB12": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "5"
+      ]
+    },
+    "COMSTAT12": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2"
+      ]
+    },
+    "PRESCR13": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2"
+      ]
+    },
+    "CONTSUB13": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "4",
+        "2",
+        "5",
+        "7"
+      ]
+    },
+    "COMSTAT13": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "PRESCR14": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB14": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "4",
+        "2",
+        "5",
+        "7"
+      ]
+    },
+    "COMSTAT14": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "PRESCR15": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2"
+      ]
+    },
+    "CONTSUB15": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "5",
+        "2",
+        "4",
+        "7"
+      ]
+    },
+    "COMSTAT15": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "PRESCR16": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB16": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "4",
+        "2",
+        "7",
+        "3"
+      ]
+    },
+    "COMSTAT16": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "PRESCR17": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    "CONTSUB17": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "6",
+        "2",
+        "4",
+        "5",
+        "7"
+      ]
+    },
+    "COMSTAT17": {
+      "encoding": "one_hot",
+      "reference_category": "Missing",
+      "encoded_categories": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "RX17V1C1": {
+      "encoding": "one_hot",
+      "reference_category": "",
+      "encoded_categories": [
+        "057",
+        "040",
+        "087",
+        "358",
+        "122",
+        "115",
+        "133",
+        "097",
+        "105",
+        "242",
+        "113",
+        "081",
+        "218",
+        "001"
+      ]
+    },
+    "FEVER_FLAG": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "TACHYCARDIC_FLAG": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "HYPOTENSIVE_FLAG": {
+      "encoding": "one_hot",
+      "reference_category": "No",
+      "encoded_categories": [
+        "Yes"
+      ]
+    },
+    "AGE_GROUP": {
+      "encoding": "one_hot",
+      "reference_category": "adult_18_64",
+      "encoded_categories": [
+        "older_adult_65_plus",
+        "child_2_12",
+        "adolescent_13_17",
+        "infant_0_1"
+      ]
+    },
+    "ARRTIME": {
+      "encoding": "frequency"
+    },
+    "RFV13D": {
+      "encoding": "frequency"
+    },
+    "RFV23D": {
+      "encoding": "frequency"
+    },
+    "RFV33D": {
+      "encoding": "frequency"
+    },
+    "RFV43D": {
+      "encoding": "frequency"
+    },
+    "RFV53D": {
+      "encoding": "frequency"
+    },
+    "CAUSE1": {
+      "encoding": "frequency"
+    },
+    "CAUSE2": {
+      "encoding": "frequency"
+    },
+    "CAUSE3": {
+      "encoding": "frequency"
+    },
+    "DIAG1": {
+      "encoding": "frequency"
+    },
+    "DIAG2": {
+      "encoding": "frequency"
+    },
+    "DIAG3": {
+      "encoding": "frequency"
+    },
+    "DIAG4": {
+      "encoding": "frequency"
+    },
+    "DIAG5": {
+      "encoding": "frequency"
+    },
+    "MED1": {
+      "encoding": "frequency"
+    },
+    "MED2": {
+      "encoding": "frequency"
+    },
+    "MED3": {
+      "encoding": "frequency"
+    },
+    "MED4": {
+      "encoding": "frequency"
+    },
+    "MED5": {
+      "encoding": "frequency"
+    },
+    "MED6": {
+      "encoding": "frequency"
+    },
+    "MED7": {
+      "encoding": "frequency"
+    },
+    "MED8": {
+      "encoding": "frequency"
+    },
+    "MED9": {
+      "encoding": "frequency"
+    },
+    "MED10": {
+      "encoding": "frequency"
+    },
+    "MED11": {
+      "encoding": "frequency"
+    },
+    "MED12": {
+      "encoding": "frequency"
+    },
+    "MED13": {
+      "encoding": "frequency"
+    },
+    "MED14": {
+      "encoding": "frequency"
+    },
+    "MED15": {
+      "encoding": "frequency"
+    },
+    "MED16": {
+      "encoding": "frequency"
+    },
+    "MED17": {
+      "encoding": "frequency"
+    },
+    "DRUGID1": {
+      "encoding": "frequency"
+    },
+    "RX1CAT1": {
+      "encoding": "frequency"
+    },
+    "RX1CAT2": {
+      "encoding": "frequency"
+    },
+    "RX1V1C1": {
+      "encoding": "frequency"
+    },
+    "RX1V1C2": {
+      "encoding": "frequency"
+    },
+    "RX1V2C1": {
+      "encoding": "frequency"
+    },
+    "RX1V2C2": {
+      "encoding": "frequency"
+    },
+    "RX1V3C1": {
+      "encoding": "frequency"
+    },
+    "RX1V3C2": {
+      "encoding": "frequency"
+    },
+    "DRUGID2": {
+      "encoding": "frequency"
+    },
+    "RX2CAT1": {
+      "encoding": "frequency"
+    },
+    "RX2CAT2": {
+      "encoding": "frequency"
+    },
+    "RX2V1C1": {
+      "encoding": "frequency"
+    },
+    "RX2V1C2": {
+      "encoding": "frequency"
+    },
+    "RX2V2C1": {
+      "encoding": "frequency"
+    },
+    "RX2V2C2": {
+      "encoding": "frequency"
+    },
+    "RX2V3C1": {
+      "encoding": "frequency"
+    },
+    "RX2V3C2": {
+      "encoding": "frequency"
+    },
+    "DRUGID3": {
+      "encoding": "frequency"
+    },
+    "RX3CAT1": {
+      "encoding": "frequency"
+    },
+    "RX3CAT2": {
+      "encoding": "frequency"
+    },
+    "RX3V1C1": {
+      "encoding": "frequency"
+    },
+    "RX3V2C1": {
+      "encoding": "frequency"
+    },
+    "RX3V2C2": {
+      "encoding": "frequency"
+    },
+    "RX3V3C1": {
+      "encoding": "frequency"
+    },
+    "RX3V3C2": {
+      "encoding": "frequency"
+    },
+    "DRUGID4": {
+      "encoding": "frequency"
+    },
+    "RX4CAT1": {
+      "encoding": "frequency"
+    },
+    "RX4CAT2": {
+      "encoding": "frequency"
+    },
+    "RX4V1C1": {
+      "encoding": "frequency"
+    },
+    "RX4V2C1": {
+      "encoding": "frequency"
+    },
+    "RX4V2C2": {
+      "encoding": "frequency"
+    },
+    "RX4V3C1": {
+      "encoding": "frequency"
+    },
+    "RX4V3C2": {
+      "encoding": "frequency"
+    },
+    "DRUGID5": {
+      "encoding": "frequency"
+    },
+    "RX5CAT1": {
+      "encoding": "frequency"
+    },
+    "RX5CAT2": {
+      "encoding": "frequency"
+    },
+    "RX5V1C1": {
+      "encoding": "frequency"
+    },
+    "RX5V2C1": {
+      "encoding": "frequency"
+    },
+    "RX5V2C2": {
+      "encoding": "frequency"
+    },
+    "RX5V3C1": {
+      "encoding": "frequency"
+    },
+    "RX5V3C2": {
+      "encoding": "frequency"
+    },
+    "DRUGID6": {
+      "encoding": "frequency"
+    },
+    "RX6CAT1": {
+      "encoding": "frequency"
+    },
+    "RX6CAT2": {
+      "encoding": "frequency"
+    },
+    "RX6V1C1": {
+      "encoding": "frequency"
+    },
+    "RX6V2C1": {
+      "encoding": "frequency"
+    },
+    "RX6V2C2": {
+      "encoding": "frequency"
+    },
+    "RX6V3C1": {
+      "encoding": "frequency"
+    },
+    "RX6V3C2": {
+      "encoding": "frequency"
+    },
+    "DRUGID7": {
+      "encoding": "frequency"
+    },
+    "RX7CAT1": {
+      "encoding": "frequency"
+    },
+    "RX7CAT2": {
+      "encoding": "frequency"
+    },
+    "RX7V1C1": {
+      "encoding": "frequency"
+    },
+    "RX7V2C1": {
+      "encoding": "frequency"
+    },
+    "RX7V2C2": {
+      "encoding": "frequency"
+    },
+    "RX7V3C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID8": {
+      "encoding": "frequency"
+    },
+    "RX8CAT1": {
+      "encoding": "frequency"
+    },
+    "RX8CAT2": {
+      "encoding": "frequency"
+    },
+    "RX8V1C1": {
+      "encoding": "frequency"
+    },
+    "RX8V2C1": {
+      "encoding": "frequency"
+    },
+    "RX8V2C2": {
+      "encoding": "frequency"
+    },
+    "RX8V3C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID9": {
+      "encoding": "frequency"
+    },
+    "RX9CAT1": {
+      "encoding": "frequency"
+    },
+    "RX9V1C1": {
+      "encoding": "frequency"
+    },
+    "RX9V2C1": {
+      "encoding": "frequency"
+    },
+    "RX9V3C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID10": {
+      "encoding": "frequency"
+    },
+    "RX10CAT1": {
+      "encoding": "frequency"
+    },
+    "RX10V1C1": {
+      "encoding": "frequency"
+    },
+    "RX10V2C1": {
+      "encoding": "frequency"
+    },
+    "RX10V3C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID11": {
+      "encoding": "frequency"
+    },
+    "RX11CAT1": {
+      "encoding": "frequency"
+    },
+    "RX11V1C1": {
+      "encoding": "frequency"
+    },
+    "RX11V2C1": {
+      "encoding": "frequency"
+    },
+    "RX11V3C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID12": {
+      "encoding": "frequency"
+    },
+    "RX12CAT1": {
+      "encoding": "frequency"
+    },
+    "RX12V1C1": {
+      "encoding": "frequency"
+    },
+    "RX12V2C1": {
+      "encoding": "frequency"
+    },
+    "RX12V3C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID13": {
+      "encoding": "frequency"
+    },
+    "RX13CAT1": {
+      "encoding": "frequency"
+    },
+    "RX13V1C1": {
+      "encoding": "frequency"
+    },
+    "RX13V2C1": {
+      "encoding": "frequency"
+    },
+    "RX13V3C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID14": {
+      "encoding": "frequency"
+    },
+    "RX14CAT1": {
+      "encoding": "frequency"
+    },
+    "RX14V1C1": {
+      "encoding": "frequency"
+    },
+    "RX14V2C1": {
+      "encoding": "frequency"
+    },
+    "RX14V3C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID15": {
+      "encoding": "frequency"
+    },
+    "RX15CAT1": {
+      "encoding": "frequency"
+    },
+    "RX15V1C1": {
+      "encoding": "frequency"
+    },
+    "RX15V2C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID16": {
+      "encoding": "frequency"
+    },
+    "RX16CAT1": {
+      "encoding": "frequency"
+    },
+    "RX16V1C1": {
+      "encoding": "frequency"
+    },
+    "RX16V2C1": {
+      "encoding": "frequency"
+    },
+    "DRUGID17": {
+      "encoding": "frequency"
+    },
+    "RX17CAT1": {
+      "encoding": "frequency"
+    },
+    "RX17V2C1": {
+      "encoding": "frequency"
+    }
+  },
+  "scaler_feature_metadata": {
+    "PULSED": {
+      "mean": 82.62030846037266,
+      "std": 13.641384017577371
+    },
+    "TEMPDF": {
+      "mean": 98.1301684942498,
+      "std": 0.483596576401189
+    },
+    "WAITTIME": {
+      "mean": 32.690113221003834,
+      "std": 60.85024214214597
+    },
+    "PULSE": {
+      "mean": 91.88018186680931,
+      "std": 22.41179548057252
+    },
+    "LOV": {
+      "mean": 290.58839261834714,
+      "std": 401.32831229183256
+    },
+    "POPCT": {
+      "mean": 97.27458322189534,
+      "std": 6.19092592811646
+    },
+    "BPSYSD": {
+      "mean": 129.76116608718908,
+      "std": 14.364041249425847
+    },
+    "BPDIAS": {
+      "mean": 79.1592226085406,
+      "std": 13.958099106279
+    },
+    "TEMPF": {
+      "mean": 98.2431844521708,
+      "std": 0.9501951232059835
+    },
+    "TOTDIAG": {
+      "mean": 3.769902826067576,
+      "std": 3.512749092450214
+    },
+    "RESPR": {
+      "mean": 19.673085495230453,
+      "std": 6.008316459422161
+    },
+    "AGE": {
+      "mean": 40.545243826335025,
+      "std": 24.94385473747982
+    },
+    "NUMDIS": {
+      "mean": 1.0606222697691006,
+      "std": 2.2598979807792405
+    },
+    "BPDIASD": {
+      "mean": 75.97806900240705,
+      "std": 8.800223506195175
+    },
+    "RESPRD": {
+      "mean": 18.513684585896407,
+      "std": 4.8482926708155
+    },
+    "NUMGIV": {
+      "mean": 1.8271373807613445,
+      "std": 2.420084370562267
+    },
+    "BPSYS": {
+      "mean": 134.2868859766426,
+      "std": 23.204439266816255
+    },
+    "NUMMED": {
+      "mean": 2.735045020950343,
+      "std": 3.332680962313155
+    },
+    "SHOCK_INDEX": {
+      "mean": 0.7073514179840966,
+      "std": 0.22624084610773507
+    },
+    "PULSE_PRESSURE": {
+      "mean": 55.127663368101985,
+      "std": 18.30197303076462
+    }
+  },
+  "fit_scope": "training_split_only (Milestone 7) \u2014 no test-set leakage into preprocessing statistics"
+}

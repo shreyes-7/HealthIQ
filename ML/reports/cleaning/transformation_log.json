@@ -1,0 +1,8115 @@
+[
+  {
+    "step": "remove_duplicate_rows",
+    "column": "*",
+    "action": "dropped_duplicate_rows",
+    "count": 0
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ARRTIME",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 243
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "WAITTIME",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 2753
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "LOV",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 697
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "AGEDAYS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15597
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RESIDNCE",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 262
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ETHUN",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 2333
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RACEUN",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 3022
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ARREMS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 495
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "AMBTRANSFER",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 13637
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PAYTYPER",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1737
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "TEMPF",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 937
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PULSE",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 965
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RESPR",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 856
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BPSYS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1722
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BPDIAS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1753
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "POPCT",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 969
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "IMMEDR",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 4152
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PAINSCALE",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 7055
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "SEEN72",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1717
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RFV1",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 25
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RFV2",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 5805
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RFV3",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9591
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RFV4",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 12203
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RFV5",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 13919
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "EPISODE",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1601
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "INJURY",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 995
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "INJPOISAD",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 995
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "INJURY72",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 12540
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "INTENT15",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 11634
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "INJURY_ENC",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 12188
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "CAUSE1",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 12899
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "CAUSE2",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14737
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "CAUSE3",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15839
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "DIAG1",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 227
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "DIAG2",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 7635
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "DIAG3",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 11774
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "DIAG4",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 13743
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "DIAG5",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14800
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PRDIAG1",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 227
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PRDIAG2",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 7635
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PRDIAG3",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 11774
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PRDIAG4",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 13743
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PRDIAG5",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14800
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "TOTCHRON",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 259
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "CTCONTRAST",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 12775
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MRICONTRAST",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15856
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "TOTDIAG",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 225
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "TOTPROC",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 445
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED1",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 3634
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED2",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 6885
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED3",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9709
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED4",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 11771
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED5",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 13149
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED6",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14031
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED7",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14570
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED8",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14958
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED9",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15193
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED10",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15379
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED11",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15489
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED12",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15565
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED13",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15638
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED14",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15701
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED15",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15753
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED16",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15801
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED17",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15834
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED18",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15870
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED19",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15902
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED20",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15917
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED21",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15945
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED22",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15962
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED23",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15971
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED24",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15988
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED25",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15996
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED26",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16005
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED27",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16011
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED28",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16013
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED29",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16020
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "MED30",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16024
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED1",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 3725
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED2",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 6992
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED3",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9828
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED4",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 11898
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED5",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 13275
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED6",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14152
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED7",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14686
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED8",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15058
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED9",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15285
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED10",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15465
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED11",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15565
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED12",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15636
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED13",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15702
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED14",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15756
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED15",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15800
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED16",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15842
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED17",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15868
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED18",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15896
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED19",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15925
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED20",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15934
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED21",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15960
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED22",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15973
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED23",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15978
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED24",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15990
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED25",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15999
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED26",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16006
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED27",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16012
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED28",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16013
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED29",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16020
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "GPMED30",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 16024
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "VITALSD",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 466
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "TEMPDF",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 11269
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PULSED",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9018
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RESPRD",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9253
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BPSYSD",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9334
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BPDIASD",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9339
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ADMIT",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14214
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ADMTPHYS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14420
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "LOS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14002
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HDDIAG1",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14018
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HDDIAG2",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15401
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HDDIAG3",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15661
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HDDIAG4",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15828
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HDDIAG5",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15924
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HDSTAT",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 13955
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ADISP",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14047
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "OBSSTAY",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 15700
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "AGEFL",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 2
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "EMRED",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 356
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HHSMUE",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 448
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "EHRINSE",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 503
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "EDPRIM",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1677
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "EDINFO",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1369
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "OBSCLIN",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 947
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "OBSSEP",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9246
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "OBSPHYSED",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9087
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "OBSHOSP",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9087
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "OBSPHYSOT",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9087
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "OBSPHYSUN",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 9087
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BOARD",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 693
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BOARDHOS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1107
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "AMBDIV",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1989
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "TOTHRDIVR",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 10486
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "REGDIV",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 8988
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ADMDIV",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 8827
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "INCSHX",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 430
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "INCPHYS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 715
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "EXPSPACE",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1355
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BEDREG",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 718
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "KIOSELCHK",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 753
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "CATRIAGE",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 972
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "IMBED",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 702
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ADVTRIAG",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1515
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "PHYSPRACTRIA",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 718
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "FASTTRAK",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1013
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "EDPTOR",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 628
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "DASHBORD",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 964
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "RFID",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 928
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "WIRELESS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 974
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "ZONENURS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1051
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "POOLNURS",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1363
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "SURGDAY",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1014
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BEDCZAR",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 520
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BEDDATA",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 531
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HLIST",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 277
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "HLISTED",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 1188
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "EMEDRES",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 680
+  },
+  {
+    "step": "sentinel_to_nan",
+    "column": "BOARDED",
+    "action": "converted_sentinel_codes_to_nan",
+    "count": 14352
+  },
+  {
+    "step": "non_numeric_annotation_to_nan",
+    "column": "PULSE",
+    "action": "converted_annotation_codes_to_nan",
+    "count": 88,
+    "codes": [
+      998
+    ]
+  },
+  {
+    "step": "non_numeric_annotation_to_nan",
+    "column": "PULSED",
+    "action": "converted_annotation_codes_to_nan",
+    "count": 3,
+    "codes": [
+      998
+    ]
+  },
+  {
+    "step": "non_numeric_annotation_to_nan",
+    "column": "BPDIAS",
+    "action": "converted_annotation_codes_to_nan",
+    "count": 1,
+    "codes": [
+      998
+    ]
+  },
+  {
+    "step": "implied_decimal_correction",
+    "column": "RFV2",
+    "action": "divided_by_10",
+    "count": 10220,
+    "reason": "codebook documents an implied decimal for this variable"
+  },
+  {
+    "step": "implied_decimal_correction",
+    "column": "RFV5",
+    "action": "divided_by_10",
+    "count": 2106,
+    "reason": "codebook documents an implied decimal for this variable"
+  },
+  {
+    "step": "implied_decimal_correction",
+    "column": "RFV3",
+    "action": "divided_by_10",
+    "count": 6434,
+    "reason": "codebook documents an implied decimal for this variable"
+  },
+  {
+    "step": "implied_decimal_correction",
+    "column": "TEMPF",
+    "action": "divided_by_10",
+    "count": 15088,
+    "reason": "codebook documents an implied decimal for this variable"
+  },
+  {
+    "step": "implied_decimal_correction",
+    "column": "RFV1",
+    "action": "divided_by_10",
+    "count": 16000,
+    "reason": "codebook documents an implied decimal for this variable"
+  },
+  {
+    "step": "implied_decimal_correction",
+    "column": "TEMPDF",
+    "action": "divided_by_10",
+    "count": 4756,
+    "reason": "codebook documents an implied decimal for this variable"
+  },
+  {
+    "step": "implied_decimal_correction",
+    "column": "RFV4",
+    "action": "divided_by_10",
+    "count": 3822,
+    "reason": "codebook documents an implied decimal for this variable"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX1V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX1CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX3V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX3CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX5V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX5CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX6V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX6CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX7V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX7CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX8V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX8CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX9V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX9CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX10V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX10CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX11V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX11CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX12V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX12CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX13V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX13CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX14V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX14CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX15V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX15CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX16V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX16V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX16V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX17CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX17V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX17V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX17V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX18CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX18V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX18V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX18V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX19CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX19V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX19V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX19V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX20CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX20V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX20V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX20V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX21V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX22CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX22V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX22V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX22V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX23CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX23V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX23V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX23V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX25CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX25V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX25V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX25V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX25V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX26CAT3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX26CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX26V1C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX26V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX26V2C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX26V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX26V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX26V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX28CAT3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX28CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX28V1C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX28V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX28V2C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX28V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX28V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX28V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29CAT2",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29CAT3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V1C2",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V1C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V2C2",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V2C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V3C2",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX29V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30CAT3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30CAT4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V1C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V1C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V2C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V2C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V3C1",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V3C2",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX16CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX17V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX17CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX19V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX19CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX20V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX20CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX21V2C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX21CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX21V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX21CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX22V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX22CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX23V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX23CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX24V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX24CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX24V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX24CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX25V2C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX25CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX27V3C3",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX27CAT3"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX27V3C4",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX27CAT4"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "COMSTAT30",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "PRESCR30"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V2C1",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX30CAT1"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V2C2",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX30CAT2"
+  },
+  {
+    "step": "remove_duplicate_columns",
+    "column": "RX30V1C2",
+    "action": "dropped_duplicate_column",
+    "duplicate_of": "RX30V1C1"
+  },
+  {
+    "step": "remove_constant_columns",
+    "column": "*",
+    "action": "dropped_constant_columns",
+    "count": 12,
+    "columns": [
+      "MED30",
+      "GPMED29",
+      "GPMED30",
+      "RX16CAT4",
+      "CONTSUB26",
+      "COMSTAT27",
+      "CONTSUB28",
+      "COMSTAT28",
+      "PRESCR30",
+      "CONTSUB30",
+      "SETTYPE",
+      "YEAR"
+    ]
+  },
+  {
+    "step": "standardize_text",
+    "column": "ARRTIME",
+    "action": "stripped_and_uppercased",
+    "count": 243
+  },
+  {
+    "step": "standardize_text",
+    "column": "CAUSE1",
+    "action": "stripped_and_uppercased",
+    "count": 12899
+  },
+  {
+    "step": "standardize_text",
+    "column": "CAUSE2",
+    "action": "stripped_and_uppercased",
+    "count": 14737
+  },
+  {
+    "step": "standardize_text",
+    "column": "CAUSE3",
+    "action": "stripped_and_uppercased",
+    "count": 15839
+  },
+  {
+    "step": "standardize_text",
+    "column": "DIAG1",
+    "action": "stripped_and_uppercased",
+    "count": 227
+  },
+  {
+    "step": "standardize_text",
+    "column": "DIAG2",
+    "action": "stripped_and_uppercased",
+    "count": 7635
+  },
+  {
+    "step": "standardize_text",
+    "column": "DIAG3",
+    "action": "stripped_and_uppercased",
+    "count": 11774
+  },
+  {
+    "step": "standardize_text",
+    "column": "DIAG4",
+    "action": "stripped_and_uppercased",
+    "count": 13743
+  },
+  {
+    "step": "standardize_text",
+    "column": "DIAG5",
+    "action": "stripped_and_uppercased",
+    "count": 14800
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED1",
+    "action": "stripped_and_uppercased",
+    "count": 3634
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED2",
+    "action": "stripped_and_uppercased",
+    "count": 6885
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED3",
+    "action": "stripped_and_uppercased",
+    "count": 9709
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED4",
+    "action": "stripped_and_uppercased",
+    "count": 11771
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED5",
+    "action": "stripped_and_uppercased",
+    "count": 13149
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED6",
+    "action": "stripped_and_uppercased",
+    "count": 14031
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED7",
+    "action": "stripped_and_uppercased",
+    "count": 14570
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED8",
+    "action": "stripped_and_uppercased",
+    "count": 14958
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED9",
+    "action": "stripped_and_uppercased",
+    "count": 15193
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED10",
+    "action": "stripped_and_uppercased",
+    "count": 15379
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED11",
+    "action": "stripped_and_uppercased",
+    "count": 15489
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED12",
+    "action": "stripped_and_uppercased",
+    "count": 15565
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED13",
+    "action": "stripped_and_uppercased",
+    "count": 15638
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED14",
+    "action": "stripped_and_uppercased",
+    "count": 15701
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED15",
+    "action": "stripped_and_uppercased",
+    "count": 15753
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED16",
+    "action": "stripped_and_uppercased",
+    "count": 15801
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED17",
+    "action": "stripped_and_uppercased",
+    "count": 15834
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED18",
+    "action": "stripped_and_uppercased",
+    "count": 15870
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED19",
+    "action": "stripped_and_uppercased",
+    "count": 15902
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED20",
+    "action": "stripped_and_uppercased",
+    "count": 15917
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED21",
+    "action": "stripped_and_uppercased",
+    "count": 15945
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED22",
+    "action": "stripped_and_uppercased",
+    "count": 15962
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED23",
+    "action": "stripped_and_uppercased",
+    "count": 15971
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED24",
+    "action": "stripped_and_uppercased",
+    "count": 15988
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED25",
+    "action": "stripped_and_uppercased",
+    "count": 15996
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED26",
+    "action": "stripped_and_uppercased",
+    "count": 16005
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED27",
+    "action": "stripped_and_uppercased",
+    "count": 16011
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED28",
+    "action": "stripped_and_uppercased",
+    "count": 16013
+  },
+  {
+    "step": "standardize_text",
+    "column": "MED29",
+    "action": "stripped_and_uppercased",
+    "count": 16020
+  },
+  {
+    "step": "standardize_text",
+    "column": "HDDIAG1",
+    "action": "stripped_and_uppercased",
+    "count": 14018
+  },
+  {
+    "step": "standardize_text",
+    "column": "HDDIAG2",
+    "action": "stripped_and_uppercased",
+    "count": 15401
+  },
+  {
+    "step": "standardize_text",
+    "column": "HDDIAG3",
+    "action": "stripped_and_uppercased",
+    "count": 15661
+  },
+  {
+    "step": "standardize_text",
+    "column": "HDDIAG4",
+    "action": "stripped_and_uppercased",
+    "count": 15828
+  },
+  {
+    "step": "standardize_text",
+    "column": "HDDIAG5",
+    "action": "stripped_and_uppercased",
+    "count": 15924
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID1",
+    "action": "stripped_and_uppercased",
+    "count": 12391
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID2",
+    "action": "stripped_and_uppercased",
+    "count": 9140
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID3",
+    "action": "stripped_and_uppercased",
+    "count": 6316
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID4",
+    "action": "stripped_and_uppercased",
+    "count": 4254
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID5",
+    "action": "stripped_and_uppercased",
+    "count": 2876
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID6",
+    "action": "stripped_and_uppercased",
+    "count": 1994
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID7",
+    "action": "stripped_and_uppercased",
+    "count": 1455
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID8",
+    "action": "stripped_and_uppercased",
+    "count": 1067
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID9",
+    "action": "stripped_and_uppercased",
+    "count": 832
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID10",
+    "action": "stripped_and_uppercased",
+    "count": 646
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID11",
+    "action": "stripped_and_uppercased",
+    "count": 536
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID12",
+    "action": "stripped_and_uppercased",
+    "count": 460
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID13",
+    "action": "stripped_and_uppercased",
+    "count": 387
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID14",
+    "action": "stripped_and_uppercased",
+    "count": 324
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID15",
+    "action": "stripped_and_uppercased",
+    "count": 272
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID16",
+    "action": "stripped_and_uppercased",
+    "count": 224
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID17",
+    "action": "stripped_and_uppercased",
+    "count": 191
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID18",
+    "action": "stripped_and_uppercased",
+    "count": 155
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID19",
+    "action": "stripped_and_uppercased",
+    "count": 123
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID20",
+    "action": "stripped_and_uppercased",
+    "count": 108
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID21",
+    "action": "stripped_and_uppercased",
+    "count": 80
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID22",
+    "action": "stripped_and_uppercased",
+    "count": 63
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID23",
+    "action": "stripped_and_uppercased",
+    "count": 54
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID24",
+    "action": "stripped_and_uppercased",
+    "count": 37
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID25",
+    "action": "stripped_and_uppercased",
+    "count": 29
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID26",
+    "action": "stripped_and_uppercased",
+    "count": 20
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID27",
+    "action": "stripped_and_uppercased",
+    "count": 14
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID28",
+    "action": "stripped_and_uppercased",
+    "count": 12
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID29",
+    "action": "stripped_and_uppercased",
+    "count": 5
+  },
+  {
+    "step": "standardize_text",
+    "column": "DRUGID30",
+    "action": "stripped_and_uppercased",
+    "count": 1
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NOPAY",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYPRIV",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYMCARE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYMCAID",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYWKCMP",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYSELF",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYNOCHG",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYOTH",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYDK",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRDIAG1",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRDIAG2",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRDIAG3",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRDIAG4",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRDIAG5",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ETOHAB",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ALZHD",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ASTHMA",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CANCER",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CEBVD",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CKD",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COPD",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CHF",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CAD",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DEPRN",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIABTYP1",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIABTYP2",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIABTYP0",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ESRD",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HPE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EDHIV",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HYPLIPID",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HTN",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBESITY",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OSA",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OSTPRSIS",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "SUBSTAB",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ABG",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BAC",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BMP",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BNP",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BUNCREAT",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CARDENZ",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CBC",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CMP",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BLOODCX",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TRTCX",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "URINECX",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "WOUNDCX",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OTHCX",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DDIMER",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ELECTROL",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GLUCOSE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "LACTATE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "LFT",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PTTINR",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OTHERBLD",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CARDMON",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EKG",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HIVTEST",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "FLUTEST",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PREGTEST",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TOXSCREN",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "URINE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OTHRTEST",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ANYIMAGE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "XRAY",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CATSCAN",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CTAB",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CTCHEST",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CTHEAD",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CTOTHER",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CTUNK",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MRI",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ULTRASND",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OTHIMAGE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COVIDTEST",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COVIDANTIBODY",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BPAP",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BLADCATH",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CASTSPLINT",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CENTLINE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CPR",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ENDOINT",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "INCDRAIN",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "IVFLUIDS",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "LUMBAR",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NEBUTHER",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PELVIC",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "SKINADH",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "SUTURE",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OTHPROC",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NOPROVID",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ATTPHYS",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RESINT",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONSULT",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RNLPN",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NURSEPR",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PHYSASST",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EMT",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MHPROV",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OTHPROV",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NODISP",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NOFU",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RETRNED",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RETREFFU",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "LWBS",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "LBTC",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "LEFTAMA",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DOA",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIEDED",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TRANNH",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TRANPSYC",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TRANOTH",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ADMITHOS",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSHOS",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSDIS",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OTHDISP",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "AGEFL",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BDATEFL",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "SEXFL",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ETHNICFL",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RACERFL",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSPHYSED",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSHOSP",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSPHYSOT",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSPHYSUN",
+    "action": "converted_to_boolean_category",
+    "labels": {
+      "0": "No",
+      "1": "Yes"
+    }
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HOSPCODE",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PATCODE",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "LOS",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RESPR",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BPSYSD",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BPDIASD",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PULSED",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSSTAY",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "AGEDAYS",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BOARDED",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "LOV",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BPDIAS",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NUMGIV",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NUMDIS",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "WAITTIME",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "POPCT",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NUMMED",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TOTDIAG",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "AGE",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PULSE",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RESPRD",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BPSYS",
+    "action": "converted_to_nullable_int64"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV13D",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV5",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV3",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV23D",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV53D",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV2",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV1",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV43D",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV4",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFV33D",
+    "action": "converted_to_nominal_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "VMONTH",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "VDAYR",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ARRTIME",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "AGER",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RESIDNCE",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "SEX",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ETHUN",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ETHIM",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RACEUN",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RACER",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RACERETH",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ARREMS",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "AMBTRANSFER",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAYTYPER",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "IMMEDR",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PAINSCALE",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "SEEN72",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EPISODE",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "INJURY",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "INJPOISAD",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "INJURY72",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "INTENT15",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "INJURY_ENC",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CAUSE1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CAUSE2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CAUSE3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIAG1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIAG2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIAG3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIAG4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIAG5",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "NOCHRON",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TOTCHRON",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DIAGSCRN",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CTCONTRAST",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MRICONTRAST",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PROC",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TOTPROC",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED5",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED6",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED7",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED8",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED9",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED10",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED11",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED12",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED13",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED14",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED15",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED16",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED17",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED18",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED19",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED20",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED21",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED22",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED23",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED24",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED25",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED26",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED27",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED28",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MED29",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED5",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED6",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED7",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED8",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED9",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED10",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED11",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED12",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED13",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED14",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED15",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED16",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED17",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED18",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED19",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED20",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED21",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED22",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED23",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED24",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED25",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED26",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED27",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "GPMED28",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "VITALSD",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ADMIT",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ADMTPHYS",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HDDIAG1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HDDIAG2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HDDIAG3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HDDIAG4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HDDIAG5",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HDSTAT",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ADISP",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "STAY24",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EMRED",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HHSMUE",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EHRINSE",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EDPRIM",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EDINFO",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSCLIN",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "OBSSEP",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BOARD",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BOARDHOS",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "AMBDIV",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "TOTHRDIVR",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "REGDIV",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ADMDIV",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "INCSHX",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "INCPHYS",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EXPSPACE",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BEDREG",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "KIOSELCHK",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CATRIAGE",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "IMBED",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ADVTRIAG",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PHYSPRACTRIA",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "FASTTRAK",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EDPTOR",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DASHBORD",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RFID",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "WIRELESS",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "ZONENURS",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "POOLNURS",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "SURGDAY",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BEDCZAR",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "BEDDATA",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HLIST",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "HLISTED",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "EMEDRES",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "REGION",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "MSA",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX1V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX2V3C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX3V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX4V3C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID5",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR5",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB5",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT5",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX5V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID6",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR6",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB6",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT6",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX6V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID7",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR7",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB7",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT7",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX7V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID8",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR8",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB8",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT8",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX8V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID9",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR9",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB9",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT9",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX9V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID10",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR10",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB10",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT10",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX10V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID11",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR11",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB11",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT11",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX11V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID12",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR12",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB12",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT12",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX12V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID13",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR13",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB13",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT13",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX13V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID14",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR14",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB14",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT14",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX14V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID15",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR15",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB15",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT15",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX15V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID16",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR16",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB16",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT16",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX16V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID17",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR17",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB17",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT17",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX17V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID18",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR18",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB18",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT18",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX18V3C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID19",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR19",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB19",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT19",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX19V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID20",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR20",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB20",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT20",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX20V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID21",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR21",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB21",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT21",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX21V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID22",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR22",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB22",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT22",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX22V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID23",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR23",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB23",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT23",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX23V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID24",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR24",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB24",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT24",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX24V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID25",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR25",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB25",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT25",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX25V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID26",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR26",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT26",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX26CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX26CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX26V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX26V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX26V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX26V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX26V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX26V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID27",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR27",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB27",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27CAT3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27CAT4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V1C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V1C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V2C3",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V2C4",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX27V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID28",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR28",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX28CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX28CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX28V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX28V1C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX28V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX28V2C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX28V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX28V3C2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID29",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "PRESCR29",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "CONTSUB29",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "COMSTAT29",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX29CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX29V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX29V2C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX29V3C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "DRUGID30",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX30CAT1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX30CAT2",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "dtype_correction",
+    "column": "RX30V1C1",
+    "action": "converted_to_category"
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RESPR",
+    "action": "median_imputed",
+    "count": 856,
+    "median_value": 18.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BPSYSD",
+    "action": "median_imputed",
+    "count": 9334,
+    "median_value": 128.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BPDIASD",
+    "action": "median_imputed",
+    "count": 9339,
+    "median_value": 75.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PULSED",
+    "action": "median_imputed",
+    "count": 9021,
+    "median_value": 81.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "LOV",
+    "action": "median_imputed",
+    "count": 697,
+    "median_value": 191.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BPDIAS",
+    "action": "median_imputed",
+    "count": 1754,
+    "median_value": 78.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "TEMPF",
+    "action": "median_imputed",
+    "count": 937,
+    "median_value": 98.1
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "WAITTIME",
+    "action": "median_imputed",
+    "count": 2753,
+    "median_value": 14.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "TEMPDF",
+    "action": "median_imputed",
+    "count": 11269,
+    "median_value": 98.2
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "POPCT",
+    "action": "median_imputed",
+    "count": 969,
+    "median_value": 98.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "TOTDIAG",
+    "action": "median_imputed",
+    "count": 225,
+    "median_value": 3.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PULSE",
+    "action": "median_imputed",
+    "count": 1053,
+    "median_value": 88.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RESPRD",
+    "action": "median_imputed",
+    "count": 9253,
+    "median_value": 18.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BPSYS",
+    "action": "median_imputed",
+    "count": 1722,
+    "median_value": 131.0
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "AGEDAYS",
+    "action": "left_as_nan_conditionally_not_applicable",
+    "count": 15597,
+    "reason": "value is only defined for a subset of visits (codebook sentinel -7 = Not applicable)"
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "OBSSTAY",
+    "action": "left_as_nan_conditionally_not_applicable",
+    "count": 15700,
+    "reason": "value is only defined for a subset of visits (codebook sentinel -7 = Not applicable)"
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BOARDED",
+    "action": "left_as_nan_conditionally_not_applicable",
+    "count": 14352,
+    "reason": "value is only defined for a subset of visits (codebook sentinel -7 = Not applicable)"
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "LOS",
+    "action": "left_as_nan_conditionally_not_applicable",
+    "count": 14002,
+    "reason": "value is only defined for a subset of visits (codebook sentinel -7 = Not applicable)"
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ARRTIME",
+    "action": "filled_with_missing_category",
+    "count": 243
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RESIDNCE",
+    "action": "filled_with_missing_category",
+    "count": 262
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ETHUN",
+    "action": "filled_with_missing_category",
+    "count": 2333
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RACEUN",
+    "action": "filled_with_missing_category",
+    "count": 3022
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ARREMS",
+    "action": "filled_with_missing_category",
+    "count": 495
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "AMBTRANSFER",
+    "action": "filled_with_missing_category",
+    "count": 13637
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PAYTYPER",
+    "action": "filled_with_missing_category",
+    "count": 1737
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "IMMEDR",
+    "action": "filled_with_missing_category",
+    "count": 4152
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PAINSCALE",
+    "action": "filled_with_missing_category",
+    "count": 7055
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "SEEN72",
+    "action": "filled_with_missing_category",
+    "count": 1717
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RFV1",
+    "action": "filled_with_missing_category",
+    "count": 25
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RFV2",
+    "action": "filled_with_missing_category",
+    "count": 5805
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RFV3",
+    "action": "filled_with_missing_category",
+    "count": 9591
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RFV4",
+    "action": "filled_with_missing_category",
+    "count": 12203
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RFV5",
+    "action": "filled_with_missing_category",
+    "count": 13919
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "EPISODE",
+    "action": "filled_with_missing_category",
+    "count": 1601
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "INJURY",
+    "action": "filled_with_missing_category",
+    "count": 995
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "INJPOISAD",
+    "action": "filled_with_missing_category",
+    "count": 995
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "INJURY72",
+    "action": "filled_with_missing_category",
+    "count": 12540
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "INTENT15",
+    "action": "filled_with_missing_category",
+    "count": 11634
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "INJURY_ENC",
+    "action": "filled_with_missing_category",
+    "count": 12188
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CAUSE1",
+    "action": "filled_with_missing_category",
+    "count": 12899
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CAUSE2",
+    "action": "filled_with_missing_category",
+    "count": 14737
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CAUSE3",
+    "action": "filled_with_missing_category",
+    "count": 15839
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "DIAG1",
+    "action": "filled_with_missing_category",
+    "count": 227
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "DIAG2",
+    "action": "filled_with_missing_category",
+    "count": 7635
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "DIAG3",
+    "action": "filled_with_missing_category",
+    "count": 11774
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "DIAG4",
+    "action": "filled_with_missing_category",
+    "count": 13743
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "DIAG5",
+    "action": "filled_with_missing_category",
+    "count": 14800
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRDIAG1",
+    "action": "filled_with_missing_category",
+    "count": 227
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRDIAG2",
+    "action": "filled_with_missing_category",
+    "count": 7635
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRDIAG3",
+    "action": "filled_with_missing_category",
+    "count": 11774
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRDIAG4",
+    "action": "filled_with_missing_category",
+    "count": 13743
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRDIAG5",
+    "action": "filled_with_missing_category",
+    "count": 14800
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "TOTCHRON",
+    "action": "filled_with_missing_category",
+    "count": 259
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CTCONTRAST",
+    "action": "filled_with_missing_category",
+    "count": 12775
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MRICONTRAST",
+    "action": "filled_with_missing_category",
+    "count": 15856
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "TOTPROC",
+    "action": "filled_with_missing_category",
+    "count": 445
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED1",
+    "action": "filled_with_missing_category",
+    "count": 3634
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED2",
+    "action": "filled_with_missing_category",
+    "count": 6885
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED3",
+    "action": "filled_with_missing_category",
+    "count": 9709
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED4",
+    "action": "filled_with_missing_category",
+    "count": 11771
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED5",
+    "action": "filled_with_missing_category",
+    "count": 13149
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED6",
+    "action": "filled_with_missing_category",
+    "count": 14031
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED7",
+    "action": "filled_with_missing_category",
+    "count": 14570
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED8",
+    "action": "filled_with_missing_category",
+    "count": 14958
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED9",
+    "action": "filled_with_missing_category",
+    "count": 15193
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED10",
+    "action": "filled_with_missing_category",
+    "count": 15379
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED11",
+    "action": "filled_with_missing_category",
+    "count": 15489
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED12",
+    "action": "filled_with_missing_category",
+    "count": 15565
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED13",
+    "action": "filled_with_missing_category",
+    "count": 15638
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED14",
+    "action": "filled_with_missing_category",
+    "count": 15701
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED15",
+    "action": "filled_with_missing_category",
+    "count": 15753
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED16",
+    "action": "filled_with_missing_category",
+    "count": 15801
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED17",
+    "action": "filled_with_missing_category",
+    "count": 15834
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED18",
+    "action": "filled_with_missing_category",
+    "count": 15870
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED19",
+    "action": "filled_with_missing_category",
+    "count": 15902
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED20",
+    "action": "filled_with_missing_category",
+    "count": 15917
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED21",
+    "action": "filled_with_missing_category",
+    "count": 15945
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED22",
+    "action": "filled_with_missing_category",
+    "count": 15962
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED23",
+    "action": "filled_with_missing_category",
+    "count": 15971
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED24",
+    "action": "filled_with_missing_category",
+    "count": 15988
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED25",
+    "action": "filled_with_missing_category",
+    "count": 15996
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED26",
+    "action": "filled_with_missing_category",
+    "count": 16005
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED27",
+    "action": "filled_with_missing_category",
+    "count": 16011
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED28",
+    "action": "filled_with_missing_category",
+    "count": 16013
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "MED29",
+    "action": "filled_with_missing_category",
+    "count": 16020
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED1",
+    "action": "filled_with_missing_category",
+    "count": 3725
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED2",
+    "action": "filled_with_missing_category",
+    "count": 6992
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED3",
+    "action": "filled_with_missing_category",
+    "count": 9828
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED4",
+    "action": "filled_with_missing_category",
+    "count": 11898
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED5",
+    "action": "filled_with_missing_category",
+    "count": 13275
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED6",
+    "action": "filled_with_missing_category",
+    "count": 14152
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED7",
+    "action": "filled_with_missing_category",
+    "count": 14686
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED8",
+    "action": "filled_with_missing_category",
+    "count": 15058
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED9",
+    "action": "filled_with_missing_category",
+    "count": 15285
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED10",
+    "action": "filled_with_missing_category",
+    "count": 15465
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED11",
+    "action": "filled_with_missing_category",
+    "count": 15565
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED12",
+    "action": "filled_with_missing_category",
+    "count": 15636
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED13",
+    "action": "filled_with_missing_category",
+    "count": 15702
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED14",
+    "action": "filled_with_missing_category",
+    "count": 15756
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED15",
+    "action": "filled_with_missing_category",
+    "count": 15800
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED16",
+    "action": "filled_with_missing_category",
+    "count": 15842
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED17",
+    "action": "filled_with_missing_category",
+    "count": 15868
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED18",
+    "action": "filled_with_missing_category",
+    "count": 15896
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED19",
+    "action": "filled_with_missing_category",
+    "count": 15925
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED20",
+    "action": "filled_with_missing_category",
+    "count": 15934
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED21",
+    "action": "filled_with_missing_category",
+    "count": 15960
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED22",
+    "action": "filled_with_missing_category",
+    "count": 15973
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED23",
+    "action": "filled_with_missing_category",
+    "count": 15978
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED24",
+    "action": "filled_with_missing_category",
+    "count": 15990
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED25",
+    "action": "filled_with_missing_category",
+    "count": 15999
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED26",
+    "action": "filled_with_missing_category",
+    "count": 16006
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED27",
+    "action": "filled_with_missing_category",
+    "count": 16012
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "GPMED28",
+    "action": "filled_with_missing_category",
+    "count": 16013
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "VITALSD",
+    "action": "filled_with_missing_category",
+    "count": 466
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ADMIT",
+    "action": "filled_with_missing_category",
+    "count": 14214
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ADMTPHYS",
+    "action": "filled_with_missing_category",
+    "count": 14420
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HDDIAG1",
+    "action": "filled_with_missing_category",
+    "count": 14018
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HDDIAG2",
+    "action": "filled_with_missing_category",
+    "count": 15401
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HDDIAG3",
+    "action": "filled_with_missing_category",
+    "count": 15661
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HDDIAG4",
+    "action": "filled_with_missing_category",
+    "count": 15828
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HDDIAG5",
+    "action": "filled_with_missing_category",
+    "count": 15924
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HDSTAT",
+    "action": "filled_with_missing_category",
+    "count": 13955
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ADISP",
+    "action": "filled_with_missing_category",
+    "count": 14047
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "AGEFL",
+    "action": "filled_with_missing_category",
+    "count": 2
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "EMRED",
+    "action": "filled_with_missing_category",
+    "count": 356
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HHSMUE",
+    "action": "filled_with_missing_category",
+    "count": 448
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "EHRINSE",
+    "action": "filled_with_missing_category",
+    "count": 503
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "EDPRIM",
+    "action": "filled_with_missing_category",
+    "count": 1677
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "EDINFO",
+    "action": "filled_with_missing_category",
+    "count": 1369
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "OBSCLIN",
+    "action": "filled_with_missing_category",
+    "count": 947
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "OBSSEP",
+    "action": "filled_with_missing_category",
+    "count": 9246
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "OBSPHYSED",
+    "action": "filled_with_missing_category",
+    "count": 9087
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "OBSHOSP",
+    "action": "filled_with_missing_category",
+    "count": 9087
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "OBSPHYSOT",
+    "action": "filled_with_missing_category",
+    "count": 9087
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "OBSPHYSUN",
+    "action": "filled_with_missing_category",
+    "count": 9087
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BOARD",
+    "action": "filled_with_missing_category",
+    "count": 693
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BOARDHOS",
+    "action": "filled_with_missing_category",
+    "count": 1107
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "AMBDIV",
+    "action": "filled_with_missing_category",
+    "count": 1989
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "TOTHRDIVR",
+    "action": "filled_with_missing_category",
+    "count": 10486
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "REGDIV",
+    "action": "filled_with_missing_category",
+    "count": 8988
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ADMDIV",
+    "action": "filled_with_missing_category",
+    "count": 8827
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "INCSHX",
+    "action": "filled_with_missing_category",
+    "count": 430
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "INCPHYS",
+    "action": "filled_with_missing_category",
+    "count": 715
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "EXPSPACE",
+    "action": "filled_with_missing_category",
+    "count": 1355
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BEDREG",
+    "action": "filled_with_missing_category",
+    "count": 718
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "KIOSELCHK",
+    "action": "filled_with_missing_category",
+    "count": 753
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CATRIAGE",
+    "action": "filled_with_missing_category",
+    "count": 972
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "IMBED",
+    "action": "filled_with_missing_category",
+    "count": 702
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ADVTRIAG",
+    "action": "filled_with_missing_category",
+    "count": 1515
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PHYSPRACTRIA",
+    "action": "filled_with_missing_category",
+    "count": 718
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "FASTTRAK",
+    "action": "filled_with_missing_category",
+    "count": 1013
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "EDPTOR",
+    "action": "filled_with_missing_category",
+    "count": 628
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "DASHBORD",
+    "action": "filled_with_missing_category",
+    "count": 964
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "RFID",
+    "action": "filled_with_missing_category",
+    "count": 928
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "WIRELESS",
+    "action": "filled_with_missing_category",
+    "count": 974
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "ZONENURS",
+    "action": "filled_with_missing_category",
+    "count": 1051
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "POOLNURS",
+    "action": "filled_with_missing_category",
+    "count": 1363
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "SURGDAY",
+    "action": "filled_with_missing_category",
+    "count": 1014
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BEDCZAR",
+    "action": "filled_with_missing_category",
+    "count": 520
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "BEDDATA",
+    "action": "filled_with_missing_category",
+    "count": 531
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HLIST",
+    "action": "filled_with_missing_category",
+    "count": 277
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "HLISTED",
+    "action": "filled_with_missing_category",
+    "count": 1188
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "EMEDRES",
+    "action": "filled_with_missing_category",
+    "count": 680
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR1",
+    "action": "filled_with_missing_category",
+    "count": 3634
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB1",
+    "action": "filled_with_missing_category",
+    "count": 3634
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT1",
+    "action": "filled_with_missing_category",
+    "count": 3634
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR2",
+    "action": "filled_with_missing_category",
+    "count": 6885
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB2",
+    "action": "filled_with_missing_category",
+    "count": 6885
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT2",
+    "action": "filled_with_missing_category",
+    "count": 6885
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR3",
+    "action": "filled_with_missing_category",
+    "count": 9709
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB3",
+    "action": "filled_with_missing_category",
+    "count": 9709
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT3",
+    "action": "filled_with_missing_category",
+    "count": 9709
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR4",
+    "action": "filled_with_missing_category",
+    "count": 11771
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB4",
+    "action": "filled_with_missing_category",
+    "count": 11771
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT4",
+    "action": "filled_with_missing_category",
+    "count": 11771
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR5",
+    "action": "filled_with_missing_category",
+    "count": 13149
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB5",
+    "action": "filled_with_missing_category",
+    "count": 13149
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT5",
+    "action": "filled_with_missing_category",
+    "count": 13149
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR6",
+    "action": "filled_with_missing_category",
+    "count": 14031
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB6",
+    "action": "filled_with_missing_category",
+    "count": 14031
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT6",
+    "action": "filled_with_missing_category",
+    "count": 14031
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR7",
+    "action": "filled_with_missing_category",
+    "count": 14570
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB7",
+    "action": "filled_with_missing_category",
+    "count": 14570
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT7",
+    "action": "filled_with_missing_category",
+    "count": 14570
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR8",
+    "action": "filled_with_missing_category",
+    "count": 14958
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB8",
+    "action": "filled_with_missing_category",
+    "count": 14958
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT8",
+    "action": "filled_with_missing_category",
+    "count": 14958
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR9",
+    "action": "filled_with_missing_category",
+    "count": 15193
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB9",
+    "action": "filled_with_missing_category",
+    "count": 15193
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT9",
+    "action": "filled_with_missing_category",
+    "count": 15193
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR10",
+    "action": "filled_with_missing_category",
+    "count": 15379
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB10",
+    "action": "filled_with_missing_category",
+    "count": 15379
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT10",
+    "action": "filled_with_missing_category",
+    "count": 15379
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR11",
+    "action": "filled_with_missing_category",
+    "count": 15489
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB11",
+    "action": "filled_with_missing_category",
+    "count": 15489
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT11",
+    "action": "filled_with_missing_category",
+    "count": 15489
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR12",
+    "action": "filled_with_missing_category",
+    "count": 15565
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB12",
+    "action": "filled_with_missing_category",
+    "count": 15565
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT12",
+    "action": "filled_with_missing_category",
+    "count": 15565
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR13",
+    "action": "filled_with_missing_category",
+    "count": 15638
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB13",
+    "action": "filled_with_missing_category",
+    "count": 15638
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT13",
+    "action": "filled_with_missing_category",
+    "count": 15638
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR14",
+    "action": "filled_with_missing_category",
+    "count": 15701
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB14",
+    "action": "filled_with_missing_category",
+    "count": 15701
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT14",
+    "action": "filled_with_missing_category",
+    "count": 15701
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR15",
+    "action": "filled_with_missing_category",
+    "count": 15753
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB15",
+    "action": "filled_with_missing_category",
+    "count": 15753
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT15",
+    "action": "filled_with_missing_category",
+    "count": 15753
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR16",
+    "action": "filled_with_missing_category",
+    "count": 15801
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB16",
+    "action": "filled_with_missing_category",
+    "count": 15801
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT16",
+    "action": "filled_with_missing_category",
+    "count": 15801
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR17",
+    "action": "filled_with_missing_category",
+    "count": 15834
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB17",
+    "action": "filled_with_missing_category",
+    "count": 15834
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT17",
+    "action": "filled_with_missing_category",
+    "count": 15834
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR18",
+    "action": "filled_with_missing_category",
+    "count": 15870
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB18",
+    "action": "filled_with_missing_category",
+    "count": 15870
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT18",
+    "action": "filled_with_missing_category",
+    "count": 15870
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR19",
+    "action": "filled_with_missing_category",
+    "count": 15902
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB19",
+    "action": "filled_with_missing_category",
+    "count": 15902
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT19",
+    "action": "filled_with_missing_category",
+    "count": 15902
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR20",
+    "action": "filled_with_missing_category",
+    "count": 15917
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB20",
+    "action": "filled_with_missing_category",
+    "count": 15917
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT20",
+    "action": "filled_with_missing_category",
+    "count": 15917
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR21",
+    "action": "filled_with_missing_category",
+    "count": 15945
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB21",
+    "action": "filled_with_missing_category",
+    "count": 15945
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT21",
+    "action": "filled_with_missing_category",
+    "count": 15945
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR22",
+    "action": "filled_with_missing_category",
+    "count": 15962
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB22",
+    "action": "filled_with_missing_category",
+    "count": 15962
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT22",
+    "action": "filled_with_missing_category",
+    "count": 15962
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR23",
+    "action": "filled_with_missing_category",
+    "count": 15971
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB23",
+    "action": "filled_with_missing_category",
+    "count": 15971
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT23",
+    "action": "filled_with_missing_category",
+    "count": 15971
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR24",
+    "action": "filled_with_missing_category",
+    "count": 15988
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB24",
+    "action": "filled_with_missing_category",
+    "count": 15988
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT24",
+    "action": "filled_with_missing_category",
+    "count": 15988
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR25",
+    "action": "filled_with_missing_category",
+    "count": 15996
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB25",
+    "action": "filled_with_missing_category",
+    "count": 15996
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT25",
+    "action": "filled_with_missing_category",
+    "count": 15996
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR26",
+    "action": "filled_with_missing_category",
+    "count": 16005
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT26",
+    "action": "filled_with_missing_category",
+    "count": 16005
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR27",
+    "action": "filled_with_missing_category",
+    "count": 16011
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB27",
+    "action": "filled_with_missing_category",
+    "count": 16011
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR28",
+    "action": "filled_with_missing_category",
+    "count": 16013
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "PRESCR29",
+    "action": "filled_with_missing_category",
+    "count": 16020
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "CONTSUB29",
+    "action": "filled_with_missing_category",
+    "count": 16020
+  },
+  {
+    "step": "impute_missing_values",
+    "column": "COMSTAT29",
+    "action": "filled_with_missing_category",
+    "count": 16020
+  }
+]

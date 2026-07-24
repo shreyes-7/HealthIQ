@@ -1,0 +1,914 @@
+variable_name,label,pandas_dtype,non_null_count,missing_count,missing_percentage,n_unique,role
+VMONTH,Month of Visit,float64,16025,0,0.0,12,general
+VDAYR,Day of Week of Visit,float64,16025,0,0.0,7,general
+ARRTIME,Arrival time (military time),str,16025,0,0.0,1438,general
+WAITTIME,"Wait time to first provider (Physician/APRN/PA) contact, in minutes",float64,16025,0,0.0,398,general
+LOV,Length of visit in minutes,float64,16025,0,0.0,1436,general
+AGE,Patient age in years,float64,16025,0,0.0,95,general
+AGER,Age recode,float64,16025,0,0.0,6,general
+AGEDAYS,Age in days for patients less than one year,float64,16025,0,0.0,244,general
+RESIDNCE,Patient residence,float64,16025,0,0.0,6,general
+SEX,Patient sex,float64,16025,0,0.0,2,general
+ETHUN,Unimputed ethnicity,float64,16025,0,0.0,3,general
+ETHIM,Imputed ethnicity,float64,16025,0,0.0,2,general
+RACEUN,Unimputed race,float64,16025,0,0.0,7,general
+RACER,White/Black/Other imputed race,float64,16025,0,0.0,3,general
+RACERETH,RACER and ETHNIC combination,float64,16025,0,0.0,4,general
+ARREMS,Arrival by ambulance,float64,16025,0,0.0,4,general
+AMBTRANSFER,Was the patient transferred from another hospital or urgent care facility?,float64,16025,0,0.0,5,general
+NOPAY,No answer to expected source of payment item,float64,16025,0,0.0,2,general
+PAYPRIV,Expected source(s) of payment for this visit: Private insurance,float64,16025,0,0.0,2,general
+PAYMCARE,Expected source(s) of payment for this visit: Medicare,float64,16025,0,0.0,2,general
+PAYMCAID,Expected source(s) of payment for this visit: Medicaid or CHIP or other state-based program,float64,16025,0,0.0,2,general
+PAYWKCMP,Expected source(s) of payment for this visit: Workers' compensation,float64,16025,0,0.0,2,general
+PAYSELF,Expected source(s) of payment for this visit: Self pay,float64,16025,0,0.0,2,general
+PAYNOCHG,Expected source(s) of payment for this visit: No charge/Charity,float64,16025,0,0.0,2,general
+PAYOTH,Expected source(s) of payment for this visit: Other,float64,16025,0,0.0,2,general
+PAYDK,Expected source(s) of payment for this visit: Unknown,float64,16025,0,0.0,2,general
+PAYTYPER,Recoded primary expected source of payment for this visit (based on hierarchy),float64,16025,0,0.0,9,general
+TEMPF,Initial vital signs: Temperature (Fahrenheit),float64,16025,0,0.0,113,general
+PULSE,Initial vital signs: Heart rate per minute,float64,16025,0,0.0,187,general
+RESPR,Initial vital signs: Respiratory rate per minute,float64,16025,0,0.0,89,general
+BPSYS,Initial vital signs: Blood pressure - Systolic,float64,16025,0,0.0,190,general
+BPDIAS,Initial vital signs: Blood pressure - Diastolic,float64,16025,0,0.0,129,general
+POPCT,Initial vital signs: Pulse oximetry (percent),float64,16025,0,0.0,57,general
+IMMEDR,Immediacy with which patient should be seen (unimputed),float64,16025,0,0.0,9,general
+PAINSCALE,Pain scale (0-10),float64,16025,0,0.0,13,general
+SEEN72,Was patient seen in this ED within the last 72 hours?,float64,16025,0,0.0,4,general
+RFV1,"Patient's complaint, symptom, or other reason for visit #1 - detailed category",float64,16025,0,0.0,518,general
+RFV2,"Patient's complaint, symptom, or other reason for visit #2 - detailed category",float64,16025,0,0.0,553,general
+RFV3,"Patient's complaint, symptom, or other reason for visit #3 - detailed category",float64,16025,0,0.0,506,general
+RFV4,"Patient's complaint, symptom, or other reason for visit #4 - detailed category",float64,16025,0,0.0,443,general
+RFV5,"Patient's complaint, symptom, or other reason for visit #5 - detailed category",float64,16025,0,0.0,352,general
+RFV13D,"Patient's complaint, symptom, or other reason for visit #1 - broader category",float64,16025,0,0.0,355,general
+RFV23D,"Patient's complaint, symptom, or other reason for visit #2 - broader category",float64,16025,0,0.0,365,general
+RFV33D,"Patient's complaint, symptom, or other reason for visit #3 - broader category",float64,16025,0,0.0,351,general
+RFV43D,"Patient's complaint, symptom, or other reason for visit #4 - broader category",float64,16025,0,0.0,318,general
+RFV53D,"Patient's complaint, symptom, or other reason for visit #5 - broader category",float64,16025,0,0.0,276,general
+EPISODE,Episode of care,float64,16025,0,0.0,4,general
+INJURY,"Is visit related to an injury/trauma, overdose/poisoning, or adverse effect of medical/surgical treatment? - Recoded from INJPOISAD",float64,16025,0,0.0,5,general
+INJPOISAD,"Is visit related to an injury/trauma, overdose/poisoning or adverse effect of medical/surgical treatment? ",float64,16025,0,0.0,7,general
+INJURY72,"Did the injury/trauma, overdose/poisoning, or adverse effect occur within 72 hours prior to the date and time of this visit?",float64,16025,0,0.0,5,general
+INTENT15,Is this injury/trauma or overdose/poisoning intentional or unintentional?,float64,16025,0,0.0,5,general
+INJURY_ENC,Type of encounter for injury visits,float64,16025,0,0.0,6,general
+CAUSE1,"Cause #1 of injury/trauma, overdose/poisoning, or adverse effect  of medical/surgical treatment",str,16025,0,0.0,245,general
+CAUSE2,"Cause #2 of injury/trauma, overdose/poisoning, or adverse effect  of medical/surgical treatment",str,16025,0,0.0,89,general
+CAUSE3,"Cause #3 of injury/trauma, overdose/poisoning, or adverse effect  of medical/surgical treatment",str,16025,0,0.0,32,general
+DIAG1,Diagnosis #1,str,16025,0,0.0,1549,general
+DIAG2,Diagnosis #2,str,16025,0,0.0,1308,general
+DIAG3,Diagnosis #3,str,16025,0,0.0,989,general
+DIAG4,Diagnosis #4,str,16025,0,0.0,668,general
+DIAG5,Diagnosis #5,str,16025,0,0.0,466,general
+PRDIAG1,"For diagnosis 1, is this probable, questionable, or ruleout?",float64,16025,0,0.0,3,general
+PRDIAG2,"For diagnosis 2, is this probable, questionable, or ruleout?",float64,16025,0,0.0,3,general
+PRDIAG3,"For diagnosis 3, is this probable, questionable, or ruleout?",float64,16025,0,0.0,3,general
+PRDIAG4,"For diagnosis 4, is this probable, questionable, or ruleout?",float64,16025,0,0.0,3,general
+PRDIAG5,"For diagnosis 5, is this probable, questionable, or ruleout?",float64,16025,0,0.0,3,general
+ETOHAB,"Does patient have: Alcohol misuse, abuse, or dependence",float64,16025,0,0.0,2,general
+ALZHD,Does patient have: Alzheimer's disease/Dementia,float64,16025,0,0.0,2,general
+ASTHMA,Does patient have: Asthma,float64,16025,0,0.0,2,general
+CANCER,Does patient have: Cancer,float64,16025,0,0.0,2,general
+CEBVD,Does patient have:  Cerebrovascular disease/History of stroke (CVA) or transient ischemic attack (TIA)?,float64,16025,0,0.0,2,general
+CKD,Does patient have: Chronic kidney disease (CKD),float64,16025,0,0.0,2,general
+COPD,Does patient have: Chronic obstructive pulmonary disease (COPD),float64,16025,0,0.0,2,general
+CHF,Does patient have: Congestive heart failure (CHF),float64,16025,0,0.0,2,general
+CAD,"Does patient have: Coronary artery disease (CAD), ischemic heart disease (IHD) or history of myocardial infarction (MI)",float64,16025,0,0.0,2,general
+DEPRN,Does patient have: Depression,float64,16025,0,0.0,2,general
+DIABTYP1,Does patient have: Diabetes mellitus (DM) - Type I,float64,16025,0,0.0,2,general
+DIABTYP2,Does patient have: Diabetes mellitus (DM) - Type II,float64,16025,0,0.0,2,general
+DIABTYP0,Does patient have: Diabetes mellitus (DM) - Type unspecified,float64,16025,0,0.0,2,general
+ESRD,Does patient have: End-stage renal disease (ESRD),float64,16025,0,0.0,2,general
+HPE,"Does patient have: History of pulmonary embolism (PE), deep vein thrombosis (DVT), or venous thromboembolism (VTE)",float64,16025,0,0.0,2,general
+EDHIV,Does patient have: HIV infection/AIDS,float64,16025,0,0.0,2,general
+HYPLIPID,Does patient have: Hyperlipidemia,float64,16025,0,0.0,2,general
+HTN,Does patient have: Hypertension,float64,16025,0,0.0,2,general
+OBESITY,Does patient have: Obesity (BMI >=30),float64,16025,0,0.0,2,general
+OSA,Does patient have: Obstructive sleep apnea (OSA),float64,16025,0,0.0,2,general
+OSTPRSIS,Does patient have: Osteoporosis,float64,16025,0,0.0,2,general
+SUBSTAB,Does patient have: Substance abuse or dependence,float64,16025,0,0.0,2,general
+NOCHRON,Does patient have: None of the above,float64,16025,0,0.0,3,general
+TOTCHRON,Total number of chronic conditions,float64,16025,0,0.0,14,general
+DIAGSCRN,Were diagnostic services ordered or provided?,float64,16025,0,0.0,3,general
+ABG,Arterial blood gases (ABG),float64,16025,0,0.0,2,general
+BAC,BAC (Blood alcohol concentration),float64,16025,0,0.0,2,general
+BMP,Basic metabolic panel (BMP),float64,16025,0,0.0,2,general
+BNP,BNP (Brain natriuretic peptide),float64,16025,0,0.0,2,general
+BUNCREAT,Creatinine/Renal function panel,float64,16025,0,0.0,2,general
+CARDENZ,Cardiac enzymes,float64,16025,0,0.0,2,general
+CBC,CBC (Complete blood count),float64,16025,0,0.0,2,general
+CMP,Comprehensive metabolic panel (CMP),float64,16025,0,0.0,2,general
+BLOODCX,Blood culture,float64,16025,0,0.0,2,general
+TRTCX,Throat culture,float64,16025,0,0.0,2,general
+URINECX,Urine culture,float64,16025,0,0.0,2,general
+WOUNDCX,Wound culture,float64,16025,0,0.0,2,general
+OTHCX,Other culture,float64,16025,0,0.0,2,general
+DDIMER,D-dimer,float64,16025,0,0.0,2,general
+ELECTROL,Electrolytes,float64,16025,0,0.0,2,general
+GLUCOSE,"Glucose, serum",float64,16025,0,0.0,2,general
+LACTATE,Lactate,float64,16025,0,0.0,2,general
+LFT,Liver enzymes/Hepatic function panel,float64,16025,0,0.0,2,general
+PTTINR,Prothrombin time (PT/PTT/INR),float64,16025,0,0.0,2,general
+OTHERBLD,Other blood test,float64,16025,0,0.0,2,general
+CARDMON,Cardiac monitor,float64,16025,0,0.0,2,general
+EKG,EKG/ECG,float64,16025,0,0.0,2,general
+HIVTEST,HIV test,float64,16025,0,0.0,2,general
+FLUTEST,Influenza test,float64,16025,0,0.0,2,general
+PREGTEST,Pregnancy/HCG test,float64,16025,0,0.0,2,general
+TOXSCREN,Toxicology screen,float64,16025,0,0.0,2,general
+URINE,Urinalysis (UA) or urine dipstick,float64,16025,0,0.0,2,general
+OTHRTEST,Other test/service,float64,16025,0,0.0,2,general
+ANYIMAGE,Any imaging,float64,16025,0,0.0,2,general
+XRAY,X-ray,float64,16025,0,0.0,2,general
+CATSCAN,CT scan,float64,16025,0,0.0,2,general
+CTCONTRAST,Was CT Scan ordered/provided with intravenous (IV) contrast?,float64,16025,0,0.0,4,general
+CTAB,CT scan - abdomen/pelvis,float64,16025,0,0.0,2,general
+CTCHEST,CT scan - chest,float64,16025,0,0.0,2,general
+CTHEAD,CT scan- head,float64,16025,0,0.0,2,general
+CTOTHER,CT scan - other,float64,16025,0,0.0,2,general
+CTUNK,CT scan - body site unknown,float64,16025,0,0.0,2,general
+MRI,MRI,float64,16025,0,0.0,2,general
+MRICONTRAST,Was MRI ordered/provided with intravenous (IV) contrast (also written as with gadolinium or with gado)?,float64,16025,0,0.0,4,general
+ULTRASND,Ultrasound,float64,16025,0,0.0,2,general
+OTHIMAGE,Other imaging,float64,16025,0,0.0,2,general
+COVIDTEST,Coronavirus (COVID-19) test,float64,16025,0,0.0,2,general
+COVIDANTIBODY,Coronavirus (COVID-19) antibody test,float64,16025,0,0.0,2,general
+TOTDIAG,Total number of diagnostic services ordered or provided,float64,16025,0,0.0,23,general
+PROC,Were procedures provided at this visit?,float64,16025,0,0.0,3,general
+BPAP,BiPAP/CPAP,float64,16025,0,0.0,2,general
+BLADCATH,Bladder catheter,float64,16025,0,0.0,2,general
+CASTSPLINT,"Cast, splint or wrap",float64,16025,0,0.0,2,general
+CENTLINE,Central line,float64,16025,0,0.0,2,general
+CPR,CPR,float64,16025,0,0.0,2,general
+ENDOINT,Endotracheal intubation,float64,16025,0,0.0,2,general
+INCDRAIN,Incision and drainage (I & D),float64,16025,0,0.0,2,general
+IVFLUIDS,IV fluids,float64,16025,0,0.0,2,general
+LUMBAR,Lumbar puncture (LP),float64,16025,0,0.0,2,general
+NEBUTHER,Nebulizer therapy,float64,16025,0,0.0,2,general
+PELVIC,Pelvic exam,float64,16025,0,0.0,2,general
+SKINADH,Skin adhesives,float64,16025,0,0.0,2,general
+SUTURE,Suturing/Staples,float64,16025,0,0.0,2,general
+OTHPROC,Other procedure,float64,16025,0,0.0,2,general
+TOTPROC,Total number of procedures provided,float64,16025,0,0.0,8,general
+MED,Were medications given at this visit or prescribed at ED discharge?,float64,16025,0,0.0,2,general
+MED1,Medication #1,str,16025,0,0.0,906,general
+MED2,Medication #2,str,16025,0,0.0,892,general
+MED3,Medication #3,str,16025,0,0.0,828,general
+MED4,Medication #4,str,16025,0,0.0,737,general
+MED5,Medication #5,str,16025,0,0.0,675,general
+MED6,Medication #6,str,16025,0,0.0,591,general
+MED7,Medication #7,str,16025,0,0.0,530,general
+MED8,Medication #8,str,16025,0,0.0,469,general
+MED9,Medication #9,str,16025,0,0.0,412,general
+MED10,Medication #10,str,16025,0,0.0,363,general
+MED11,Medication #11,str,16025,0,0.0,312,general
+MED12,Medication #12,str,16025,0,0.0,265,general
+MED13,Medication #13,str,16025,0,0.0,246,general
+MED14,Medication #14,str,16025,0,0.0,224,general
+MED15,Medication #15,str,16025,0,0.0,200,general
+MED16,Medication #16,str,16025,0,0.0,165,general
+MED17,Medication #17,str,16025,0,0.0,142,general
+MED18,Medication #18,str,16025,0,0.0,122,general
+MED19,Medication #19,str,16025,0,0.0,101,general
+MED20,Medication #20,str,16025,0,0.0,94,general
+MED21,Medication #21,str,16025,0,0.0,70,general
+MED22,Medication #22,str,16025,0,0.0,58,general
+MED23,Medication #23,str,16025,0,0.0,47,general
+MED24,Medication #24,str,16025,0,0.0,36,general
+MED25,Medication #25,str,16025,0,0.0,28,general
+MED26,Medication #26,str,16025,0,0.0,21,general
+MED27,Medication #27,str,16025,0,0.0,13,general
+MED28,Medication #28,str,16025,0,0.0,12,general
+MED29,Medication #29,str,16025,0,0.0,6,general
+MED30,Medication #30,str,16025,0,0.0,2,general
+GPMED1,Medication #1 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED2,Medication #2 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED3,Medication #3 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED4,Medication #4 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED5,Medication #5 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED6,Medication #6 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED7,Medication #7 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED8,Medication #8 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED9,Medication #9 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED10,Medication #10 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED11,Medication #11 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED12,Medication #12 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED13,Medication #13 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED14,Medication #14 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED15,Medication #15 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED16,Medication #16 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED17,Medication #17 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED18,Medication #18 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED19,Medication #19 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED20,Medication #20 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED21,Medication #21 given in ED or Rx at discharge,float64,16025,0,0.0,4,general
+GPMED22,Medication #22 given in ED or Rx at discharge,float64,16025,0,0.0,4,general
+GPMED23,Medication #23 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED24,Medication #24 given in ED or Rx at discharge,float64,16025,0,0.0,5,general
+GPMED25,Medication #25 given in ED or Rx at discharge,float64,16025,0,0.0,4,general
+GPMED26,Medication #26 given in ED or Rx at discharge,float64,16025,0,0.0,4,general
+GPMED27,Medication #27 given in ED or Rx at discharge,float64,16025,0,0.0,4,general
+GPMED28,Medication #28 given in ED or Rx at discharge,float64,16025,0,0.0,3,general
+GPMED29,Medication #29 given in ED or Rx at discharge,float64,16025,0,0.0,2,general
+GPMED30,Medication #30 given in ED or Rx at discharge,float64,16025,0,0.0,2,general
+NUMGIV,Number of medications given in ED,float64,16025,0,0.0,28,general
+NUMDIS,Number of medications prescribed at discharge,float64,16025,0,0.0,30,general
+NUMMED,Number of medications,float64,16025,0,0.0,31,general
+VITALSD,Does the chart contain vital signs taken after triage?,float64,16025,0,0.0,3,general
+TEMPDF,Vitals after triage: Temperature in Fahrenheit,float64,16025,0,0.0,86,general
+PULSED,Vitals after triage: Heart rate (beats per minute),float64,16025,0,0.0,156,general
+RESPRD,Vitals after triage: Respiratory rate (breaths per minute),float64,16025,0,0.0,77,general
+BPSYSD,Vitals after triage: Systolic blood pressure,float64,16025,0,0.0,156,general
+BPDIASD,Vitals after triage: Diastolic blood pressure,float64,16025,0,0.0,107,general
+NOPROVID,No answer to provider seen item,float64,16025,0,0.0,2,general
+ATTPHYS,ED attending physician seen,float64,16025,0,0.0,2,general
+RESINT,ED resident/intern seen,float64,16025,0,0.0,2,general
+CONSULT,Consulting physician seen,float64,16025,0,0.0,2,general
+RNLPN,RN/PN seen,float64,16025,0,0.0,2,general
+NURSEPR,Nurse practitioner seen,float64,16025,0,0.0,2,general
+PHYSASST,Physician assistant seen,float64,16025,0,0.0,2,general
+EMT,EMT seen,float64,16025,0,0.0,2,general
+MHPROV,Other mental health provider seen,float64,16025,0,0.0,2,general
+OTHPROV,Other provider seen,float64,16025,0,0.0,2,general
+NODISP,No answer to disposition item,float64,16025,0,0.0,2,general
+NOFU,No follow-up planned,float64,16025,0,0.0,2,general
+RETRNED,Return to ED,float64,16025,0,0.0,2,general
+RETREFFU,Return/refer to physician/clinic for FU,float64,16025,0,0.0,2,general
+LWBS,Left without being seen (LWBS),float64,16025,0,0.0,2,general
+LBTC,Left before treatment complete (LBTC),float64,16025,0,0.0,2,general
+LEFTAMA,Left AMA (against medical advice),float64,16025,0,0.0,2,general
+DOA,DOA,float64,16025,0,0.0,2,general
+DIEDED,Died in ED,float64,16025,0,0.0,2,general
+TRANNH,Return/Transfer to nursing home,float64,16025,0,0.0,2,general
+TRANPSYC,Transfer to psychiatric hospital,float64,16025,0,0.0,2,general
+TRANOTH,Transfer to non-psychiatric hospital,float64,16025,0,0.0,2,general
+ADMITHOS,Admit to this hospital,float64,16025,0,0.0,2,target
+OBSHOS,"Admit to observation unit, then hospitalized",float64,16025,0,0.0,2,target
+OBSDIS,"Admit to observation unit, then discharged",float64,16025,0,0.0,2,general
+OTHDISP,Other disposition,float64,16025,0,0.0,2,general
+ADMIT,Admitted to:,float64,16025,0,0.0,9,general
+ADMTPHYS,Admitting physician,float64,16025,0,0.0,5,general
+LOS,"If admitted, length of stay in hospital in days",float64,16025,0,0.0,56,general
+HDDIAG1,Hospital discharge diagnosis #1,str,16025,0,0.0,597,general
+HDDIAG2,Hospital discharge diagnosis #2,str,16025,0,0.0,320,general
+HDDIAG3,Hospital discharge diagnosis #3,str,16025,0,0.0,213,general
+HDDIAG4,Hospital discharge diagnosis #4,str,16025,0,0.0,127,general
+HDDIAG5,Hospital discharge diagnosis #5,str,16025,0,0.0,71,general
+HDSTAT,Hospital discharge status,float64,16025,0,0.0,5,general
+ADISP,Disposition of live discharges,float64,16025,0,0.0,7,general
+OBSSTAY,Length of stay in observation unit in minutes,float64,16025,0,0.0,293,general
+STAY24,ED discharge greater than 24 hours,float64,16025,0,0.0,3,general
+AGEFL,"Was patient age reported, calculated or imputed?",float64,16025,0,0.0,3,general
+BDATEFL,Birth date imputed?,float64,16025,0,0.0,2,general
+SEXFL,Sex imputed?,float64,16025,0,0.0,2,general
+ETHNICFL,Ethnicity imputed?,float64,16025,0,0.0,2,general
+RACERFL,RACER imputed?,float64,16025,0,0.0,2,general
+HOSPCODE,Hospital number,float64,16025,0,0.0,188,general
+PATCODE,Patient code,float64,16025,0,0.0,173,general
+EMRED,Does your ED use an electronic health record (EHR) system? Do not including billing systems.,float64,16025,0,0.0,3,general
+HHSMUE,Does your current system meet meaningful use criteria as defined by the Department of Health and Human Services?,float64,16025,0,0.0,4,general
+EHRINSE,Does your ED have plans for installing a new EHR/EMR system within the next 18 months?,float64,16025,0,0.0,4,general
+EDPRIM,"When patients with identified primary care physicians (PCP) arrive at the ED, how often do you electronically send notifications to the patients' PCP?",float64,16025,0,0.0,5,general
+EDINFO,"When patients arrive at the ED, are you able to query for patients' healthcare information electronically (e.g., medications, allergies) from outside sources?",float64,16025,0,0.0,3,general
+OBSCLIN,Does your ED have an observation or clinical decision unit?,float64,16025,0,0.0,3,general
+OBSSEP,Is this observation or clinical decision unit physically separate from the ED?,float64,16025,0,0.0,4,general
+OBSPHYSED,"What type of providers make decisions for patients in this observation or clinical decision unit? - ED physicians, APRN, PA",float64,16025,0,0.0,3,general
+OBSHOSP,What type of providers make decisions for patients in this observation or clinical decision unit? - Hospitalists,float64,16025,0,0.0,3,general
+OBSPHYSOT,"What type of providers make decisions for patients in this observation or clinical decision unit? - Other physicians, APRN, PA",float64,16025,0,0.0,3,general
+OBSPHYSUN,What type of providers make decisions for patients in this observation or clinical decision unit? - Unknown,float64,16025,0,0.0,3,general
+BOARD,Are admitted ED patients ever 'boarded' for more than 2 hours in the ED or observation unit while waiting for an inpatient bed?,float64,16025,0,0.0,3,general
+BOARDHOS,Does your ED allow some admitted patients to move from the ED to inpatient corridors while awaiting a bed ('boarding') - sometimes called 'full capacity protocol'?,float64,16025,0,0.0,3,general
+AMBDIV,Did your ED go on ambulance diversion in 2020?,float64,16025,0,0.0,3,general
+TOTHRDIVR,What is the total number of hours that your hospital's ED was on ambulance diversion in 2020?,float64,16025,0,0.0,5,general
+REGDIV,Is ambulance diversion actively managed on a regional level versus each hospital adopting diversion if and when it chooses?,float64,16025,0,0.0,4,general
+ADMDIV,Does your hospital continue to admit elective or schedule surgery cases when ED is on ambulance diversion?,float64,16025,0,0.0,4,general
+INCSHX,"In the last two years, did your ED increase the number of standard treatment spaces?",float64,16025,0,0.0,3,general
+INCPHYS,"In the last two years, did your ED's physical space expand?",float64,16025,0,0.0,3,general
+EXPSPACE,Do you have plans to expand your ED's physical space within the next two years?,float64,16025,0,0.0,3,general
+BEDREG,Does your ED use bedside registration?,float64,16025,0,0.0,3,general
+KIOSELCHK,Does ED use kiosk self check-in?,float64,16025,0,0.0,3,general
+CATRIAGE,Does your ED use computer-assisted triage?,float64,16025,0,0.0,3,general
+IMBED,Does your ED use immediate bedding?,float64,16025,0,0.0,3,general
+ADVTRIAG,Does your ED use advanced triage (triage-based care) protocols?,float64,16025,0,0.0,3,general
+PHYSPRACTRIA,Does your ED use physician/practitioner at triage?,float64,16025,0,0.0,3,general
+FASTTRAK,Does your ED use separate fast track unit for nonurgent care?,float64,16025,0,0.0,3,general
+EDPTOR,Does your ED use separate operating room dedicated to ED patients?,float64,16025,0,0.0,3,general
+DASHBORD,Does your ED use electronic dashboard?,float64,16025,0,0.0,3,general
+RFID,Does your ED use radio frequency identification (RFID) tracking?,float64,16025,0,0.0,3,general
+WIRELESS,Does ED use wireless communication devices by providers?,float64,16025,0,0.0,3,general
+ZONENURS,Does your ED use zone nursing?,float64,16025,0,0.0,3,general
+POOLNURS,Does your ED use pool nurses?,float64,16025,0,0.0,3,general
+SURGDAY,How many days in a week are inpatient elective surgeries scheduled?,float64,16025,0,0.0,9,general
+BEDCZAR,"Does your hospital have a bed coordinator, sometimes known as a bed czar?",float64,16025,0,0.0,4,general
+BEDDATA,How often are hospital bed census data available?,float64,16025,0,0.0,8,general
+HLIST,Does your hospital have hospitalists on staff?,float64,16025,0,0.0,4,general
+HLISTED,Do the hospitalists on staff at your hospital admit patients from your ED?,float64,16025,0,0.0,4,general
+EMEDRES,Does hospital have an Emergency Medicine residency program?,float64,16025,0,0.0,4,general
+REGION,Geographic region,float64,16025,0,0.0,4,general
+MSA,Metropolitan statistical area status,float64,16025,0,0.0,2,general
+DRUGID1,Drug ID code for medication #1,str,16025,0,0.0,541,general
+PRESCR1,Prescription status code for medication #1,float64,12391,3634,22.68,4,general
+CONTSUB1,Controlled substance status code for medication #1,float64,12391,3634,22.68,7,general
+COMSTAT1,Composition status code for medication #1,float64,12391,3634,22.68,3,general
+RX1CAT1,"For RX1, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,217,general
+RX1CAT2,"For RX1, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,50,general
+RX1CAT3,"For RX1, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,8,general
+RX1CAT4,"For RX1, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX1V1C1,"For RX1, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,22,general
+RX1V1C2,"For RX1, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,16,general
+RX1V1C3,"For RX1, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX1V1C4,"For RX1, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX1V2C1,"For RX1, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,121,general
+RX1V2C2,"For RX1, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,39,general
+RX1V2C3,"For RX1, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,7,general
+RX1V2C4,"For RX1, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX1V3C1,"For RX1, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,129,general
+RX1V3C2,"For RX1, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,28,general
+RX1V3C3,"For RX1, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,5,general
+RX1V3C4,"For RX1, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID2,Drug ID code for medication #2,str,16025,0,0.0,531,general
+PRESCR2,Prescription status code for medication #2,float64,9140,6885,42.96,4,general
+CONTSUB2,Controlled substance status code for medication #2,float64,9140,6885,42.96,7,general
+COMSTAT2,Composition status code for medication #2,float64,9140,6885,42.96,3,general
+RX2CAT1,"For RX2, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,206,general
+RX2CAT2,"For RX2, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,53,general
+RX2CAT3,"For RX2, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,9,general
+RX2CAT4,"For RX2, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,4,general
+RX2V1C1,"For RX2, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,22,general
+RX2V1C2,"For RX2, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,16,general
+RX2V1C3,"For RX2, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,7,general
+RX2V1C4,"For RX2, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,4,general
+RX2V2C1,"For RX2, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,112,general
+RX2V2C2,"For RX2, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,41,general
+RX2V2C3,"For RX2, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,8,general
+RX2V2C4,"For RX2, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,4,general
+RX2V3C1,"For RX2, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,126,general
+RX2V3C2,"For RX2, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,28,general
+RX2V3C3,"For RX2, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,6,general
+RX2V3C4,"For RX2, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID3,Drug ID code for medication #3,str,16025,0,0.0,503,general
+PRESCR3,Prescription status code for medication #3,float64,6316,9709,60.59,4,general
+CONTSUB3,Controlled substance status code for medication #3,float64,6316,9709,60.59,7,general
+COMSTAT3,Composition status code for medication #3,float64,6316,9709,60.59,3,general
+RX3CAT1,"For RX3, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,196,general
+RX3CAT2,"For RX3, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,53,general
+RX3CAT3,"For RX3, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,8,general
+RX3CAT4,"For RX3, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX3V1C1,"For RX3, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,21,general
+RX3V1C2,"For RX3, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,15,general
+RX3V1C3,"For RX3, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX3V1C4,"For RX3, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,2,general
+RX3V2C1,"For RX3, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,110,general
+RX3V2C2,"For RX3, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,41,general
+RX3V2C3,"For RX3, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,7,general
+RX3V2C4,"For RX3, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,2,general
+RX3V3C1,"For RX3, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,121,general
+RX3V3C2,"For RX3, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,28,general
+RX3V3C3,"For RX3, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,5,general
+RX3V3C4,"For RX3, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,2,general
+DRUGID4,Drug ID code for medication #4,str,16025,0,0.0,457,general
+PRESCR4,Prescription status code for medication #4,float64,4254,11771,73.45,4,general
+CONTSUB4,Controlled substance status code for medication #4,float64,4254,11771,73.45,7,general
+COMSTAT4,Composition status code for medication #4,float64,4254,11771,73.45,3,general
+RX4CAT1,"For RX4, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,194,general
+RX4CAT2,"For RX4, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,45,general
+RX4CAT3,"For RX4, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,8,general
+RX4CAT4,"For RX4, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX4V1C1,"For RX4, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,22,general
+RX4V1C2,"For RX4, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,15,general
+RX4V1C3,"For RX4, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX4V1C4,"For RX4, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX4V2C1,"For RX4, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,113,general
+RX4V2C2,"For RX4, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,36,general
+RX4V2C3,"For RX4, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,7,general
+RX4V2C4,"For RX4, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX4V3C1,"For RX4, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,114,general
+RX4V3C2,"For RX4, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,24,general
+RX4V3C3,"For RX4, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,5,general
+RX4V3C4,"For RX4, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,2,general
+DRUGID5,Drug ID code for medication #5,str,16025,0,0.0,416,general
+PRESCR5,Prescription status code medication #5,float64,2876,13149,82.05,4,general
+CONTSUB5,Controlled substance status code medication #5,float64,2876,13149,82.05,7,general
+COMSTAT5,Composition status code medication #5,float64,2876,13149,82.05,3,general
+RX5CAT1,"For RX5, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,191,general
+RX5CAT2,"For RX5, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,41,general
+RX5CAT3,"For RX5, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,7,general
+RX5CAT4,"For RX5, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX5V1C1,"For RX5, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,20,general
+RX5V1C2,"For RX5, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,14,general
+RX5V1C3,"For RX5, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX5V1C4,"For RX5, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX5V2C1,"For RX5, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,112,general
+RX5V2C2,"For RX5, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,33,general
+RX5V2C3,"For RX5, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,6,general
+RX5V2C4,"For RX5, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX5V3C1,"For RX5, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,115,general
+RX5V3C2,"For RX5, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,20,general
+RX5V3C3,"For RX5, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,4,general
+RX5V3C4,"For RX5, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID6,Drug ID code for medication #6,str,16025,0,0.0,391,general
+PRESCR6,Prescription status code for medication #6,float64,1994,14031,87.56,4,general
+CONTSUB6,Controlled substance status code for medication #6,float64,1994,14031,87.56,7,general
+COMSTAT6,Composition status code for medication #6,float64,1994,14031,87.56,3,general
+RX6CAT1,"For RX6, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,181,general
+RX6CAT2,"For RX6, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,46,general
+RX6CAT3,"For RX6, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,8,general
+RX6CAT4,"For RX6, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX6V1C1,"For RX6, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,21,general
+RX6V1C2,"For RX6, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,15,general
+RX6V1C3,"For RX6, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX6V1C4,"For RX6, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX6V2C1,"For RX6, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,106,general
+RX6V2C2,"For RX6, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,38,general
+RX6V2C3,"For RX6, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,7,general
+RX6V2C4,"For RX6, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX6V3C1,"For RX6, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,108,general
+RX6V3C2,"For RX6, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,21,general
+RX6V3C3,"For RX6, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,4,general
+RX6V3C4,"For RX6, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID7,Drug ID code for medication #7,str,16025,0,0.0,345,general
+PRESCR7,Prescription status code for medication #7,float64,1455,14570,90.92,4,general
+CONTSUB7,Controlled substance status code for medication #7,float64,1455,14570,90.92,7,general
+COMSTAT7,Composition status code for medication #7,float64,1455,14570,90.92,3,general
+RX7CAT1,"For RX7, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,164,general
+RX7CAT2,"For RX7, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,41,general
+RX7CAT3,"For RX7, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,7,general
+RX7CAT4,"For RX7, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX7V1C1,"For RX7, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,19,general
+RX7V1C2,"For RX7, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,15,general
+RX7V1C3,"For RX7, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX7V1C4,"For RX7, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX7V2C1,"For RX7, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,102,general
+RX7V2C2,"For RX7, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,32,general
+RX7V2C3,"For RX7, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,6,general
+RX7V2C4,"For RX7, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX7V3C1,"For RX7, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,96,general
+RX7V3C2,"For RX7, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,22,general
+RX7V3C3,"For RX7, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,4,general
+RX7V3C4,"For RX7, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID8,Drug ID code for medication #8,str,16025,0,0.0,309,general
+PRESCR8,Prescription status code for medication #8,float64,1067,14958,93.34,4,general
+CONTSUB8,Controlled substance status code for medication #8,float64,1067,14958,93.34,6,general
+COMSTAT8,Composition status code for medication #8,float64,1067,14958,93.34,3,general
+RX8CAT1,"For RX8, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,156,general
+RX8CAT2,"For RX8, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,42,general
+RX8CAT3,"For RX8, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,8,general
+RX8CAT4,"For RX8, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX8V1C1,"For RX8, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,20,general
+RX8V1C2,"For RX8, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,16,general
+RX8V1C3,"For RX8, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX8V1C4,"For RX8, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,2,general
+RX8V2C1,"For RX8, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,101,general
+RX8V2C2,"For RX8, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,35,general
+RX8V2C3,"For RX8, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,7,general
+RX8V2C4,"For RX8, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,2,general
+RX8V3C1,"For RX8, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,88,general
+RX8V3C2,"For RX8, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,20,general
+RX8V3C3,"For RX8, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,5,general
+RX8V3C4,"For RX8, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,2,general
+DRUGID9,Drug ID code for medication #9,str,16025,0,0.0,281,general
+PRESCR9,Prescription status code for medication #9,float64,832,15193,94.81,4,general
+CONTSUB9,Controlled substance status code for medication #9,float64,832,15193,94.81,7,general
+COMSTAT9,Composition status code for medication #9,float64,832,15193,94.81,3,general
+RX9CAT1,"For RX9, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,150,general
+RX9CAT2,"For RX9, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,31,general
+RX9CAT3,"For RX9, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,6,general
+RX9CAT4,"For RX9, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX9V1C1,"For RX9, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,20,general
+RX9V1C2,"For RX9, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,13,general
+RX9V1C3,"For RX9, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,4,general
+RX9V1C4,"For RX9, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,2,general
+RX9V2C1,"For RX9, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,96,general
+RX9V2C2,"For RX9, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,26,general
+RX9V2C3,"For RX9, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,5,general
+RX9V2C4,"For RX9, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,2,general
+RX9V3C1,"For RX9, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,88,general
+RX9V3C2,"For RX9, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,17,general
+RX9V3C3,"For RX9, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,5,general
+RX9V3C4,"For RX9, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,2,general
+DRUGID10,Drug ID code for medication #10,str,16025,0,0.0,257,general
+PRESCR10,Prescription status code for medication #10,float64,646,15379,95.97,5,general
+CONTSUB10,Controlled substance status code for medication #10,float64,646,15379,95.97,7,general
+COMSTAT10,Composition status code for medication #10,float64,646,15379,95.97,3,general
+RX10CAT1,"For RX10, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,133,general
+RX10CAT2,"For RX10, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,29,general
+RX10CAT3,"For RX10, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,7,general
+RX10CAT4,"For RX10, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX10V1C1,"For RX10, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,19,general
+RX10V1C2,"For RX10, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,14,general
+RX10V1C3,"For RX10, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX10V1C4,"For RX10, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX10V2C1,"For RX10, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,85,general
+RX10V2C2,"For RX10, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,25,general
+RX10V2C3,"For RX10, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,6,general
+RX10V2C4,"For RX10, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX10V3C1,"For RX10, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,78,general
+RX10V3C2,"For RX10, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,13,general
+RX10V3C3,"For RX10, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,4,general
+RX10V3C4,"For RX10, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID11,Drug ID code for medication #11,str,16025,0,0.0,226,general
+PRESCR11,Prescription status code for medication #11,float64,536,15489,96.66,4,general
+CONTSUB11,Controlled substance status code for medication #11,float64,536,15489,96.66,7,general
+COMSTAT11,Composition status code for medication #11,float64,536,15489,96.66,3,general
+RX11CAT1,"For RX11, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,130,general
+RX11CAT2,"For RX11, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,32,general
+RX11CAT3,"For RX11, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,7,general
+RX11CAT4,"For RX11, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX11V1C1,"For RX11, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,19,general
+RX11V1C2,"For RX11, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,13,general
+RX11V1C3,"For RX11, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,5,general
+RX11V1C4,"For RX11, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX11V2C1,"For RX11, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,81,general
+RX11V2C2,"For RX11, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,28,general
+RX11V2C3,"For RX11, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,6,general
+RX11V2C4,"For RX11, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX11V3C1,"For RX11, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,78,general
+RX11V3C2,"For RX11, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,16,general
+RX11V3C3,"For RX11, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,4,general
+RX11V3C4,"For RX11, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID12,Drug ID code for medication #12,str,16025,0,0.0,205,general
+PRESCR12,Prescription status code for medication #12,float64,460,15565,97.13,5,general
+CONTSUB12,Controlled substance status code for medication #12,float64,460,15565,97.13,6,general
+COMSTAT12,Composition status code for medication #12,float64,460,15565,97.13,3,general
+RX12CAT1,"For RX12, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,116,general
+RX12CAT2,"For RX12, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,26,general
+RX12CAT3,"For RX12, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,4,general
+RX12CAT4,"For RX12, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX12V1C1,"For RX12, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,19,general
+RX12V1C2,"For RX12, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,12,general
+RX12V1C3,"For RX12, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,3,general
+RX12V1C4,"For RX12, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX12V2C1,"For RX12, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,81,general
+RX12V2C2,"For RX12, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,22,general
+RX12V2C3,"For RX12, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,4,general
+RX12V2C4,"For RX12, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX12V3C1,"For RX12, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,63,general
+RX12V3C2,"For RX12, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,13,general
+RX12V3C3,"For RX12, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,3,general
+RX12V3C4,"For RX12, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID13,Drug ID code for medication #13,str,16025,0,0.0,189,general
+PRESCR13,Prescription status code for medication #13,float64,387,15638,97.59,3,general
+CONTSUB13,Controlled substance status code for medication #13,float64,387,15638,97.59,5,general
+COMSTAT13,Composition status code for medication #13,float64,387,15638,97.59,3,general
+RX13CAT1,"For RX13, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,113,general
+RX13CAT2,"For RX13, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,29,general
+RX13CAT3,"For RX13, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,5,general
+RX13CAT4,"For RX13, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX13V1C1,"For RX13, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,20,general
+RX13V1C2,"For RX13, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,15,general
+RX13V1C3,"For RX13, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,4,general
+RX13V1C4,"For RX13, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX13V2C1,"For RX13, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,73,general
+RX13V2C2,"For RX13, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,26,general
+RX13V2C3,"For RX13, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,5,general
+RX13V2C4,"For RX13, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX13V3C1,"For RX13, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,70,general
+RX13V3C2,"For RX13, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,12,general
+RX13V3C3,"For RX13, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,3,general
+RX13V3C4,"For RX13, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID14,Drug ID code for medication #14,str,16025,0,0.0,169,general
+PRESCR14,Prescription status code for medication #14,float64,324,15701,97.98,4,general
+CONTSUB14,Controlled substance status code for medication #14,float64,324,15701,97.98,5,general
+COMSTAT14,Composition status code for medication #14,float64,324,15701,97.98,3,general
+RX14CAT1,"For RX14, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,98,general
+RX14CAT2,"For RX14, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,20,general
+RX14CAT3,"For RX14, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,4,general
+RX14CAT4,"For RX14, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX14V1C1,"For RX14, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,19,general
+RX14V1C2,"For RX14, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,12,general
+RX14V1C3,"For RX14, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,3,general
+RX14V1C4,"For RX14, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,2,general
+RX14V2C1,"For RX14, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,65,general
+RX14V2C2,"For RX14, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,16,general
+RX14V2C3,"For RX14, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,4,general
+RX14V2C4,"For RX14, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,2,general
+RX14V3C1,"For RX14, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,60,general
+RX14V3C2,"For RX14, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,11,general
+RX14V3C3,"For RX14, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,3,general
+RX14V3C4,"For RX14, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,2,general
+DRUGID15,Drug ID code for medication #15,str,16025,0,0.0,161,general
+PRESCR15,Prescription status code for medication #15,float64,272,15753,98.3,3,general
+CONTSUB15,Controlled substance status code for medication #15,float64,272,15753,98.3,5,general
+COMSTAT15,Composition status code for medication #15,float64,272,15753,98.3,3,general
+RX15CAT1,"For RX15, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,105,general
+RX15CAT2,"For RX15, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,26,general
+RX15CAT3,"For RX15, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,5,general
+RX15CAT4,"For RX15, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX15V1C1,"For RX15, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,18,general
+RX15V1C2,"For RX15, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,13,general
+RX15V1C3,"For RX15, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,3,general
+RX15V1C4,"For RX15, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,3,general
+RX15V2C1,"For RX15, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,71,general
+RX15V2C2,"For RX15, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,20,general
+RX15V2C3,"For RX15, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,4,general
+RX15V2C4,"For RX15, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,3,general
+RX15V3C1,"For RX15, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,60,general
+RX15V3C2,"For RX15, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,13,general
+RX15V3C3,"For RX15, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,4,general
+RX15V3C4,"For RX15, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,3,general
+DRUGID16,Drug ID code for medication #16,str,16025,0,0.0,139,general
+PRESCR16,Prescription status code for medication #16,float64,224,15801,98.6,4,general
+CONTSUB16,Controlled substance status code for medication #16,float64,224,15801,98.6,5,general
+COMSTAT16,Composition status code for medication #16,float64,224,15801,98.6,3,general
+RX16CAT1,"For RX16, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,95,general
+RX16CAT2,"For RX16, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,18,general
+RX16CAT3,"For RX16, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,4,general
+RX16CAT4,"For RX16, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX16V1C1,"For RX16, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,19,general
+RX16V1C2,"For RX16, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,11,general
+RX16V1C3,"For RX16, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,3,general
+RX16V1C4,"For RX16, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX16V2C1,"For RX16, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,67,general
+RX16V2C2,"For RX16, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,16,general
+RX16V2C3,"For RX16, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,3,general
+RX16V2C4,"For RX16, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX16V3C1,"For RX16, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,55,general
+RX16V3C2,"For RX16, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,9,general
+RX16V3C3,"For RX16, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,3,general
+RX16V3C4,"For RX16, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID17,Drug ID code for medication #17,str,16025,0,0.0,118,general
+PRESCR17,Prescription status code for medication #17,float64,191,15834,98.81,4,general
+CONTSUB17,Controlled substance status code for medication #17,float64,191,15834,98.81,5,general
+COMSTAT17,Composition status code for medication #17,float64,191,15834,98.81,3,general
+RX17CAT1,"For RX17, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,77,general
+RX17CAT2,"For RX17, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,13,general
+RX17CAT3,"For RX17, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX17CAT4,"For RX17, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX17V1C1,"For RX17, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,17,general
+RX17V1C2,"For RX17, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,7,general
+RX17V1C3,"For RX17, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,2,general
+RX17V1C4,"For RX17, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX17V2C1,"For RX17, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,56,general
+RX17V2C2,"For RX17, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,12,general
+RX17V2C3,"For RX17, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,2,general
+RX17V2C4,"For RX17, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX17V3C1,"For RX17, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,44,general
+RX17V3C2,"For RX17, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,6,general
+RX17V3C3,"For RX17, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,2,general
+RX17V3C4,"For RX17, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID18,Drug ID code for medication #18,str,16025,0,0.0,101,general
+PRESCR18,Prescription status code for medication #18,float64,155,15870,99.03,4,general
+CONTSUB18,Controlled substance status code for medication #18,float64,155,15870,99.03,5,general
+COMSTAT18,Composition status code for medication #18,float64,155,15870,99.03,3,general
+RX18CAT1,"For RX18, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,73,general
+RX18CAT2,"For RX18, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,13,general
+RX18CAT3,"For RX18, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX18CAT4,"For RX18, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX18V1C1,"For RX18, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,20,general
+RX18V1C2,"For RX18, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,10,general
+RX18V1C3,"For RX18, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,3,general
+RX18V1C4,"For RX18, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX18V2C1,"For RX18, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,54,general
+RX18V2C2,"For RX18, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,12,general
+RX18V2C3,"For RX18, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,3,general
+RX18V2C4,"For RX18, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX18V3C1,"For RX18, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,42,general
+RX18V3C2,"For RX18, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,9,general
+RX18V3C3,"For RX18, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,2,general
+RX18V3C4,"For RX18, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID19,Drug ID code for medication #19,str,16025,0,0.0,91,general
+PRESCR19,Prescription status code for medication #19,float64,123,15902,99.23,3,general
+CONTSUB19,Controlled substance status code for medication #19,float64,123,15902,99.23,4,general
+COMSTAT19,Composition status code for medication #19,float64,123,15902,99.23,2,general
+RX19CAT1,"For RX19, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,68,general
+RX19CAT2,"For RX19, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,16,general
+RX19CAT3,"For RX19, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX19CAT4,"For RX19, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX19V1C1,"For RX19, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,16,general
+RX19V1C2,"For RX19, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,10,general
+RX19V1C3,"For RX19, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,2,general
+RX19V1C4,"For RX19, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX19V2C1,"For RX19, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,49,general
+RX19V2C2,"For RX19, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,15,general
+RX19V2C3,"For RX19, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,2,general
+RX19V2C4,"For RX19, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX19V3C1,"For RX19, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,40,general
+RX19V3C2,"For RX19, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,8,general
+RX19V3C3,"For RX19, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,3,general
+RX19V3C4,"For RX19, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID20,Drug ID code for medication #20,str,16025,0,0.0,83,general
+PRESCR20,Prescription status code for medication #20,float64,108,15917,99.33,3,general
+CONTSUB20,Controlled substance status code for medication #20,float64,108,15917,99.33,3,general
+COMSTAT20,Composition status code for medication #20,float64,108,15917,99.33,2,general
+RX20CAT1,"For RX20, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,59,general
+RX20CAT2,"For RX20, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,7,general
+RX20CAT3,"For RX20, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX20CAT4,"For RX20, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX20V1C1,"For RX20, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,16,general
+RX20V1C2,"For RX20, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,5,general
+RX20V1C3,"For RX20, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,2,general
+RX20V1C4,"For RX20, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX20V2C1,"For RX20, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,42,general
+RX20V2C2,"For RX20, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,7,general
+RX20V2C3,"For RX20, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,2,general
+RX20V2C4,"For RX20, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX20V3C1,"For RX20, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,37,general
+RX20V3C2,"For RX20, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,2,general
+RX20V3C3,"For RX20, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,2,general
+RX20V3C4,"For RX20, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID21,Drug ID code for medication #21,str,16025,0,0.0,65,general
+PRESCR21,Prescription status code for medication #21,float64,80,15945,99.5,4,general
+CONTSUB21,Controlled substance status code for medication #21,float64,80,15945,99.5,3,general
+COMSTAT21,Composition status code for medication #21,float64,80,15945,99.5,2,general
+RX21CAT1,"For RX21, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,48,general
+RX21CAT2,"For RX21, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,10,general
+RX21CAT3,"For RX21, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX21CAT4,"For RX21, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX21V1C1,"For RX21, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,14,general
+RX21V1C2,"For RX21, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,9,general
+RX21V1C3,"For RX21, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,3,general
+RX21V1C4,"For RX21, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,2,general
+RX21V2C1,"For RX21, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,35,general
+RX21V2C2,"For RX21, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,10,general
+RX21V2C3,"For RX21, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,3,general
+RX21V2C4,"For RX21, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,2,general
+RX21V3C1,"For RX21, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,32,general
+RX21V3C2,"For RX21, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,5,general
+RX21V3C3,"For RX21, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,1,general
+RX21V3C4,"For RX21, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,2,general
+DRUGID22,Drug ID code for medication #22,str,16025,0,0.0,53,general
+PRESCR22,Prescription status code for medication #22,float64,63,15962,99.61,4,general
+CONTSUB22,Controlled substance status code for medication #22,float64,63,15962,99.61,4,general
+COMSTAT22,Composition status code for medication #22,float64,63,15962,99.61,3,general
+RX22CAT1,"For RX22, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,43,general
+RX22CAT2,"For RX22, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,9,general
+RX22CAT3,"For RX22, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX22CAT4,"For RX22, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX22V1C1,"For RX22, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,13,general
+RX22V1C2,"For RX22, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,8,general
+RX22V1C3,"For RX22, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,2,general
+RX22V1C4,"For RX22, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX22V2C1,"For RX22, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,28,general
+RX22V2C2,"For RX22, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,9,general
+RX22V2C3,"For RX22, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,2,general
+RX22V2C4,"For RX22, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX22V3C1,"For RX22, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,29,general
+RX22V3C2,"For RX22, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,6,general
+RX22V3C3,"For RX22, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,2,general
+RX22V3C4,"For RX22, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID23,Drug ID code for medication #23,str,16025,0,0.0,45,general
+PRESCR23,Prescription status code for medication #23,float64,54,15971,99.66,3,general
+CONTSUB23,Controlled substance status code for medication #23,float64,54,15971,99.66,3,general
+COMSTAT23,Composition status code for medication #23,float64,54,15971,99.66,2,general
+RX23CAT1,"For RX23, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,34,general
+RX23CAT2,"For RX23, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,7,general
+RX23CAT3,"For RX23, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX23CAT4,"For RX23, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX23V1C1,"For RX23, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,12,general
+RX23V1C2,"For RX23, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,6,general
+RX23V1C3,"For RX23, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,2,general
+RX23V1C4,"For RX23, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX23V2C1,"For RX23, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,22,general
+RX23V2C2,"For RX23, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,7,general
+RX23V2C3,"For RX23, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,2,general
+RX23V2C4,"For RX23, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX23V3C1,"For RX23, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,25,general
+RX23V3C2,"For RX23, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,4,general
+RX23V3C3,"For RX23, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,3,general
+RX23V3C4,"For RX23, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID24,Drug ID code for medication #24,str,16025,0,0.0,32,general
+PRESCR24,Prescription status code for medication #24,float64,37,15988,99.77,3,general
+CONTSUB24,Controlled substance status code for medication #24,float64,37,15988,99.77,2,general
+COMSTAT24,Composition status code for medication #24,float64,37,15988,99.77,2,general
+RX24CAT1,"For RX24, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,27,general
+RX24CAT2,"For RX24, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,7,general
+RX24CAT3,"For RX24, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX24CAT4,"For RX24, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX24V1C1,"For RX24, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,14,general
+RX24V1C2,"For RX24, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,6,general
+RX24V1C3,"For RX24, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,2,general
+RX24V1C4,"For RX24, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,2,general
+RX24V2C1,"For RX24, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,21,general
+RX24V2C2,"For RX24, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,6,general
+RX24V2C3,"For RX24, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,3,general
+RX24V2C4,"For RX24, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,2,general
+RX24V3C1,"For RX24, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,19,general
+RX24V3C2,"For RX24, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,5,general
+RX24V3C3,"For RX24, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,3,general
+RX24V3C4,"For RX24, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,2,general
+DRUGID25,Drug ID code for medication #25,str,16025,0,0.0,28,general
+PRESCR25,Prescription status code for medication #25,float64,29,15996,99.82,3,general
+CONTSUB25,Controlled substance status code for medication #25,float64,29,15996,99.82,3,general
+COMSTAT25,Composition status code for medication #25,float64,29,15996,99.82,2,general
+RX25CAT1,"For RX25, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,22,general
+RX25CAT2,"For RX25, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,5,general
+RX25CAT3,"For RX25, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX25CAT4,"For RX25, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX25V1C1,"For RX25, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,11,general
+RX25V1C2,"For RX25, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,4,general
+RX25V1C3,"For RX25, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,2,general
+RX25V1C4,"For RX25, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX25V2C1,"For RX25, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,19,general
+RX25V2C2,"For RX25, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,5,general
+RX25V2C3,"For RX25, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,2,general
+RX25V2C4,"For RX25, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX25V3C1,"For RX25, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,13,general
+RX25V3C2,"For RX25, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,3,general
+RX25V3C3,"For RX25, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,1,general
+RX25V3C4,"For RX25, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID26,Drug ID code for medication #26,str,16025,0,0.0,21,general
+PRESCR26,Prescription status code for medication #26,float64,20,16005,99.88,2,general
+CONTSUB26,Controlled substance status code for medication #26,float64,20,16005,99.88,1,general
+COMSTAT26,Composition status code for medication #26,float64,20,16005,99.88,2,general
+RX26CAT1,"For RX26, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,19,general
+RX26CAT2,"For RX26, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,4,general
+RX26CAT3,"For RX26, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX26CAT4,"For RX26, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX26V1C1,"For RX26, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,11,general
+RX26V1C2,"For RX26, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,3,general
+RX26V1C3,"For RX26, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,1,general
+RX26V1C4,"For RX26, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX26V2C1,"For RX26, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,19,general
+RX26V2C2,"For RX26, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,4,general
+RX26V2C3,"For RX26, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,1,general
+RX26V2C4,"For RX26, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX26V3C1,"For RX26, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,10,general
+RX26V3C2,"For RX26, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,3,general
+RX26V3C3,"For RX26, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,1,general
+RX26V3C4,"For RX26, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID27,Drug ID code for medication #27,str,16025,0,0.0,13,general
+PRESCR27,Prescription status code for medication #27,float64,14,16011,99.91,2,general
+CONTSUB27,Controlled substance status code for medication #27,float64,14,16011,99.91,2,general
+COMSTAT27,Composition status code for medication #27,float64,14,16011,99.91,1,general
+RX27CAT1,"For RX27, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,12,general
+RX27CAT2,"For RX27, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,5,general
+RX27CAT3,"For RX27, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,3,general
+RX27CAT4,"For RX27, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX27V1C1,"For RX27, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,6,general
+RX27V1C2,"For RX27, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,4,general
+RX27V1C3,"For RX27, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,2,general
+RX27V1C4,"For RX27, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,2,general
+RX27V2C1,"For RX27, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,10,general
+RX27V2C2,"For RX27, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,5,general
+RX27V2C3,"For RX27, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,3,general
+RX27V2C4,"For RX27, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,2,general
+RX27V3C1,"For RX27, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,6,general
+RX27V3C2,"For RX27, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,3,general
+RX27V3C3,"For RX27, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,3,general
+RX27V3C4,"For RX27, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,2,general
+DRUGID28,Drug ID code for medication #28,str,16025,0,0.0,12,general
+PRESCR28,Prescription status code for medication #28,float64,12,16013,99.93,2,general
+CONTSUB28,Controlled substance status code for medication #28,float64,12,16013,99.93,1,general
+COMSTAT28,Composition status code for medication #28,float64,12,16013,99.93,1,general
+RX28CAT1,"For RX28, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,10,general
+RX28CAT2,"For RX28, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,5,general
+RX28CAT3,"For RX28, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX28CAT4,"For RX28, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX28V1C1,"For RX28, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,8,general
+RX28V1C2,"For RX28, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,4,general
+RX28V1C3,"For RX28, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,1,general
+RX28V1C4,"For RX28, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX28V2C1,"For RX28, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,10,general
+RX28V2C2,"For RX28, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,5,general
+RX28V2C3,"For RX28, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,1,general
+RX28V2C4,"For RX28, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX28V3C1,"For RX28, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,6,general
+RX28V3C2,"For RX28, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,2,general
+RX28V3C3,"For RX28, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,1,general
+RX28V3C4,"For RX28, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID29,Drug ID code for medication #29,str,16025,0,0.0,6,general
+PRESCR29,Prescription status code for medication #29,float64,5,16020,99.97,3,general
+CONTSUB29,Controlled substance status code for medication #29,float64,5,16020,99.97,2,general
+COMSTAT29,Composition status code for medication #29,float64,5,16020,99.97,2,general
+RX29CAT1,"For RX29, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,6,general
+RX29CAT2,"For RX29, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX29CAT3,"For RX29, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX29CAT4,"For RX29, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX29V1C1,"For RX29, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,4,general
+RX29V1C2,"For RX29, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,1,general
+RX29V1C3,"For RX29, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,1,general
+RX29V1C4,"For RX29, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX29V2C1,"For RX29, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,6,general
+RX29V2C2,"For RX29, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,1,general
+RX29V2C3,"For RX29, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,1,general
+RX29V2C4,"For RX29, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX29V3C1,"For RX29, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,5,general
+RX29V3C2,"For RX29, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,1,general
+RX29V3C3,"For RX29, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,1,general
+RX29V3C4,"For RX29, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+DRUGID30,Drug ID code for medication #30,str,16025,0,0.0,2,general
+PRESCR30,Prescription status code for medication #30,float64,1,16024,99.99,1,general
+CONTSUB30,Controlled substance status code for medication #30,float64,1,16024,99.99,1,general
+COMSTAT30,Composition status code for medication #30,float64,1,16024,99.99,1,general
+RX30CAT1,"For RX30, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX30CAT2,"For RX30, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,2,general
+RX30CAT3,"For RX30, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX30CAT4,"For RX30, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)",str,16025,0,0.0,1,general
+RX30V1C1,"For RX30, level 1 of MULTUM drug category #1 (broad level)",str,16025,0,0.0,2,general
+RX30V1C2,"For RX30, level 1 of MULTUM drug category #2 (broad level)",str,16025,0,0.0,2,general
+RX30V1C3,"For RX30, level 1 of MULTUM drug category #3 (broad level)",str,16025,0,0.0,1,general
+RX30V1C4,"For RX30, level 1 of MULTUM drug category #4 (broad level)",str,16025,0,0.0,1,general
+RX30V2C1,"For RX30, level 2 of MULTUM drug category #1 (intermediate level)",str,16025,0,0.0,2,general
+RX30V2C2,"For RX30, level 2 of MULTUM drug category #2 (intermediate level)",str,16025,0,0.0,2,general
+RX30V2C3,"For RX30, level 2 of MULTUM drug category #3 (intermediate level)",str,16025,0,0.0,1,general
+RX30V2C4,"For RX30, level 2 of MULTUM drug category #4 (intermediate level)",str,16025,0,0.0,1,general
+RX30V3C1,"For RX30, level 3 of MULTUM drug category #1 (detailed level)",str,16025,0,0.0,1,general
+RX30V3C2,"For RX30, level 3 of MULTUM drug category #2 (detailed level)",str,16025,0,0.0,1,general
+RX30V3C3,"For RX30, level 3 of MULTUM drug category #3 (detailed level)",str,16025,0,0.0,1,general
+RX30V3C4,"For RX30, level 3 of MULTUM drug category #4 (detailed level)",str,16025,0,0.0,1,general
+SETTYPE,Setting type,float64,16025,0,0.0,1,general
+YEAR,Survey year,float64,16025,0,0.0,1,general
+CSTRATM,Clustered CSTRATM -- masked,float64,16025,0,0.0,8,survey_design
+CPSUM,Clustered CPSUM -- masked,float64,16025,0,0.0,122,survey_design
+PATWT,Patient visit weight,float64,16025,0,0.0,249,survey_design
+EDWT,ED weight,float64,188,15837,98.83,149,survey_design
+BOARDED,Length of time boarded in ED in minutes,float64,16025,0,0.0,481,general

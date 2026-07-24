@@ -1,0 +1,25 @@
+# Configuration for the NHAMCS 2022 Emergency Department dataset.
+# All paths are relative to the repository root.
+
+dataset:
+  name: "NHAMCS 2022 Emergency Department"
+  raw_path: "Data/raw/ed2022_sas.sas7bdat"
+  documentation_dir: "Data/documents"
+  expected_row_count: 16025
+  expected_column_count: 913
+
+survey_design:
+  # Confirmed against the NCHS technical documentation (Section H/I and
+  # Appendix I.A): svyset [pweight=patwt], psu(cpsum) strata(cstratm)
+  weight_variable: "PATWT"
+  strata_variable: "CSTRATM"
+  cluster_variable: "CPSUM"
+  facility_weight_variable: "EDWT"
+
+target:
+  # NHAMCS has no single "admitted" flag. Disposition is recorded as a set
+  # of mutually-independent 0/1 checkboxes. Hospital admission is defined
+  # as either flag below being 1.
+  admitted_to_hospital_flag: "ADMITHOS"
+  admitted_via_observation_flag: "OBSHOS"
+  derived_target_name: "hospital_admission"

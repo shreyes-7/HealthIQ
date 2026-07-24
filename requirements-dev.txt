@@ -1,0 +1,9 @@
+# Development tools. Not required to run the application.
+
+-r requirements.txt
+
+jupyter
+ipykernel
+pytest
+black
+ruff

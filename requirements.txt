@@ -1,0 +1,14 @@
+# Runtime dependencies for the data engineering phase (Sprint 1).
+# ML training frameworks (XGBoost, LightGBM, CatBoost, SHAP) will be added
+# in a later sprint once the data pipeline is complete.
+
+pandas
+numpy
+pyreadstat
+pyarrow
+scikit-learn
+joblib
+matplotlib
+seaborn
+pyyaml
+python-dotenv

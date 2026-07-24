@@ -1,0 +1,60 @@
+{
+  "per_split": {
+    "train": {
+      "row_count": 11217,
+      "unique_strata": 8,
+      "unique_psus": 122,
+      "weight_sum": 107955414.77050999,
+      "weight_mean": 9624.26805478381,
+      "weight_std": 9600.232430103704,
+      "weight_min": 89.85488,
+      "weight_max": 57925.50019,
+      "weight_coefficient_of_variation": 0.9975026023232844,
+      "approximate_kish_design_effect": 1.9950114416417244,
+      "facility_weight_non_null_count": 134
+    },
+    "validation": {
+      "row_count": 2404,
+      "unique_strata": 8,
+      "unique_psus": 121,
+      "weight_sum": 23314978.87504,
+      "weight_mean": 9698.41051374376,
+      "weight_std": 9895.978942478107,
+      "weight_min": 89.85488,
+      "weight_max": 57925.50019,
+      "weight_coefficient_of_variation": 1.0203712173715858,
+      "approximate_kish_design_effect": 2.0411574212403716,
+      "facility_weight_non_null_count": 26
+    },
+    "test": {
+      "row_count": 2404,
+      "unique_strata": 8,
+      "unique_psus": 122,
+      "weight_sum": 24127352.921579998,
+      "weight_mean": 10036.33648984193,
+      "weight_std": 10046.914006542616,
+      "weight_min": 89.85488,
+      "weight_max": 57925.50019,
+      "weight_coefficient_of_variation": 1.0010539220871473,
+      "approximate_kish_design_effect": 2.0021089549260602,
+      "facility_weight_non_null_count": 28
+    }
+  },
+  "psu_overlap": {
+    "train_and_validation": {
+      "shared_psu_count": 121,
+      "train_psu_count": 122,
+      "validation_psu_count": 121
+    },
+    "train_and_test": {
+      "shared_psu_count": 122,
+      "train_psu_count": 122,
+      "test_psu_count": 122
+    },
+    "validation_and_test": {
+      "shared_psu_count": 121,
+      "validation_psu_count": 121,
+      "test_psu_count": 122
+    }
+  }
+}
