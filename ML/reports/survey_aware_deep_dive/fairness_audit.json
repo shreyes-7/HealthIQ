@@ -1,0 +1,120 @@
+{
+  "group_sizes": {
+    "1": 1310,
+    "2": 598,
+    "3": 394,
+    "4": 102
+  },
+  "unweighted_group_metrics": {
+    "1": {
+      "n": 1310,
+      "actual_admission_rate": 0.14427480916030536,
+      "selection_rate": 0.1267175572519084,
+      "true_positive_rate": 0.6825396825396826,
+      "false_positive_rate": 0.03300624442462088,
+      "roc_auc": 0.9635671098650582
+    },
+    "2": {
+      "n": 598,
+      "actual_admission_rate": 0.11036789297658862,
+      "selection_rate": 0.10869565217391304,
+      "true_positive_rate": 0.6818181818181818,
+      "false_positive_rate": 0.03759398496240601,
+      "roc_auc": 0.9510138983823194
+    },
+    "3": {
+      "n": 394,
+      "actual_admission_rate": 0.1065989847715736,
+      "selection_rate": 0.09644670050761421,
+      "true_positive_rate": 0.7380952380952381,
+      "false_positive_rate": 0.019886363636363636,
+      "roc_auc": 0.980857683982684
+    },
+    "4": {
+      "n": 102,
+      "actual_admission_rate": 0.20588235294117646,
+      "selection_rate": 0.19607843137254902,
+      "true_positive_rate": 0.8571428571428571,
+      "false_positive_rate": 0.024691358024691357,
+      "roc_auc": 0.977660199882422
+    }
+  },
+  "weighted_group_metrics": {
+    "1": {
+      "n": 1310,
+      "actual_admission_rate": 0.14427480916030536,
+      "selection_rate": 0.12900763358778625,
+      "true_positive_rate": 0.6931216931216931,
+      "false_positive_rate": 0.03389830508474576,
+      "roc_auc": 0.9619057058842965
+    },
+    "2": {
+      "n": 598,
+      "actual_admission_rate": 0.11036789297658862,
+      "selection_rate": 0.11538461538461539,
+      "true_positive_rate": 0.7121212121212122,
+      "false_positive_rate": 0.041353383458646614,
+      "roc_auc": 0.9454032809295967
+    },
+    "3": {
+      "n": 394,
+      "actual_admission_rate": 0.1065989847715736,
+      "selection_rate": 0.10406091370558376,
+      "true_positive_rate": 0.7619047619047619,
+      "false_positive_rate": 0.02556818181818182,
+      "roc_auc": 0.9795725108225108
+    },
+    "4": {
+      "n": 102,
+      "actual_admission_rate": 0.20588235294117646,
+      "selection_rate": 0.18627450980392157,
+      "true_positive_rate": 0.8095238095238095,
+      "false_positive_rate": 0.024691358024691357,
+      "roc_auc": 0.9817754262198707
+    }
+  },
+  "unweighted_disparity": {
+    "selection_rate": {
+      "min": 0.09644670050761421,
+      "max": 0.19607843137254902,
+      "gap": 0.0996317308649348
+    },
+    "true_positive_rate": {
+      "min": 0.6818181818181818,
+      "max": 0.8571428571428571,
+      "gap": 0.17532467532467533
+    },
+    "false_positive_rate": {
+      "min": 0.019886363636363636,
+      "max": 0.03759398496240601,
+      "gap": 0.017707621326042377
+    },
+    "roc_auc": {
+      "min": 0.9510138983823194,
+      "max": 0.980857683982684,
+      "gap": 0.029843785600364603
+    }
+  },
+  "weighted_disparity": {
+    "selection_rate": {
+      "min": 0.10406091370558376,
+      "max": 0.18627450980392157,
+      "gap": 0.08221359609833781
+    },
+    "true_positive_rate": {
+      "min": 0.6931216931216931,
+      "max": 0.8095238095238095,
+      "gap": 0.1164021164021164
+    },
+    "false_positive_rate": {
+      "min": 0.024691358024691357,
+      "max": 0.041353383458646614,
+      "gap": 0.016662025433955258
+    },
+    "roc_auc": {
+      "min": 0.9454032809295967,
+      "max": 0.9817754262198707,
+      "gap": 0.036372145290273994
+    }
+  }
+}

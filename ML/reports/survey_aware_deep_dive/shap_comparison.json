@@ -1,0 +1,110 @@
+{
+  "ranking_comparison": {
+    "spearman_rank_correlation": 0.9725115772777688,
+    "spearman_p_value": 2.5981993506755884e-248,
+    "top_n": 20,
+    "top_n_overlap_count": 18,
+    "top_n_overlap_variables": [
+      "AGE",
+      "ARREMS",
+      "BLOODCX",
+      "CONSULT",
+      "COVIDTEST",
+      "DIAG1",
+      "DIAG2",
+      "EDPRIM",
+      "IMMEDR",
+      "IVFLUIDS",
+      "LOV",
+      "MED2",
+      "NUMDIS",
+      "PROC",
+      "REGION",
+      "RFV13D",
+      "TOTDIAG",
+      "VMONTH"
+    ],
+    "only_in_unweighted_top_n": [
+      "DRUGID2",
+      "SURGDAY"
+    ],
+    "only_in_weighted_top_n": [
+      "NUMGIV",
+      "POOLNURS"
+    ],
+    "unweighted_ranking": {
+      "NUMDIS": 1.688090943141716,
+      "CONSULT": 1.1837185402868422,
+      "TOTDIAG": 0.7845519994409292,
+      "DIAG1": 0.6576158253709616,
+      "IMMEDR": 0.5671726194900838,
+      "COVIDTEST": 0.49368820249430717,
+      "LOV": 0.4308925803142422,
+      "AGE": 0.41108687963084733,
+      "PROC": 0.2364335293924427,
+      "IVFLUIDS": 0.23230647579131652,
+      "REGION": 0.22215649972729865,
+      "DIAG2": 0.21445733003852113,
+      "ARREMS": 0.2004203040312192,
+      "DRUGID2": 0.18267353347610252,
+      "RFV13D": 0.1768061615054023,
+      "EDPRIM": 0.17170620733645214,
+      "VMONTH": 0.17039131111221262,
+      "BLOODCX": 0.17026808108933694,
+      "SURGDAY": 0.1603649137488558,
+      "MED2": 0.1519676466247805
+    },
+    "weighted_ranking": {
+      "NUMDIS": 1.754840865790055,
+      "CONSULT": 1.366522266997982,
+      "TOTDIAG": 0.7265488518364327,
+      "IMMEDR": 0.6614740904146796,
+      "DIAG1": 0.6030582414812876,
+      "COVIDTEST": 0.5420361317578793,
+      "LOV": 0.44078641851581796,
+      "AGE": 0.39687309884480365,
+      "IVFLUIDS": 0.31092824264307795,
+      "EDPRIM": 0.29592028090086736,
+      "REGION": 0.2913144038843068,
+      "PROC": 0.256336127861639,
+      "ARREMS": 0.23878784532972172,
+      "VMONTH": 0.21401059360738042,
+      "DIAG2": 0.21293302895828903,
+      "BLOODCX": 0.16967057003652727,
+      "MED2": 0.15791230443026338,
+      "RFV13D": 0.15761336468150944,
+      "POOLNURS": 0.1451211980152903,
+      "NUMGIV": 0.13904622973394865
+    }
+  },
+  "patient_comparisons": {
+    "patient_1": {
+      "row_index": 1809,
+      "unweighted_probability": 0.999865252752666,
+      "weighted_probability": 0.9990633625289062,
+      "unweighted_top_feature": "CONSULT__Yes",
+      "weighted_top_feature": "CONSULT__Yes"
+    },
+    "patient_2": {
+      "row_index": 1219,
+      "unweighted_probability": 4.243825667145058e-08,
+      "weighted_probability": 1.298073026675846e-07,
+      "unweighted_top_feature": "DIAG1__frequency",
+      "weighted_top_feature": "PROC__1"
+    },
+    "patient_3": {
+      "row_index": 2213,
+      "unweighted_probability": 0.5067021739243224,
+      "weighted_probability": 0.4390645494303378,
+      "unweighted_top_feature": "CONSULT__Yes",
+      "weighted_top_feature": "CONSULT__Yes"
+    }
+  },
+  "decision_flip_stats": {
+    "flip_count": 47,
+    "total": 2404,
+    "flip_rate": 0.019550748752079867,
+    "mean_distance_from_boundary_when_flipped": 0.16557529551624894,
+    "mean_distance_from_boundary_when_not_flipped": 0.48073657678046905
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "predicted_probability": 4.243825667145058e-08,
+  "base_rate_probability": 0.00024727871636218493,
+  "predicted_admission": false,
+  "features_that_increased_risk": [
+    {
+      "feature": "DIAG1__frequency",
+      "source_variable": "DIAG1",
+      "feature_value": 0.000891503967192654,
+      "shap_value": 0.46369517623529033
+    },
+    {
+      "feature": "PROC__1",
+      "source_variable": "PROC",
+      "feature_value": 1.0,
+      "shap_value": 0.21065796621130944
+    },
+    {
+      "feature": "PAINSCALE__9",
+      "source_variable": "PAINSCALE",
+      "feature_value": 1.0,
+      "shap_value": 0.14307356775954078
+    },
+    {
+      "feature": "RFV23D__frequency",
+      "source_variable": "RFV23D",
+      "feature_value": 0.3633770170277258,
+      "shap_value": 0.08319534465820141
+    },
+    {
+      "feature": "TOTPROC__1",
+      "source_variable": "TOTPROC",
+      "feature_value": 1.0,
+      "shap_value": 0.06058662351134052
+    },
+    {
+      "feature": "ANYIMAGE__No",
+      "source_variable": "ANYIMAGE",
+      "feature_value": 0.0,
+      "shap_value": 0.05165053029476578
+    },
+    {
+      "feature": "OTHPROV__Yes",
+      "source_variable": "OTHPROV",
+      "feature_value": 1.0,
+      "shap_value": 0.048515171168126314
+    },
+    {
+      "feature": "INJURY72__1",
+      "source_variable": "INJURY72",
+      "feature_value": 1.0,
+      "shap_value": 0.04517294933372784
+    }
+  ],
+  "features_that_decreased_risk": [
+    {
+      "feature": "NUMDIS",
+      "source_variable": "NUMDIS",
+      "feature_value": -0.026825224096265296,
+      "shap_value": -1.2869392359591807
+    },
+    {
+      "feature": "CASTSPLINT__Yes",
+      "source_variable": "CASTSPLINT",
+      "feature_value": 1.0,
+      "shap_value": -0.5737101546852734
+    },
+    {
+      "feature": "TOTDIAG",
+      "source_variable": "TOTDIAG",
+      "feature_value": -0.7885285151794068,
+      "shap_value": -0.571288160629918
+    },
+    {
+      "feature": "CONSULT__Yes",
+      "source_variable": "CONSULT",
+      "feature_value": 0.0,
+      "shap_value": -0.5482032406415179
+    },
+    {
+      "feature": "LOV",
+      "source_variable": "LOV",
+      "feature_value": -0.29050627390964623,
+      "shap_value": -0.43074941312381837
+    },
+    {
+      "feature": "COVIDTEST__Yes",
+      "source_variable": "COVIDTEST",
+      "feature_value": 0.0,
+      "shap_value": -0.3510556041557143
+    },
+    {
+      "feature": "IMMEDR__4",
+      "source_variable": "IMMEDR",
+      "feature_value": 1.0,
+      "shap_value": -0.33740580382994606
+    },
+    {
+      "feature": "EDPRIM__4",
+      "source_variable": "EDPRIM",
+      "feature_value": 1.0,
+      "shap_value": -0.2820528829948067
+    }
+  ],
+  "row_index_in_validation_split": 1219,
+  "actual_label": 0,
+  "selection_reason": "Lowest-confidence-of-admission correctly-predicted discharge -- the clearest negative case."
+}

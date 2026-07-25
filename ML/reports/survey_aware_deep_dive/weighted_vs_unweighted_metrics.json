@@ -1,0 +1,78 @@
+{
+  "validation": {
+    "weighted": {
+      "accuracy": 0.93261231281198,
+      "precision": 0.761744966442953,
+      "recall": 0.7138364779874213,
+      "sensitivity": 0.7138364779874213,
+      "specificity": 0.9659635666347076,
+      "f1": 0.737012987012987,
+      "roc_auc": 0.9626817296501987,
+      "pr_auc": 0.8147955043606544,
+      "brier_score": 0.055524686780842804,
+      "confusion_matrix": {
+        "true_negative": 2015,
+        "false_positive": 71,
+        "false_negative": 91,
+        "true_positive": 227
+      },
+      "threshold": 0.5
+    },
+    "unweighted": {
+      "accuracy": 0.9330282861896838,
+      "precision": 0.7716262975778547,
+      "recall": 0.7012578616352201,
+      "sensitivity": 0.7012578616352201,
+      "specificity": 0.9683604985618408,
+      "f1": 0.7347611202635914,
+      "roc_auc": 0.9648510284194721,
+      "pr_auc": 0.8274761599325219,
+      "brier_score": 0.052812447645099125,
+      "confusion_matrix": {
+        "true_negative": 2020,
+        "false_positive": 66,
+        "false_negative": 95,
+        "true_positive": 223
+      },
+      "threshold": 0.5
+    }
+  },
+  "test": {
+    "weighted": {
+      "accuracy": 0.9267886855241264,
+      "precision": 0.7350993377483444,
+      "recall": 0.6981132075471698,
+      "sensitivity": 0.6981132075471698,
+      "specificity": 0.9616490891658677,
+      "f1": 0.7161290322580646,
+      "roc_auc": 0.9534241453957801,
+      "pr_auc": 0.7408008506818887,
+      "brier_score": 0.06258132089700282,
+      "confusion_matrix": {
+        "true_negative": 2006,
+        "false_positive": 80,
+        "false_negative": 96,
+        "true_positive": 222
+      },
+      "threshold": 0.5
+    },
+    "unweighted": {
+      "accuracy": 0.9305324459234608,
+      "precision": 0.7559322033898305,
+      "recall": 0.7012578616352201,
+      "sensitivity": 0.7012578616352201,
+      "specificity": 0.965484180249281,
+      "f1": 0.7275693311582382,
+      "roc_auc": 0.9564286015786586,
+      "pr_auc": 0.7599308717742836,
+      "brier_score": 0.05932422812523278,
+      "confusion_matrix": {
+        "true_negative": 2014,
+        "false_positive": 72,
+        "false_negative": 95,
+        "true_positive": 223
+      },
+      "threshold": 0.5
+    }
+  }
+}

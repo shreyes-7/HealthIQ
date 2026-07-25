@@ -1,0 +1,105 @@
+{
+  "predicted_probability": 1.7965299244307263e-05,
+  "base_rate_probability": 0.00024727871636218493,
+  "predicted_admission": false,
+  "features_that_increased_risk": [
+    {
+      "feature": "NUMDIS",
+      "source_variable": "NUMDIS",
+      "feature_value": -0.4693230751077467,
+      "shap_value": 1.4584564001044438
+    },
+    {
+      "feature": "DIAG1__frequency",
+      "source_variable": "DIAG1",
+      "feature_value": 0.002852812695016493,
+      "shap_value": 0.3020559591989834
+    },
+    {
+      "feature": "IMMEDR__4",
+      "source_variable": "IMMEDR",
+      "feature_value": 0.0,
+      "shap_value": 0.21707720346900541
+    },
+    {
+      "feature": "WAITTIME",
+      "source_variable": "WAITTIME",
+      "feature_value": -0.48792103656133073,
+      "shap_value": 0.1883318052951684
+    },
+    {
+      "feature": "RACEUN__Missing",
+      "source_variable": "RACEUN",
+      "feature_value": 1.0,
+      "shap_value": 0.1348755421990821
+    },
+    {
+      "feature": "RFV23D__frequency",
+      "source_variable": "RFV23D",
+      "feature_value": 0.3633770170277258,
+      "shap_value": 0.13384413765110076
+    },
+    {
+      "feature": "RFV13D__frequency",
+      "source_variable": "RFV13D",
+      "feature_value": 0.0021396095212623694,
+      "shap_value": 0.1254702181015095
+    },
+    {
+      "feature": "ETHUN__1",
+      "source_variable": "ETHUN",
+      "feature_value": 1.0,
+      "shap_value": 0.1249364662222241
+    }
+  ],
+  "features_that_decreased_risk": [
+    {
+      "feature": "TOTDIAG",
+      "source_variable": "TOTDIAG",
+      "feature_value": -1.0732058358993104,
+      "shap_value": -0.9700757256377438
+    },
+    {
+      "feature": "CONSULT__Yes",
+      "source_variable": "CONSULT",
+      "feature_value": 0.0,
+      "shap_value": -0.784779626129211
+    },
+    {
+      "feature": "COVIDTEST__Yes",
+      "source_variable": "COVIDTEST",
+      "feature_value": 0.0,
+      "shap_value": -0.4039013099850256
+    },
+    {
+      "feature": "AGE",
+      "source_variable": "AGE",
+      "feature_value": -0.2623990515988836,
+      "shap_value": -0.3392275357425174
+    },
+    {
+      "feature": "BPDIAS",
+      "source_variable": "BPDIAS",
+      "feature_value": 0.7766657414391558,
+      "shap_value": -0.22611951831632232
+    },
+    {
+      "feature": "VMONTH__12",
+      "source_variable": "VMONTH",
+      "feature_value": 1.0,
+      "shap_value": -0.20661093662254487
+    },
+    {
+      "feature": "SHOCK_INDEX",
+      "source_variable": "SHOCK_INDEX",
+      "feature_value": -0.9018714490167161,
+      "shap_value": -0.19476150100681197
+    },
+    {
+      "feature": "RFID__1",
+      "source_variable": "RFID",
+      "feature_value": 0.0,
+      "shap_value": -0.17086014330132862
+    }
+  ]
+}

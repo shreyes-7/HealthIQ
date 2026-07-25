@@ -1,0 +1,108 @@
+{
+  "predicted_probability": 0.5067021739243224,
+  "base_rate_probability": 0.00024727871636218493,
+  "predicted_admission": true,
+  "features_that_increased_risk": [
+    {
+      "feature": "CONSULT__Yes",
+      "source_variable": "CONSULT",
+      "feature_value": 1.0,
+      "shap_value": 4.003199544141829
+    },
+    {
+      "feature": "NUMDIS",
+      "source_variable": "NUMDIS",
+      "feature_value": -0.4693230751077467,
+      "shap_value": 2.109913068001126
+    },
+    {
+      "feature": "TOTDIAG",
+      "source_variable": "TOTDIAG",
+      "feature_value": 2.0582446920196293,
+      "shap_value": 1.9052417111558704
+    },
+    {
+      "feature": "COVIDTEST__Yes",
+      "source_variable": "COVIDTEST",
+      "feature_value": 1.0,
+      "shap_value": 0.7538684254166426
+    },
+    {
+      "feature": "IVFLUIDS__Yes",
+      "source_variable": "IVFLUIDS",
+      "feature_value": 1.0,
+      "shap_value": 0.410422170219415
+    },
+    {
+      "feature": "PROC__1",
+      "source_variable": "PROC",
+      "feature_value": 1.0,
+      "shap_value": 0.32794980221619346
+    },
+    {
+      "feature": "TEMPDF",
+      "source_variable": "TEMPDF",
+      "feature_value": -1.3030871701767737,
+      "shap_value": 0.29382170161896876
+    },
+    {
+      "feature": "RESINT__Yes",
+      "source_variable": "RESINT",
+      "feature_value": 1.0,
+      "shap_value": 0.24900558928956626
+    }
+  ],
+  "features_that_decreased_risk": [
+    {
+      "feature": "DIAG1__frequency",
+      "source_variable": "DIAG1",
+      "feature_value": 0.008201836498172417,
+      "shap_value": -1.0536269247210108
+    },
+    {
+      "feature": "AGE",
+      "source_variable": "AGE",
+      "feature_value": -1.3047399517378364,
+      "shap_value": -0.8236821281532687
+    },
+    {
+      "feature": "LOV",
+      "source_variable": "LOV",
+      "feature_value": -0.08618478078664836,
+      "shap_value": -0.39330414372423156
+    },
+    {
+      "feature": "FLUTEST__Yes",
+      "source_variable": "FLUTEST",
+      "feature_value": 1.0,
+      "shap_value": -0.351641021843348
+    },
+    {
+      "feature": "DIAG2__frequency",
+      "source_variable": "DIAG2",
+      "feature_value": 0.005349023803155924,
+      "shap_value": -0.24628478862429753
+    },
+    {
+      "feature": "ARREMS__1",
+      "source_variable": "ARREMS",
+      "feature_value": 0.0,
+      "shap_value": -0.184569488205531
+    },
+    {
+      "feature": "RX2CAT1__frequency",
+      "source_variable": "RX2CAT1",
+      "feature_value": 0.42881340821966657,
+      "shap_value": -0.1663646187037593
+    },
+    {
+      "feature": "WAITTIME",
+      "source_variable": "WAITTIME",
+      "feature_value": 0.12012913213919993,
+      "shap_value": -0.16610751645461833
+    }
+  ],
+  "row_index_in_validation_split": 2213,
+  "actual_label": 1,
+  "selection_reason": "Predicted probability closest to 0.5 -- the model's most uncertain case, most informative for understanding where evidence conflicts."
+}

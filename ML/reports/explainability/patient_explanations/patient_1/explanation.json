@@ -1,0 +1,108 @@
+{
+  "predicted_probability": 0.999865252752666,
+  "base_rate_probability": 0.00024727871636218493,
+  "predicted_admission": true,
+  "features_that_increased_risk": [
+    {
+      "feature": "CONSULT__Yes",
+      "source_variable": "CONSULT",
+      "feature_value": 1.0,
+      "shap_value": 3.18931353700227
+    },
+    {
+      "feature": "NUMDIS",
+      "source_variable": "NUMDIS",
+      "feature_value": -0.4693230751077467,
+      "shap_value": 2.238943759336573
+    },
+    {
+      "feature": "TOTDIAG",
+      "source_variable": "TOTDIAG",
+      "feature_value": 2.912276654179341,
+      "shap_value": 2.020289887078848
+    },
+    {
+      "feature": "BLOODCX__Yes",
+      "source_variable": "BLOODCX",
+      "feature_value": 1.0,
+      "shap_value": 0.9943888926623798
+    },
+    {
+      "feature": "COVIDTEST__Yes",
+      "source_variable": "COVIDTEST",
+      "feature_value": 1.0,
+      "shap_value": 0.6551786436862717
+    },
+    {
+      "feature": "IVFLUIDS__Yes",
+      "source_variable": "IVFLUIDS",
+      "feature_value": 1.0,
+      "shap_value": 0.46865877737004397
+    },
+    {
+      "feature": "MED3__frequency",
+      "source_variable": "MED3",
+      "feature_value": 0.000445751983596327,
+      "shap_value": 0.4605540782525908
+    },
+    {
+      "feature": "CKD__Yes",
+      "source_variable": "CKD",
+      "feature_value": 1.0,
+      "shap_value": 0.41340971559889017
+    }
+  ],
+  "features_that_decreased_risk": [
+    {
+      "feature": "RACEUN__2",
+      "source_variable": "RACEUN",
+      "feature_value": 1.0,
+      "shap_value": -0.27441737476921024
+    },
+    {
+      "feature": "ELECTROL__Yes",
+      "source_variable": "ELECTROL",
+      "feature_value": 1.0,
+      "shap_value": -0.2469442082040448
+    },
+    {
+      "feature": "FLUTEST__Yes",
+      "source_variable": "FLUTEST",
+      "feature_value": 1.0,
+      "shap_value": -0.13613802977173947
+    },
+    {
+      "feature": "IMBED__2",
+      "source_variable": "IMBED",
+      "feature_value": 1.0,
+      "shap_value": -0.1220894108689023
+    },
+    {
+      "feature": "BPDIAS",
+      "source_variable": "BPDIAS",
+      "feature_value": 1.5647386671466177,
+      "shap_value": -0.12123662546282549
+    },
+    {
+      "feature": "TEMPDF",
+      "source_variable": "TEMPDF",
+      "feature_value": 2.0054556898798763,
+      "shap_value": -0.11312184031856402
+    },
+    {
+      "feature": "BPSYSD",
+      "source_variable": "BPSYSD",
+      "feature_value": 1.2001381514759977,
+      "shap_value": -0.10031213557593005
+    },
+    {
+      "feature": "RX1CAT2__frequency",
+      "source_variable": "RX1CAT2",
+      "feature_value": 0.01239190514397789,
+      "shap_value": -0.08574806561521868
+    }
+  ],
+  "row_index_in_validation_split": 1809,
+  "actual_label": 1,
+  "selection_reason": "Highest-confidence correctly-predicted admission -- the clearest positive case."
+}
