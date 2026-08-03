@@ -7,3 +7,6 @@ ipykernel
 pytest
 black
 ruff
+
+# Sprint 4: backend testing (FastAPI TestClient requires httpx).
+httpx

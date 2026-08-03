@@ -21,6 +21,10 @@ Data/processed/
 # Logs
 logs/
 
+# Backend local database
+Backend/*.db
+Backend/*.db-journal
+
 # CatBoost auto-generated training telemetry (regenerates every training run)
 catboost_info/
 

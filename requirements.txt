@@ -19,3 +19,10 @@ catboost
 shap
 statsmodels
 tabulate
+
+# Sprint 4: backend API.
+fastapi
+uvicorn[standard]
+pydantic-settings
+sqlalchemy
+alembic

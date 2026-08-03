@@ -1,18 +1,23 @@
 # TASKS.md
 
-# Sprint 3 - Explainable AI (SHAP)
+# Sprint 4 - Backend Integration
 
 Status: ✅ Complete
 
-Owner: ML Team
+Owner: Backend Team
 
 Goal:
 
-Develop a complete Explainable AI pipeline for the selected Emergency Department admission prediction model using SHAP.
+Build the FastAPI backend that exposes the Sprint 2 production model (`ML/saved_models/model.pkl`) and the
+Sprint 3 explainability layer (`ML/explainability/service.py`) as a versioned REST API, with request
+validation, prediction history persistence, health monitoring, structured logging, and automated tests.
 
-The objective is to generate reliable global and local explanations, validate explanation quality, and prepare explainability artifacts for backend integration, frontend visualization, and research reporting.
+The backend must never train models, never recompute preprocessing logic independently of the Sprint 1
+`PreprocessingPipeline`, and must never return a prediction without an accompanying explanation
+(`CLAUDE.md`: "Explainability is a required feature. Not an optional enhancement.").
 
-This sprint begins only after Sprint 2 has successfully selected and serialized the production model.
+This sprint begins only after Sprint 3 (Explainable AI) and the Survey-Aware Deep Dive have been marked
+complete.
 
 ---
 
@@ -22,9 +27,12 @@ This sprint begins only after Sprint 2 has successfully selected and serialized 
 
 1. Read `CLAUDE.md`.
 2. Read this `TASKS.md`.
-3. Inspect the repository.
-4. Verify Sprint 2 artifacts exist.
-5. Read `Docs/PROJECT_CONTEXT.md` only if additional information is required.
+3. Inspect the repository, in particular `ML/explainability/service.py`, `ML/explainability/artifacts.py`,
+   and `ML/saved_models/`.
+4. Verify Sprint 2 and Sprint 3 artifacts exist (model, preprocessing pipeline, SHAP explainer, feature
+   metadata).
+5. Read `Docs/PROJECT_CONTEXT.md` sections 51–74 (Backend System) and 101–111 (Database System, API Design)
+   only if additional information is required.
 
 ---
 
@@ -32,12 +40,16 @@ This sprint begins only after Sprint 2 has successfully selected and serialized 
 
 1. Work through milestones in order, starting with the first incomplete one.
 2. Never skip milestones.
-3. Reuse preprocessing artifacts.
-4. Reuse the production model selected in Sprint 2.
-5. Never retrain models.
-6. Keep implementations modular.
-7. Produce reusable explainability utilities.
-8. Save every generated visualization and report.
+3. Never train, retrain, or fit any model or preprocessing artifact from the backend — load only.
+4. Reuse `ML/explainability/service.py` (`ExplanationService`, `get_global_explanation`) instead of
+   reimplementing inference or SHAP logic inside `Backend/`.
+5. Keep the ML, Backend, and Frontend boundaries intact — no cross-layer imports beyond the backend
+   consuming `ML/` as a read-only dependency.
+6. Keep implementations modular: routes call services, services call the ML layer and the database, nothing
+   else.
+7. Validate every request before it reaches the prediction/explanation engine.
+8. Externalize all configuration (database URL, model paths, logging level, API version) via environment
+   variables — never hardcode secrets or paths.
 9. Document assumptions and limitations.
 10. Continue automatically to the next milestone without waiting for approval.
 11. Only stop if:
@@ -50,7 +62,7 @@ This sprint begins only after Sprint 2 has successfully selected and serialized 
 ## Before Finishing (per milestone)
 
 1. Verify milestone completion.
-2. Validate generated explanations.
+2. Run the backend test suite for the affected area.
 3. Update milestone status in this file.
 4. Continue to the next milestone immediately — do not stop or wait for review.
 
@@ -59,7 +71,7 @@ This sprint begins only after Sprint 2 has successfully selected and serialized 
 Once every milestone is complete, summarize:
 - Completed work
 - Files created
-- Visualizations generated
+- Endpoints exposed
 - Key observations
 - Limitations
 
@@ -67,33 +79,29 @@ Then stop and wait for review.
 
 ---
 
-# Milestone 1 — Verify Sprint 2 Artifacts
+# Milestone 1 — Verify Artifacts & Scaffold Backend
 
 ## Objectives
 
-Ensure all required assets exist before explainability begins.
+Ensure all required ML assets exist before backend work begins, and lay out the backend project structure.
 
 ### Tasks
 
-- [x] Load preprocessing pipeline
-- [x] Load best trained model — `lightgbm` v1.0.0
-- [x] Load feature metadata — 866 features
-- [x] Load train dataset — (11,217, 873)
-- [x] Load validation dataset — (2,404, 873)
-- [x] Load test dataset — (2,404, 873)
-- [x] Verify feature ordering — train split columns AND the model's own
-  `feature_name_` both match `feature_names.json` exactly
-- [x] Verify preprocessing compatibility — ran the loaded `PreprocessingPipeline`
-  fresh on a raw 50-row sample end-to-end (raw → transform → predict); output
-  feature schema matches the model's expected features exactly, and the model
-  produces predictions with no errors
-
-All 10 checks passed. No model was retrained — everything was loaded, not regenerated.
+- [x] Verify `ML/saved_models/model.pkl`, `preprocessing_pipeline.pkl`, `shap_explainer.pkl`,
+  `feature_names.json`, `model_metadata.json` all load successfully
+- [x] Verify `ML/explainability/service.py` (`ExplanationService`) runs end-to-end on a sample raw record —
+  used a genuinely fresh raw row (row 123), not a precomputed split row
+- [x] Scaffold `Backend/app/` with `api/`, `core/`, `services/`, `schemas/`, `db/`, `models/`, `tests/`
+- [x] Create the FastAPI application entrypoint
+- [x] Add backend runtime dependencies (`fastapi`, `uvicorn`, `sqlalchemy`, `alembic`, `pydantic-settings`,
+  `pytest`, `httpx`) to `requirements.txt` / `requirements-dev.txt`
+- [x] Confirm the app starts locally and serves `/docs` — verified `/`, `/docs`, `/openapi.json` all return
+  200
 
 ### Deliverables
 
-- Explainability Readiness Report — `ML/reports/explainability/explainability_readiness_report.md`
-- `ML/explainability/artifacts.py` — reusable loader module for Milestones 2+
+- Backend Readiness Report — `Backend/reports/artifact_verification_report.md`
+- Initial `Backend/app/` skeleton with a running FastAPI instance
 
 Status
 
@@ -101,32 +109,26 @@ Status
 
 ---
 
-# Milestone 2 — SHAP Integration
+# Milestone 2 — Configuration Management
 
 ## Objectives
 
-Initialize the SHAP explainability framework.
+Externalize all backend configuration.
 
 ### Tasks
 
-- [x] Detect model type — `LGBMClassifier` → tree family
-- [x] Select appropriate SHAP Explainer — `TreeExplainer` (exact, no background sample needed)
-- [x] Initialize explainer
-- [x] Generate SHAP values — on the validation split (held-out, unseen during training)
-- [x] Verify output dimensions — (2404, 866), matches expected exactly
-- [x] Verify runtime performance — 12.84s / 2,404 rows (187 rows/sec, comfortably interactive)
-
-Empirically confirmed (not assumed) that `shap_values` are a single `(n_rows, n_features)`
-array in **margin/log-odds space** for this model+library combo, despite a SHAP UserWarning
-suggesting otherwise — `shap_values.sum(axis=1) + expected_value` reconstructs
-`model.predict(X, raw_score=True)` to within 3e-9. See `ML/explainability/explainer.py` docstring.
+- [x] Define a `Settings` object (environment-variable driven) for database URL, model artifact paths,
+  logging level, application environment, and API version
+- [x] Create `.env.example` documenting required variables without real values
+- [x] Ensure no secrets, credentials, or file paths are hardcoded anywhere in `Backend/`
+- [x] Support distinct configuration for development vs. production — `environment`/`debug` are
+  environment-variable driven, `.env` is git-ignored
 
 ### Deliverables
 
-- SHAP Explainer — `ML/saved_models/shap_explainer.pkl`
-- SHAP Values — `ML/reports/explainability/shap_values_validation.npy`
-- `ML/explainability/explainer.py`, `shap_utils.py`
-- `ML/reports/explainability/shap_integration_report.md`
+- `Backend/app/core/config.py`
+- `.env.example`
+- `Backend/tests/test_config.py`
 
 Status
 
@@ -134,43 +136,33 @@ Status
 
 ---
 
-# Milestone 3 — Global Explainability
+# Milestone 3 — Model & Explainability Service Layer
 
 ## Objectives
 
-Understand overall model behavior.
+Give the backend a single, stateful integration point with the ML subsystem.
 
 ### Tasks
 
-Generate:
-
-- [x] SHAP Summary Plot — top 20 individual encoded features
-- [x] SHAP Bar Plot — mean |SHAP| ranking, same granularity
-- [x] Beeswarm Plot — custom, aggregated **by source variable** (one-hot dummies summed
-  back together) rather than a third near-duplicate per-encoded-feature view; SHAP has no
-  native support for this grouping, built directly with matplotlib
-- [x] Global Feature Importance — both per-encoded-feature and per-source-variable
-- [x] Mean Absolute SHAP Values — `ML/explainability/shap_utils.py`
-
-Document:
-
-- [x] Most influential features — `NUMDIS`, `CONSULT`, `TOTDIAG`, `DIAG1`, `IMMEDR` top 5
-- [x] Least influential features — mostly rare medication-slot fields (`GPMED13-16`, `RX*`
-  detail codes), consistent with Sprint 1's near-zero-variance findings
-- [x] Clinical interpretation — cross-referenced against the data dictionary; **cross-validated
-  against Sprint 2's independent tree-importance/mutual-information ranking** — strong overlap
-  in the top ~10 variables gives real confidence the model leans on clinically plausible signal
-  under two different measurement methods, not an artifact of one method
+- [x] Wrap `ML.explainability.service.ExplanationService` in a backend service (`ExplanationRuntime`) that
+  loads all artifacts once at application startup (FastAPI `lifespan`), not per request
+- [x] Expose a service method for a single-patient prediction + explanation — `predict_and_explain()` adds
+  risk-category and confidence-score business logic on top of the ML layer's raw explanation
+- [x] Expose a service method for the precomputed global explanation
+  (`ML.explainability.service.get_global_explanation`)
+- [x] Verify model compatibility (feature schema, version) on startup; fail startup with a clear error if
+  artifacts are missing or incompatible — `ModelCompatibilityError` compares `model.feature_name_` against
+  `feature_names.json`, covered by a test that injects a mismatch
+- [x] Ensure the backend never retrains, refits, or recomputes SHAP outside of what `ML/explainability`
+  already provides — verified: `ExplanationRuntime` only calls `ExplanationService`/`get_global_explanation`
 
 ### Deliverables
 
-- `ML/reports/explainability/global_explainability_report.md` (markdown, not PDF — every
-  other report in this project is markdown; a PDF toolchain would be a new dependency for
-  one file. Flagged, not silently substituted.)
-- `ML/reports/explainability/visualizations/summary_plot.png`, `bar_plot.png`, `beeswarm_plot.png`
-- `ML/explainability/global_explanations.py` (named `global_explanations.py`, not the sprint
-  plan's literal `global.py` — `global` is a reserved Python keyword; `import global` is a
-  SyntaxError, so that literal filename could never work)
+- `Backend/app/services/prediction_service.py`
+- `Backend/app/services/explanation_service.py`
+- `Backend/app/main.py` — lifespan wiring
+- `Backend/tests/test_explanation_service.py`, `test_prediction_service.py`, `test_main.py` (21 tests
+  passing, full suite)
 
 Status
 
@@ -178,40 +170,81 @@ Status
 
 ---
 
-# Milestone 4 — Local Explainability
+# Milestone 4 — Request/Response Schemas & Validation
 
 ## Objectives
 
-Explain individual patient predictions.
+Ensure no invalid or malformed data reaches the prediction engine.
 
 ### Tasks
 
-Generate (per patient):
-
-- [x] Waterfall Plot
-- [x] Force Plot
-- [x] Decision Plot
-
-Explain:
-
-- [x] Why patient was admitted/not admitted (plain-language JSON + markdown per patient)
-- [x] Which variables increased risk
-- [x] Which variables reduced risk
-
-Test multiple patient examples — **selected programmatically, not hand-picked**, to cover
-genuinely different cases rather than three easy wins:
-- `patient_1`: highest-confidence correctly-predicted admission (P=0.9999)
-- `patient_2`: highest-confidence correctly-predicted discharge (P=0.0000)
-- `patient_3`: the model's most uncertain prediction, closest to the 0.5 decision boundary
-  (P=0.5067) — the most instructive case, since it shows competing evidence (`CONSULT`/`NUMDIS`/
-  `TOTDIAG` pushing toward admission, balanced against a rare diagnosis code and younger age
-  pulling the other way)
+- [x] Define a Pydantic request schema for a patient record covering the fields the
+  `PreprocessingPipeline` expects — **design decision, confirmed with the user**: the pipeline's
+  `transform()` requires all ~900 raw NHAMCS columns to be *present* (several cleaning steps index a
+  fixed learned column list without an existence check — a genuinely missing column raises `KeyError`,
+  not just a null value). Requiring a client to submit ~900 fields would violate the "simple form,
+  minimal effort" product requirement, so the request schema exposes a curated ~18-field clinical
+  subset (demographics, vitals, triage, arrival, and the Sprint 3 top-SHAP workup fields), and a new
+  `Backend/app/services/patient_record_assembler.py` fills every other raw column with null before
+  calling `transform()` — relying on the pipeline's own already-fitted median/"Missing"-category
+  imputation, not new imputation logic. Verified empirically: a record with only the curated fields set
+  produces all 866 expected model features with **zero NaNs**.
+- [x] Added `ML/scripts/generate_raw_schema.py` → `ML/saved_models/raw_schema.json` (913 raw column
+  names) so the backend never needs to load the raw SAS dataset at runtime to know the full column set
+- [x] Validate required fields, data types, allowed value ranges, and reject unexpected fields
+  (`extra="forbid"`)
+- [x] Define response schemas: prediction outcome, admission probability, confidence score, risk category,
+  explanation payload, model version, timestamp
+- [x] Define a consistent error response schema (status, message, details, timestamp) — `SuccessResponse`/
+  `ErrorResponse` envelope per `PROJECT_CONTEXT.md` §60/§110
+- [x] Add unit tests for validation edge cases (missing fields, invalid categories, out-of-range values)
 
 ### Deliverables
 
-- `ML/reports/explainability/patient_explanations/patient_{1,2,3}/` — each with
-  `waterfall_plot.png`, `force_plot.png`, `decision_plot.png`, `explanation.json`, `README.md`
-- `ML/explainability/local_explanations.py`
+- `Backend/app/schemas/patient.py`, `Backend/app/schemas/prediction.py`, `Backend/app/schemas/common.py`
+- `Backend/app/services/patient_record_assembler.py`
+- `ML/scripts/generate_raw_schema.py`, `ML/saved_models/raw_schema.json`
+- `Backend/tests/test_patient_schema.py`, `test_prediction_schema.py`, `test_common_schema.py`,
+  `test_patient_record_assembler.py` (47 tests passing, full suite)
+
+Status
+
+✅ Complete
+
+Note: coded fields (`sex`, `race_ethnicity`, `triage_level`) are passed through as raw NHAMCS codebook
+values rather than human-readable enums — the codebook layout file documents field names, not the
+value-label tables, and guessing a Yes/No or category orientation wrong in a healthcare context was
+judged riskier than shipping raw codes with descriptive `Field` docs. Flagged as future work once the
+value-label tables are confirmed (likely a Frontend-sprint concern, since the frontend is what needs
+human-readable choices).
+
+---
+
+# Milestone 5 — Prediction & Explainability API
+
+## Objectives
+
+Expose the core versioned REST endpoints.
+
+### Tasks
+
+- [x] `POST /api/v1/predict` — validate input, invoke the prediction service, return prediction +
+  probability + confidence + risk category + explanation in one response (per `CLAUDE.md`, no prediction
+  without explanation)
+- [x] `GET /api/v1/explain/global` — return the precomputed global explanation
+- [x] Routes contain no business logic — receive request, validate, call service, return response only
+- [x] Return appropriate HTTP status codes for success (200), validation failure (422 — verified for
+  missing required fields, out-of-range values, and unexpected fields)
+- [x] Add API-level tests using `TestClient` / `httpx`
+- [x] Live-verified with a running `uvicorn` server + `curl`, not just `TestClient` — both endpoints
+  return correct, well-formed JSON
+
+### Deliverables
+
+- `Backend/app/api/v1/predict.py`, `Backend/app/api/v1/explain.py`, `Backend/app/api/v1/__init__.py`
+  (aggregates the versioned router, mounted in `Backend/app/main.py` under `settings.api_prefix`)
+- `Backend/app/schemas/explanation.py`
+- `Backend/tests/test_predict_api.py`, `Backend/tests/test_explain_api.py` (54 tests passing, full suite)
 
 Status
 
@@ -219,39 +252,37 @@ Status
 
 ---
 
-# Milestone 5 — Dependence Analysis
+# Milestone 6 — Database Integration & Prediction History
 
 ## Objectives
 
-Understand feature interactions.
+Persist operational data without touching the NHAMCS dataset or ML artifacts.
 
 ### Tasks
 
-Generate SHAP Dependence Plots for:
-
-- [x] Top Feature — `NUMDIS`
-- [x] Second Feature — `CONSULT__Yes`
-- [x] Third Feature — `TOTDIAG`
-- [x] Additional important variables — 5 more, prioritizing continuous features over one-hot
-  dummies (which only show two point clouds, not a traceable curve): `DIAG1__frequency`, `LOV`,
-  `AGE`, `DIAG2__frequency`, `DRUGID2__frequency`
-
-Identify:
-
-- [x] Nonlinear effects — **`AGE`**: flat-to-slightly-negative contribution for younger/middle-aged
-  patients, then a clear nonlinear upward inflection for older patients — consistent with real
-  clinical knowledge about elderly admission risk
-- [x] Threshold effects — see `AGE` above; also documented per-feature in the report via a
-  raw-value/SHAP-value correlation check (low correlation flags a non-monotonic relationship
-  worth looking at the actual plot for)
-- [x] Feature interactions — each plot auto-colored by SHAP's chosen interaction feature
-  (e.g. `AGE` colored by `CONSULT__Yes`)
+- [x] Define SQLAlchemy models for prediction history (prediction id, timestamp, model version,
+  probability, outcome, confidence, processing time) — **scoped to match PROJECT_CONTEXT.md §64's field
+  list exactly**: raw patient input (age/vitals/etc.) is deliberately NOT persisted, only the prediction
+  outcome and an "explanation reference" (`top_contributing_features`, the top 3 increased/decreased-risk
+  SHAP features as JSON), consistent with CLAUDE.md's "never log/store sensitive information"
+- [x] Set up Alembic migrations — initialized under `Backend/alembic/` (kept inside `Backend/` rather
+  than the repo root, so the backend subsystem stays self-contained); `env.py` reads the database URL from
+  `Settings` (never hardcoded) and targets `Base.metadata`
+- [x] Add a database session/connection layer, configurable via `Settings`
+- [x] Persist a record on every successful `/api/v1/predict` call, in the service layer — not in the route
+- [x] Add a read endpoint for prediction history (`GET /api/v1/predictions`, most-recent-first, limit
+  configurable and capped)
+- [x] Add database tests (using a test database/SQLite) — an isolated in-memory DB for `history_service`
+  unit tests, plus a session-scoped fixture that runs `Base.metadata.create_all()` so the full suite is
+  self-contained and doesn't depend on `alembic upgrade head` having been run manually first
 
 ### Deliverables
 
-- `ML/reports/explainability/dependence_plots/` (8 plots)
-- `ML/reports/explainability/dependence_analysis_report.md`
-- `ML/explainability/dependence.py`
+- `Backend/app/db/session.py`, `Backend/app/db/base.py`, `Backend/app/models/prediction.py`
+- `Backend/alembic.ini`, `Backend/alembic/env.py`, `Backend/alembic/versions/*_create_prediction_history_table.py`
+- `Backend/app/services/history_service.py`
+- `Backend/app/schemas/history.py`, `Backend/app/api/v1/predictions.py`
+- `Backend/tests/test_history.py`, `Backend/tests/test_predictions_api.py` (60 tests passing, full suite)
 
 Status
 
@@ -259,45 +290,30 @@ Status
 
 ---
 
-# Milestone 6 — Cohort Analysis
+# Milestone 7 — Health Monitoring & Error Handling
 
 ## Objectives
 
-Compare explanations across patient groups.
+Make the backend observable and fail gracefully.
 
 ### Tasks
 
-Generate explanations by:
-
-- [x] Admission vs Discharge
-- [x] Age groups
-- [x] Gender
-- [x] Arrival mode
-- [x] Triage level
-
-Categories reconstructed from their one-hot encoded columns using the encoder's own saved
-reference-category metadata (generic, not hand-listed per variable) — see
-`ML/explainability/cohort.py`.
-
-Compare:
-
-- [x] Feature importance (top 5 by mean \|SHAP\| per group, all group sizes verified to sum
-  exactly to the 2,404-row validation split)
-- [x] SHAP distributions — boxplot of total \|SHAP\| per row, per group
-
-**Findings**: the top 3 features (`NUMDIS`, `CONSULT`, `TOTDIAG`) are consistent across nearly
-every cohort — the model applies the same core reasoning regardless of subgroup, not a
-different process per group. Two genuine, clinically plausible exceptions stood out: `AGE`
-enters the top-5 ranking only for the `older_adult_65_plus` cohort (mean P(admit) 0.277, highest
-of any age group), and ambulance-arrival patients (`arrival_mode=1`) show 3x the mean predicted
-admission probability of other arrival modes (0.279 vs. 0.085).
+- [x] `GET /health` — application liveness
+- [x] `GET /health/model` — confirms model + explainer are loaded (503 `ModelUnavailableError` if not)
+- [x] `GET /health/db` — confirms database connectivity (503 `DatabaseUnavailableError` if not)
+- [x] Global exception handlers for validation errors, prediction errors, database errors, and unhandled
+  errors — every error returns the common `ErrorResponse` envelope without leaking stack traces or
+  internal paths. `RequestValidationError` (422), `AppError` subclasses (`ModelUnavailableError`,
+  `DatabaseUnavailableError`, `PredictionError` — 503/500), `StarletteHTTPException` (404 etc.), and a
+  catch-all `Exception` handler (500) all funnel through the same envelope
+- [x] Tests covering each health endpoint and each error category — including simulated ML and database
+  failures via monkeypatching, verified the response never contains "traceback" or an internal path
 
 ### Deliverables
 
-- Cohort Explainability Report — `ML/reports/explainability/cohort_analysis_report.md`,
-  `cohort_analysis.json`
-- `ML/reports/explainability/cohort_plots/` (5 distribution boxplots)
-- `ML/explainability/cohort.py`
+- `Backend/app/api/health.py`
+- `Backend/app/core/exceptions.py`
+- `Backend/tests/test_health.py`, `Backend/tests/test_error_handling.py` (68 tests passing, full suite)
 
 Status
 
@@ -305,40 +321,26 @@ Status
 
 ---
 
-# Milestone 7 — Explanation Validation
+# Milestone 8 — Logging
 
 ## Objectives
 
-Ensure explanations are reliable.
+Provide structured, non-sensitive logging.
 
 ### Tasks
 
-Verify:
-
-- [x] SHAP values reproduce predictions — checked on the FULL validation split (2,404 rows,
-  not a sample): max abs diff 1.55e-9 (machine precision)
-- [x] Feature ordering consistency — SHAP array width, `feature_names.json` length, and the
-  features DataFrame's column order all match exactly
-- [x] Explanation stability — recomputed SHAP for the same 100 rows twice: **exactly bit-identical**
-  (0.0 diff), confirming `TreeExplainer`'s tree-path-dependent algorithm is deterministic, not
-  sampling-based
-- [x] No preprocessing mismatch — re-ran the Milestone 1 raw→pipeline→model check fresh
-- [x] No missing SHAP values — 0 NaN across all 2,081,864 computed values
-
-**All 5 checks PASS.**
-
-Document limitations:
-
-- [x] These checks validate SHAP's internal mathematical consistency with the model and the
-  preprocessing handoff — they do NOT validate that the underlying model is clinically correct
-  or unbiased (a separate, ongoing concern, partially addressed by the cross-checks in
-  Milestones 3 and 6, not resolved by this milestone alone). Documented explicitly in the report
-  rather than implied by an all-green checklist.
+- [x] Configure structured logging for application startup/shutdown, model loading, prediction requests,
+  and errors — `configure_logging()`/`get_logger()` under a single `healthiq.backend` logger namespace,
+  shared by `main.py`'s lifespan, `predict.py`'s request logging, and `core/exceptions.py`'s error logging
+- [x] Ensure no patient-identifiable or sensitive data is logged — the prediction log line only records
+  `model_version`, `risk_category`, `admission_probability`, and `processing_time_ms`; verified with a test
+  that asserts submitted vitals (e.g. temperature, systolic BP) never appear in the log record
+- [x] Make log level configurable via `Settings`
 
 ### Deliverables
 
-- Validation Report — `ML/reports/explainability/explanation_validation_report.md`
-- `ML/explainability/validation.py`
+- `Backend/app/core/logging.py`
+- `Backend/tests/test_logging.py` (70 tests passing, full suite)
 
 Status
 
@@ -346,43 +348,36 @@ Status
 
 ---
 
-# Milestone 8 — Explainability API Preparation
+# Milestone 9 — API Documentation & Test Suite
 
 ## Objectives
 
-Prepare reusable utilities for backend.
+Ensure the API is documented and verified end-to-end.
 
 ### Tasks
 
-Create reusable modules:
-
-- [x] SHAP Loader — `ML/explainability/artifacts.py` (`load_shap_explainer`, `load_shap_expected_value`)
-- [x] Explanation Generator — `ExplanationService.explain_patient()` — takes a **fresh raw
-  record** (never seen before), runs the full raw → `PreprocessingPipeline` → model → SHAP chain
-- [x] Global Explanation Service — `get_global_explanation()`, serves Milestone 3's precomputed
-  artifact rather than recomputing per call
-- [x] Local Explanation Service — `ExplanationService.explain_by_split_row()`, quick lookup for
-  an existing split row
-- [x] Visualization Export Utility — `ML/explainability/export.py` (JSON + PNG)
-
-Outputs:
-
-- [x] JSON explanations
-- [x] PNG plots
-- [x] Metadata
-
-**End-to-end verified, not just defined**: tested `explain_patient()` on a genuinely fresh raw
-row (row 15000, loaded directly from the raw dataset, never explained by any earlier milestone).
-`ExplanationService()` loads all artifacts once in 0.28s; `explain_patient()` per call is 1.2s —
-flagged as borderline for a truly interactive API (mostly the cleaning pipeline's per-row
-overhead, not SHAP itself, which runs at 187 rows/sec in bulk per Milestone 2) — worth a
-follow-up if sub-200ms latency is required.
+- [x] Add descriptions, request/response examples, and error response documentation to every endpoint for
+  the automatic OpenAPI docs — summaries, descriptions, and `responses={...}` documenting the error
+  envelope added to every route; example payloads added to `PatientRecordRequest`/`PredictionResponse`
+- [x] Run the full backend `pytest` suite (unit, schema, API, database, health) and confirm all pass —
+  **70/70 passing**
+- [x] Run one genuinely fresh raw patient record through `POST /api/v1/predict` against the running app to
+  confirm the live path works end-to-end, not just the test suite — row 15428 of the raw dataset, selected
+  programmatically (filtered to non-sentinel values), never used by any prior milestone/test; verified
+  live against a running `uvicorn` server, including that the prediction was persisted and retrievable via
+  `GET /api/v1/predictions`
+- [x] Document any latency or performance limitations (see Sprint 3 Milestone 8's ~1.2s explanation latency
+  note) in the backend readiness report — **finding**: measured latency this sprint is consistently
+  ~2.3-2.6s, roughly double Sprint 3's figure. Root-caused as far as this sprint's scope allows: verified
+  the curated-subset/auto-fill design is NOT the cause (a fully-populated real row is exactly as slow as
+  the mostly-null assembled row, and the regression reproduces in a single call in a fresh process).
+  Flagged as an open follow-up for the ML subsystem, not silently dropped and not fixed here since
+  root-causing SHAP/LightGBM performance is outside this sprint's backend-only scope.
 
 ### Deliverables
 
-- `ML/explainability/service.py`, `export.py`
-- `ML/reports/explainability/explainability_api_report.md`
-- `ML/reports/explainability/api_check_example/` (example JSON + PNG output)
+- `Backend/reports/backend_readiness_report.md`
+- Full `Backend/tests/` suite passing (70/70)
 
 Status
 
@@ -390,201 +385,115 @@ Status
 
 ---
 
-# Milestone 9 — Research Documentation
+# Milestone 10 — Ready for Frontend Integration
 
-## Objectives
+Sprint 4 is complete when:
 
-Prepare explainability outputs for publication.
+- [x] REST APIs are fully functional — `/predict`, `/explain/global`, `/predictions`, `/health*`, live- and
+  test-verified
+- [x] Requests are validated correctly — 422 on missing/invalid/unexpected fields
+- [x] Predictions are generated successfully, always with an explanation — single response shape, no
+  prediction-only path exists
+- [x] Explainability data is returned — per-prediction (SHAP) and global (precomputed)
+- [x] Errors are handled gracefully — categorized, common envelope, no leaked internals
+- [x] Logging is implemented — startup/shutdown/model-load/prediction/error, no sensitive data
+- [x] Configuration is externalized — `Settings` + `.env.example`, nothing hardcoded
+- [x] Database integration works (prediction history persists and is retrievable) — Alembic-managed
+  schema, verified via a live round trip
+- [x] API documentation is available and accurate — OpenAPI summaries/descriptions/examples on every
+  endpoint
+- [x] The backend can communicate with the ML subsystem without direct coupling, and is ready for the
+  Frontend to consume it — only touches `ML.explainability.service`/`ML.explainability.artifacts`, never
+  ML training/preprocessing internals directly
 
-### Tasks
-
-Generate (synthesized from Milestones 3-8's already-computed artifacts — nothing recomputed,
-so the report cannot drift from what Milestone 7 actually validated):
-
-- [x] Feature Importance Table — top 20 source variables with data-dictionary labels
-- [x] Global Interpretation Report — cross-validated against Sprint 2's independent
-  tree-importance ranking; documents `AGE`'s nonlinear effect
-- [x] Local Interpretation Report — synthesizes the 3 patient cases from Milestone 4
-- [x] Clinical Findings — 4 findings pulled directly from `cohort_analysis.json`
-  (admission-status separation, elderly-cohort age sensitivity, ambulance-arrival risk, and
-  cross-cohort consistency)
-- [x] Limitations — 5 documented (SHAP explains the model not medical reality; one-hot
-  fragmentation, corrected for; validation scope; API latency; tree-path-dependent
-  perturbation's correlated-feature caveat)
-- [x] Future Work — 5 items (SHAP interaction values, fairness audit, backend integration,
-  drift monitoring, survey-aware explanation comparison)
-
-### Deliverables
-
-- Explainability Report — `ML/reports/explainability/explainability_research_report.md`
+All 10 checks pass. See `Backend/reports/backend_readiness_report.md`.
 
 Status
 
-✅ Complete
-
----
-
-# Milestone 10 — Ready for Backend Integration
-
-Sprint 3 is complete when:
-
-- [x] SHAP integrated
-- [x] Global explanations generated
-- [x] Local explanations generated
-- [x] Dependence analysis completed
-- [x] Cohort analysis completed
-- [x] Explanations validated
-- [x] Explainability utilities created
-- [x] JSON outputs generated
-- [x] Reports completed
-- [x] Ready for FastAPI integration — verified with a live call, not just a file check:
-  `ExplanationService().explain_patient()` run end-to-end on a genuinely fresh raw row
-
-All 10 checks pass. See `ML/reports/explainability/ready_for_backend_integration.md`.
-
-Status
-
-✅ READY — Sprint 3 is complete.
+✅ READY — Sprint 4 is complete.
 
 ---
 
 # Sprint Deliverables
 
-Actual repository layout (two filenames deviate from the sprint plan's literal names —
-`global.py`/`local.py` — documented at Milestone 3/4: `global` is a reserved Python keyword,
-so `import global` is a SyntaxError and that literal filename could never have worked):
+```
+Backend/
+├── alembic.ini
+├── alembic/
+│   ├── env.py
+│   └── versions/*_create_prediction_history_table.py
+├── app/
+│   ├── api/
+│   │   ├── health.py                  (Milestone 7)
+│   │   └── v1/
+│   │       ├── __init__.py             (aggregates the versioned router)
+│   │       ├── predict.py
+│   │       ├── explain.py
+│   │       └── predictions.py
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── logging.py                 (Milestone 8)
+│   │   └── exceptions.py              (Milestone 7)
+│   ├── services/
+│   │   ├── prediction_service.py
+│   │   ├── explanation_service.py
+│   │   ├── patient_record_assembler.py
+│   │   └── history_service.py
+│   ├── schemas/
+│   │   ├── patient.py
+│   │   ├── prediction.py
+│   │   ├── explanation.py
+│   │   ├── history.py
+│   │   └── common.py
+│   ├── db/
+│   │   ├── base.py
+│   │   └── session.py
+│   ├── models/
+│   │   └── prediction.py
+│   └── main.py
+├── tests/
+└── reports/
+    ├── artifact_verification_report.md   (Milestone 1)
+    └── backend_readiness_report.md        (Milestone 9)
+```
+
+ML/ additions supporting the backend (Sprint 4, not Sprint 3):
 
 ```
-ML/explainability/
-├── artifacts.py          (SHAP/model/pipeline/split loaders)
-├── explainer.py           (model-type detection, TreeExplainer setup, SHAP value computation)
-├── shap_utils.py           (sigmoid, source-variable aggregation, per-row explanation builder)
-├── global_explanations.py  (Milestone 3 — was "global.py" in the plan; see note above)
-├── local_explanations.py   (Milestone 4)
-├── dependence.py            (Milestone 5)
-├── cohort.py                (Milestone 6)
-├── validation.py            (Milestone 7)
-├── service.py                (Milestone 8 — ExplanationService, get_global_explanation)
-└── export.py                 (Milestone 8 — JSON/PNG export)
-
-ML/reports/explainability/
-├── explainability_readiness_report.md, shap_integration_report.md
-├── global_explainability_report.md, visualizations/{summary,bar,beeswarm}_plot.png
-├── patient_explanations/patient_{1,2,3}/{waterfall,force,decision}_plot.png + explanation.json + README.md
-├── dependence_analysis_report.md, dependence_plots/ (8 plots)
-├── cohort_analysis_report.md, cohort_analysis.json, cohort_plots/ (5 plots)
-├── explanation_validation_report.md
-├── explainability_api_report.md, api_check_example/
-├── explainability_research_report.md
-└── ready_for_backend_integration.md
-
-ML/saved_models/shap_explainer.pkl
-ML/tests/test_shap_utils.py (+5 tests; full suite: 55/55 passing)
+ML/scripts/generate_raw_schema.py
+ML/saved_models/raw_schema.json
 ```
-
-Note: reports are markdown, not PDF (`explainability_report.pdf`/`validation_report.pdf` in
-the original plan) — every other report in this project is markdown; a PDF toolchain would be
-a new dependency for this alone. Same substitution already made and flagged for Sprint 1's EDA
-notebook request.
 
 Generated Artifacts
 
-- SHAP Explainer & Values
-- Global Report (+ 3 visualizations)
-- Local Reports (3 patients x 3 plot types + JSON + README)
-- Dependence Analysis Report (+ 8 plots)
-- Cohort Report (+ 5 plots, JSON)
-- Validation Report (5/5 checks pass)
-- Explainability Utilities (`service.py`, `export.py` — live-tested, not just defined)
-- Research Report (feature importance table, clinical findings, limitations, future work)
-- Backend Integration Readiness Gate
+- FastAPI application (versioned `/api/v1` routes)
+- Prediction + Explanation endpoint, with a curated-subset request schema and full-raw-record
+  assembler (`PatientRecordAssembler`)
+- Database schema + Alembic migrations for prediction history
+- Health monitoring endpoints (liveness, model, database)
+- Structured logging (no sensitive data)
+- Categorized error handling with a consistent response envelope
+- Backend test suite (70/70 passing)
+- Backend Readiness Report + Artifact Verification Report
 
 ---
 
 # Sprint Status
 
-**Progress: 10/10 milestones complete. Sprint 3 (Explainable AI) is DONE.**
+**Progress: 10/10 milestones complete. Sprint 4 (Backend Integration) is DONE.**
 
-Selected model (`lightgbm`) is confirmed explainable end-to-end: raw patient record →
-`PreprocessingPipeline` → model → SHAP → plain-language explanation, validated to reconstruct
-actual predictions to within 1.5e-9 and reproduce bit-identically across runs. One caught issue
-along the way: a draft "consistent with Sprint 2" claim in the global-explainability report was
-verified against the actual computed ranking before being kept (see Milestone 3) rather than
-asserted from memory. One real limitation flagged for follow-up, not glossed over: per-request
-explanation latency (~1.2s) is borderline for a truly interactive API (Milestone 8/9).
-
-**Post-sprint addition**: per standing user preference (see `ML/notebooks/eda_report.ipynb`
-from Sprint 1), two more presentation-layer notebooks were added after this sprint was marked
-complete — `ML/notebooks/model_development_report.ipynb` (Sprint 2) and
-`ML/notebooks/explainability_report.ipynb` (Sprint 3). Both import/load already-computed
-artifacts only (experiment log, SHAP values, cohort JSON) — no retraining, no SHAP
-recomputation — and were executed end-to-end (`jupyter nbconvert --execute`) with all values
-cross-checked against the existing markdown reports before being considered done.
-
----
-
-# Post-Sprint 3 Addition — Survey-Aware Deep Dive
-
-Status: ✅ Complete
-
-Owner: ML Team
-
-Goal:
-
-Close a gap identified after Sprint 3 was marked complete: this project's stated primary
-research contribution (`Docs/PROJECT_CONTEXT.md` §44, survey-aware prediction using NHAMCS's
-`PATWT` sample weights) had only ever been tested with a first-pass Logistic Regression
-(`ML/modeling/survey_aware.py`, Sprint 2) — never on the actual production LightGBM model, never
-connected to SHAP explainability, and with no fairness audit at all. This work item runs the full
-comparison — performance, explanations, and fairness — on the production model.
-
-### Tasks
-
-- [x] Fit a survey-weighted LightGBM using the exact production hyperparameters (from
-  `experiment_log.json`) plus `sample_weight=PATWT`; evaluate against the existing unweighted
-  `model.pkl` (not refit) on validation + test splits — `ML/modeling/survey_aware_lightgbm.py`,
-  `ML/scripts/run_survey_aware_lightgbm.py`
-- [x] Compute SHAP values for the weighted model (same `TreeExplainer` approach as Sprint 3),
-  compare global importance rankings against the unweighted model via Spearman rank correlation
-  and top-20 overlap — `ML/explainability/survey_aware_shap.py`
-- [x] Per-patient explanation comparison (the same 3 patients from Sprint 3 Milestone 4) plus a
-  systematic decision-flip-rate analysis across the full validation split (not just anecdotal
-  examples) — `ML/scripts/run_survey_aware_shap_comparison.py`
-- [x] Fairness audit across race/ethnicity (`RACERETH`, verified against the NCHS codebook, not
-  assumed) for both models: selection rate, true positive rate, false positive rate, per-group
-  ROC-AUC, and max-min disparity gaps — `ML/explainability/fairness.py`,
-  `ML/scripts/run_fairness_audit.py`
-- [x] Consolidated summary tying the three pieces together — `ML/scripts/run_survey_aware_summary.py`
-- [x] Unit tests for all new pure functions (10 tests; full suite now 65/65 passing) —
-  `ML/tests/test_survey_aware_deep_dive.py`
-- [x] Companion presentation-layer notebook, same pattern as the three Sprint 1-3 notebooks
-  (loads precomputed artifacts only, no recomputation, executed end-to-end via
-  `jupyter nbconvert --execute`) — `ML/notebooks/survey_aware_deep_dive_report.ipynb`
-
-**Findings**: validation/test ROC-AUC drop by 0.0022/0.0030 under weighting — small, expected,
-and far smaller than Sprint 2's Logistic Regression comparison. SHAP rankings are stable
-(Spearman 0.9725, 18/20 top-feature overlap); only 47/2404 (1.96%) validation predictions flip
-across the 0.5 threshold, concentrated near the decision boundary (mean distance 0.166 for
-flipped vs. 0.481 for non-flipped). The fairness audit found 3 of 4 disparity metrics
-(selection rate, true positive rate, false positive rate) narrow under weighting, while the
-per-group ROC-AUC gap widens slightly — read as suggestive on a single validation split, not
-statistically certified (no bootstrap confidence intervals).
-
-### Deliverables
-
-- `ML/saved_models/model_survey_weighted.pkl`
-- `ML/reports/survey_aware_deep_dive/` — `weighted_vs_unweighted_lightgbm.md`,
-  `shap_comparison_report.md`, `fairness_audit_report.md`, `summary.md` (+ matching `.json` files
-  and `figures/`)
-- `ML/notebooks/survey_aware_deep_dive_report.ipynb`
-- `ML/tests/test_survey_aware_deep_dive.py`
-
-Status
-
-✅ Complete
-
----
+The backend serves the Sprint 2 production model and Sprint 3 explainability layer end-to-end:
+patient record in → validated → assembled into the full raw schema → `PreprocessingPipeline` →
+model → SHAP → prediction + explanation out → persisted to prediction history — verified live
+against a running server with a genuinely fresh raw dataset row (row 15428), not just the test
+suite. One design fork was surfaced and resolved with the user rather than guessed (Milestone 4):
+the pipeline's hard requirement for all ~900 raw columns to be present led to a curated ~18-field
+request schema plus a full-record assembler, instead of either exposing all raw columns or
+silently under-scoping the API. One open issue was found and documented, not silently dropped:
+per-prediction latency measured this sprint (~2.3-2.6s) is roughly double Sprint 3's reported
+figure, root-caused as far as backend-only scope allows (confirmed NOT caused by the
+curated-subset design) and flagged as ML-subsystem follow-up work.
 
 Current Task:
-Sprint 3 and the Survey-Aware Deep Dive are both complete. Ready for Sprint 4 (Backend
-Integration) — awaiting instruction to begin.
+
+Sprint 4 is complete. Ready for Sprint 5 (Frontend Integration) — awaiting instruction to begin.
