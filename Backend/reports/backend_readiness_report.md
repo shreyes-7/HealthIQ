@@ -98,6 +98,12 @@ within the request).
   available in this repository documents field names, not value-label tables, and guessing the
   Yes/No or category orientation wrong was judged riskier than shipping raw codes with descriptive
   `Field` docs. Frontend-sprint follow-up once the value-label tables are confirmed.
+  **Resolved in Sprint 5**: confirmed via `pdftotext` against
+  `Data/documents/technical Documentation.pdf` — `SEX` 1=Female/2=Male, `RACERETH`
+  1=Non-Hispanic White/2=Non-Hispanic Black/3=Hispanic/4=Non-Hispanic Other, `IMMEDR` (triage)
+  1=Immediate/2=Emergent/3=Urgent/4=Semi-urgent/5=Non-urgent. `Backend/app/schemas/patient.py`
+  updated with the confirmed labels in its `Field` descriptions (wire format unchanged — only the
+  documentation and the frontend's dropdown option text needed the labels).
 - Prediction history intentionally does not store the patient's submitted input (age/vitals/etc.),
   only the prediction outcome and a small "explanation reference" — matches
   `PROJECT_CONTEXT.md` §64's field list and CLAUDE.md's "never log/store sensitive information."

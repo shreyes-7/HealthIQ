@@ -16,18 +16,27 @@ fitted median / "Missing"-category imputation the pipeline already applies
 to any other missing value -- no separate imputation logic is introduced
 here.
 
-Coded fields (sex, race_ethnicity, triage_level) are passed through using
-the raw NHAMCS codebook values (`Data/documents/ed22inp.txt`) rather than
-translated to human-readable labels: the layout file documents field
-*names*, not the value-label tables, and the value-label PDF was not
-authoritative enough to risk a wrong mapping in a healthcare context.
-Translating these into human-readable choices is Frontend's job in a
-later sprint, once the value labels are confirmed.
+Coded fields (sex, race_ethnicity, triage_level) are passed through as raw
+NHAMCS codebook integers rather than as strings -- translating them to the
+human-readable labels below is presentation logic (dropdown option text),
+which belongs in the Frontend, not in this request contract. The wire
+format doesn't need to change for that; only the frontend form needs the
+label text. Value labels confirmed against
+`Data/documents/technical Documentation.pdf` (via `pdftotext`, not
+guessed) in Sprint 5:
 
-`arrived_by_ambulance` and `consult_requested` are the two fields
-confidently mapped to booleans: NHAMCS consistently uses this 1=Yes/2=No
-(or 0=No/1=Yes) convention for simple indicator fields across the
-codebook, unlike the multi-category coded fields above.
+    SEX (sex):            1 = Female, 2 = Male
+    RACERETH (race_ethnicity): 1 = Non-Hispanic White, 2 = Non-Hispanic Black,
+                                3 = Hispanic, 4 = Non-Hispanic Other
+    IMMEDR (triage_level): 1 = Immediate, 2 = Emergent, 3 = Urgent,
+                            4 = Semi-urgent, 5 = Non-urgent
+                            (0 = visit had no triage / 7 = ESA does not
+                            conduct nursing triage -- not accepted here,
+                            since this schema only models the 5-point scale)
+
+`arrived_by_ambulance` (ARREMS: 1=Yes, 2=No) and `consult_requested`
+(CONSULT: 0=No, 1=Yes) were already confidently mapped to booleans in
+Sprint 4 and are now independently confirmed by the same codebook check.
 """
 
 from typing import Literal
@@ -67,9 +76,13 @@ class PatientRecordRequest(BaseModel):
 
     # Demographics
     age: int = Field(..., ge=0, le=120, description="Patient age in years.")
-    sex: Literal[1, 2] = Field(..., description="NHAMCS SEX code (1 or 2, per the NHAMCS codebook).")
+    sex: Literal[1, 2] = Field(..., description="NHAMCS SEX code: 1 = Female, 2 = Male.")
     race_ethnicity: Literal[1, 2, 3, 4] | None = Field(
-        None, description="NHAMCS RACERETH code (1-4: combined race/ethnicity classification)."
+        None,
+        description=(
+            "NHAMCS RACERETH code: 1 = Non-Hispanic White, 2 = Non-Hispanic Black, "
+            "3 = Hispanic, 4 = Non-Hispanic Other."
+        ),
     )
 
     # Vitals
@@ -81,7 +94,12 @@ class PatientRecordRequest(BaseModel):
     pulse_oximetry_percent: int | None = Field(None, ge=0, le=100, description="Pulse oximetry, percent oxygen saturation.")
 
     # Visit / triage / arrival
-    triage_level: int = Field(..., ge=1, le=5, description="NHAMCS IMMEDR triage acuity, 1 (immediate) to 5 (non-urgent).")
+    triage_level: int = Field(
+        ...,
+        ge=1,
+        le=5,
+        description="NHAMCS IMMEDR triage acuity: 1 = Immediate, 2 = Emergent, 3 = Urgent, 4 = Semi-urgent, 5 = Non-urgent.",
+    )
     arrived_by_ambulance: bool = Field(..., description="Whether the patient arrived by ambulance.")
     wait_time_minutes: int | None = Field(None, ge=0, description="Minutes from arrival to being seen by a provider.")
     length_of_visit_minutes: int | None = Field(None, ge=0, description="Total ED length of visit, in minutes.")

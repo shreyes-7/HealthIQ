@@ -28,9 +28,17 @@ class Settings(BaseSettings):
 
     log_level: str = "INFO"
 
+    # Comma-separated list of origins allowed to call this API cross-origin.
+    # Defaults cover Vite's default dev server ports (5173 CRA-less Vite, 4173 preview).
+    cors_allowed_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+
     @property
     def api_prefix(self) -> str:
         return f"/api/{self.api_version}"
+
+    @property
+    def cors_allowed_origins_list(self) -> list[str]:
+        return [origin.strip() for origin in self.cors_allowed_origins.split(",") if origin.strip()]
 
 
 @lru_cache

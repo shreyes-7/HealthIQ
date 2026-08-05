@@ -31,3 +31,6 @@ catboost_info/
 # OS
 .DS_Store
 Thumbs.db
+
+TASKS.md
+CLAUDE.md
