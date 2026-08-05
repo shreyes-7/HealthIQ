@@ -2,6 +2,13 @@ import '@testing-library/jest-dom/vitest'
 import { cleanup } from '@testing-library/react'
 import { afterEach } from 'vitest'
 
+// Polyfill for undici/jsdom compatibility in Node test workers
+if (typeof globalThis.webidl === 'undefined') {
+  globalThis.webidl = { util: { markAsUncloneable: (o) => o } }
+} else if (globalThis.webidl.util && typeof globalThis.webidl.util.markAsUncloneable !== 'function') {
+  globalThis.webidl.util.markAsUncloneable = (o) => o
+}
+
 // With `globals: false` (vite.config.js), React Testing Library's automatic
 // afterEach cleanup can't hook into Vitest's global afterEach -- without
 // this, unmounted components from a previous test stay in the DOM and

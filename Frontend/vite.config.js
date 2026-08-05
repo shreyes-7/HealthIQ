@@ -3,6 +3,13 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
+// Polyfill webidl for undici / jsdom compatibility in Node environment
+if (typeof globalThis.webidl === 'undefined') {
+  globalThis.webidl = { util: { markAsUncloneable: (o) => o } }
+} else if (globalThis.webidl.util && typeof globalThis.webidl.util.markAsUncloneable !== 'function') {
+  globalThis.webidl.util.markAsUncloneable = (o) => o
+}
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],

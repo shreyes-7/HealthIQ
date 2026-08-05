@@ -9,6 +9,7 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { formatPercentage } from '@/utils/formatPercentage'
+import { formatTimestamp } from '@/utils/formatTimestamp'
 
 function SortableHead({ label, sortKey, sortState, onSortChange, className }) {
   if (!onSortChange) {
@@ -32,14 +33,6 @@ function SortableHead({ label, sortKey, sortState, onSortChange, className }) {
   )
 }
 
-/**
- * Shared between the Dashboard's condensed "Recent Predictions" card and
- * the full Prediction History page -- one table implementation, two
- * levels of detail via `compact`, rather than two parallel components.
- * Sorting is opt-in: pass `sortState`/`onSortChange` (History) to get
- * clickable, sort-indicating headers, or omit them (Dashboard) for plain
- * headers.
- */
 export default function PredictionsTable({ predictions, compact = false, sortState, onSortChange }) {
   return (
     <Table>
@@ -61,21 +54,21 @@ export default function PredictionsTable({ predictions, compact = false, sortSta
       <TableBody>
         {predictions.map((prediction) => (
           <TableRow key={prediction.id}>
-            <TableCell className="text-muted-foreground">
-              {new Date(prediction.created_at).toLocaleString()}
+            <TableCell className="text-muted-foreground font-mono text-xs">
+              {formatTimestamp(prediction.created_at)}
             </TableCell>
-            <TableCell>{prediction.predicted_admission ? 'Admission' : 'No admission'}</TableCell>
-            <TableCell className="tabular-nums">{formatPercentage(prediction.admission_probability)}</TableCell>
+            <TableCell className="font-medium">{prediction.predicted_admission ? 'Admission' : 'No admission'}</TableCell>
+            <TableCell className="tabular-nums font-semibold">{formatPercentage(prediction.admission_probability)}</TableCell>
             <TableCell>
               <RiskBadge riskCategory={prediction.risk_category} />
             </TableCell>
             {!compact && (
-              <TableCell className="text-muted-foreground">
+              <TableCell className="text-muted-foreground text-xs font-mono">
                 {prediction.model_name} v{prediction.model_version}
               </TableCell>
             )}
             {!compact && (
-              <TableCell className="text-right tabular-nums text-muted-foreground">
+              <TableCell className="text-right tabular-nums text-muted-foreground text-xs font-mono">
                 {prediction.processing_time_ms.toFixed(0)} ms
               </TableCell>
             )}
