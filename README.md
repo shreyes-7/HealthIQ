@@ -29,8 +29,6 @@
 
 - [Overview](#overview)
 - [Features](#features)
-- [Screenshots](#screenshots)
-- [Demo](#demo)
 - [Architecture](#architecture)
 - [Tech Stack](#tech-stack)
 - [Folder Structure](#folder-structure)
@@ -60,7 +58,6 @@
 - [FAQ](#faq)
 - [License](#license)
 - [Authors](#authors)
-- [Citation](#citation)
 - [Acknowledgements](#acknowledgements)
 
 ---
@@ -119,32 +116,6 @@ The **National Hospital Ambulatory Medical Care Survey (NHAMCS)** is a nationall
 | 🏗️ **Enterprise architecture** | Strict separation of concerns — ML never imports FastAPI, the backend never trains models, the frontend never computes a prediction |
 | 🧪 **Research-ready** | Reproducible pipeline scripts, experiment logging, Jupyter reports, and a documented model-selection process |
 | 🎨 **Modern frontend** | React 19 + Vite 8 + Tailwind v4 + shadcn/ui (Radix primitives), with a public marketing landing page separate from the authenticated-feeling app shell |
-
----
-
-## Screenshots
-
-> Screenshots are not yet checked into this repository. Add PNGs under `docs/images/` and update the paths below — the layout is ready to go.
-
-| Page | Preview |
-|---|---|
-| Public landing page | `docs/images/landing.png` |
-| Dashboard | `docs/images/dashboard.png` |
-| Patient prediction form + result | `docs/images/prediction.png` |
-| SHAP explainability | `docs/images/explainability.png` |
-| Prediction history | `docs/images/history.png` |
-| Dark mode | `docs/images/dark-mode.png` |
-
----
-
-## Demo
-
-> Placeholders — fill these in once available.
-
-- **Live Demo**: _not yet deployed — see [Deployment](#deployment)_
-- **Video Demo**: _not yet recorded_
-- **Research Paper**: _not yet published_
-- **Presentation Slides**: _not yet published_
 
 ---
 
@@ -1072,26 +1043,10 @@ This project is licensed under the **MIT License** — see [`LICENSE`](./LICENSE
 
 | Role | Name | GitHub | Email |
 |---|---|---|---|
-| Author / Maintainer | _Your Name_ | [@shreyes-7](https://github.com/shreyes-7) | `you@example.com` |
-| Contributor | _Name_ | `@github-handle` | `email@example.com` |
-| Supervisor / Advisor | _Name_ (if applicable) | — | — |
-| Institution | _Institution name_ (if applicable) | — | — |
+| Contributor | Shreyes Jaiswal | [@shreyes-7](https://github.com/shreyes-7) | `shreyesjaiswal7@gmail.com` |
+| Contributor | Abhinav Pandey | [@AbhinavPandey-afk](https://github.com/AbhinavPandey-afk) | `abhinavpandeydel42@gmail.com` |
+| Contributor | Prabhu Pachisia | [@prabhupachisia](https://github.com/prabhupachisia) | `prabhupachisia@gmail.com` |
 
----
-
-## Citation
-
-If you use this project or its methodology in academic work, please cite it:
-
-```bibtex
-@software{healthiq2026,
-  author  = {HealthIQ Contributors},
-  title   = {HealthIQ: Survey-Aware Explainable AI for Emergency Department Admission Prediction},
-  year    = {2026},
-  url     = {https://github.com/shreyes-7/HealthIQ},
-  note    = {NHAMCS-based Emergency Department admission risk prediction with SHAP explainability}
-}
-```
 
 ---
 
